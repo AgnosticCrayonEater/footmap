@@ -1,0 +1,18 @@
+[
+  {
+    "id": 805,
+    "name": "HB",
+    "fullname": "Havnar Bóltfelag",
+    "town": "Tórshavn",
+    "stadium": "Gundadalur",
+    "league": "Betrideildin",
+    "founded": 1904,
+    "website": "https://www.hb.fo/",
+    "position": [
+      62.01922,
+      -6.78110
+    ],
+    "primaryColor": "#ee3e27",
+    "secondaryColor": "#1f1f20"
+  }
+]

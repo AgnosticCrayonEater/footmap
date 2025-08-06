@@ -1,0 +1,913 @@
+[
+    {
+        "id": "parken",
+        "name": "Parken by 3",
+        "realName": "Parken",
+        "town": "København",
+        "capacity": 38065,
+        "built": 1992,
+        "position": [
+            55.70269,
+            12.57226
+        ],
+        "imageCount": 2
+    },
+    {
+        "id": "brondby_stadion",
+        "name": "Brøndby Stadion",
+        "town": "Brøndby",
+        "capacity": 28000,
+        "built": 1966,
+        "position": [
+            55.64899,
+            12.41861
+        ],
+        "imageCount": 2
+    },
+    {
+        "id": "mch_arena",
+        "name": "MCH Arena",
+        "town": "Herning",
+        "capacity": 12055,
+        "built": 2004,
+        "position": [
+            56.11681,
+            8.95179
+        ],
+        "imageCount": 2
+    },
+    {
+        "id": "ceres_park",
+        "name": "Ceres Park",
+        "realName": "Aarhus Stadion",
+        "town": "Aarhus",
+        "capacity": 19433,
+        "built": 1918,
+        "position": [
+            56.132,
+            10.19657
+        ],
+        "imageCount": 2
+    },
+    {
+        "id": "right_to_dream_park",
+        "name": "Right to Dream Park",
+        "realName": "Farum Park",
+        "town": "Farum",
+        "capacity": 10300,
+        "built": 1999,
+        "position": [
+            55.81601,
+            12.35251
+        ],
+        "imageCount": 2
+    },
+    {
+        "id": "monjasa_park",
+        "name": "Monjasa Park",
+        "realName": "Fredericia Idrætscenter",
+        "town": "Fredericia",
+        "capacity": 6000,
+        "built": 2006,
+        "position": [
+            55.57845,
+            9.72917
+        ],
+        "imageCount": 2
+    },
+    {
+        "id": "nature_energy_park",
+        "name": "Nature Energy Park",
+        "realName": "Odense Stadion",
+        "town": "Odense",
+        "capacity": 15790,
+        "built": 1941,
+        "position": [
+            55.39776,
+            10.35009
+        ],
+        "imageCount": 2
+    },
+    {
+        "id": "cepheus_park",
+        "name": "Cepheus Park Randers",
+        "realName": "Randers Stadion",
+        "town": "Randers",
+        "capacity": 10300,
+        "built": 1961,
+        "position": [
+            56.46586,
+            10.01027
+        ],
+        "imageCount": 2
+    },
+    {
+        "id": "jysk_park",
+        "name": "JYSK Park",
+        "town": "Silkeborg",
+        "capacity": 10000,
+        "built": 2015,
+        "position": [
+            56.18421,
+            9.57522
+        ],
+        "imageCount": 2
+    },
+    {
+        "id": "sydbank_park",
+        "name": "Sydbank Park",
+        "realName": "Haderslev Fodboldstadion",
+        "town": "Haderslev",
+        "capacity": 10100,
+        "built": 2001,
+        "position": [
+            55.26133,
+            9.48775
+        ],
+        "imageCount": 2
+    },
+    {
+        "id": "vejle_stadion",
+        "name": "Vejle Stadion",
+        "town": "Vejle",
+        "capacity": 10657,
+        "built": 2008,
+        "position": [
+            55.71372,
+            9.55621
+        ],
+        "imageCount": 2
+    },
+    {
+        "id": "energi_viborg_arena",
+        "name": "Energi Viborg Arena",
+        "realName": "Viborg Stadion",
+        "town": "Viborg",
+        "capacity": 10000,
+        "built": 1931,
+        "position": [
+            56.4559,
+            9.40209
+        ],
+        "imageCount": 2
+    },
+    {
+        "id": "nordstern_arena_horsens",
+        "name": "Nordstern Arena Horsens",
+        "realName": "Forum Horsens Stadion",
+        "town": "Horsens",
+        "capacity": 10495,
+        "built": 1929,
+        "position": [
+            55.87165,
+            9.85759
+        ],
+        "imageCount": 2
+    },
+    {
+        "id": "aalborg_portland_park",
+        "name": "Aalborg Portland Park",
+        "realName": "Aalborg Stadion",
+        "town": "Aalborg",
+        "capacity": 13800,
+        "built": 1920,
+        "position": [
+            57.05203,
+            9.8986
+        ],
+        "imageCount": 2
+    },
+    {
+        "id": "riisvangen_stadion",
+        "name": "Riisvangen Stadion",
+        "town": "Aarhus",
+        "capacity": 5000,
+        "built": 1930,
+        "position": [
+            56.17866,
+            10.21106
+        ],
+        "imageCount": 2
+    },
+    {
+        "id": "osterbro_stadion",
+        "name": "Østerbro Stadion",
+        "town": "København",
+        "capacity": 4400,
+        "built": 1912,
+        "position": [
+            55.70411,
+            12.57488
+        ],
+        "imageCount": 2
+    },
+    {
+        "id": "blue_water_arena",
+        "name": "Blue Water Arena",
+        "realName": "Esbjerg Stadion",
+        "town": "Esbjerg",
+        "capacity": 17442,
+        "built": 1955,
+        "position": [
+            55.48193,
+            8.43949
+        ],
+        "imageCount": 2
+    },
+    {
+        "id": "capelli_sport_stadion",
+        "name": "Capelli Sport Stadion",
+        "realName": "Køge Idrætspark",
+        "town": "Køge",
+        "capacity": 4000,
+        "built": 2019,
+        "position": [
+            55.46785,
+            12.17537
+        ],
+        "imageCount": 2
+    },
+    {
+        "id": "helsingor_ny_stadion",
+        "name": "Helsingør Stadion",
+        "town": "Helsingør",
+        "capacity": 4000,
+        "built": 2019,
+        "position": [
+            56.04638,
+            12.58497
+        ],
+        "imageCount": 2
+    },
+    {
+        "id": "ds_arena",
+        "name": "DS Arena",
+        "realName": "Hobro Idrætscenter",
+        "town": "Hobro",
+        "capacity": 10700,
+        "built": 2011,
+        "position": [
+            56.63495,
+            9.81995
+        ],
+        "imageCount": 2
+    },
+    {
+        "id": "pro_ventilation_arena",
+        "name": "Pro Ventilation Arena",
+        "realName": "Hvidovre Stadion",
+        "town": "Hvidovre",
+        "capacity": 12000,
+        "built": 1954,
+        "position": [
+            55.63191,
+            12.48295
+        ],
+        "imageCount": 2
+    },
+    {
+        "id": "autocentralen_park",
+        "name": "Autocentralen Park",
+        "realName": "Kolding Stadion",
+        "town": "Kolding",
+        "capacity": 12000,
+        "built": 1927,
+        "position": [
+            55.49402,
+            9.45916
+        ],
+        "imageCount": 2
+    },
+    {
+        "id": "lyngby_stadion",
+        "name": "Lyngby Stadion",
+        "town": "Lyngby",
+        "capacity": 10100,
+        "built": 1949,
+        "position": [
+            55.78131,
+            12.50573
+        ],
+        "imageCount": 2
+    },
+    {
+        "id": "middelfart_sparekasse_stadion",
+        "name": "Middelfart Sparekasse Stadion",
+        "realName": "Middelfart Stadion",
+        "town": "Middelfart",
+        "capacity": 4000,
+        "position": [
+            55.50374,
+            9.71462
+        ],
+        "imageCount": 2
+    },
+    {
+        "id": "gladsaxe_stadion",
+        "name": "Gladsaxe Stadion",
+        "town": "Søborg",
+        "capacity": 13507,
+        "built": 1998,
+        "position": [
+            55.73284,
+            12.49672
+        ],
+        "imageCount": 2
+    },
+    {
+        "id": "brabrand_stadion",
+        "name": "Domis Park",
+        "realName": "Brabrand Stadion",
+        "town": "Brabrand",
+        "capacity": 1500,
+        "position": [
+            56.14954,
+            10.11906
+        ],
+        "imageCount": 2
+    },
+    {
+        "id": "roskilde_idraetspark",
+        "name": "Roskilde Idrætspark",
+        "town": "Roskilde",
+        "position": [
+            55.63727,
+            12.07316
+        ],
+        "imageCount": 2
+    },
+    {
+        "id": "sundby_idraetspark",
+        "name": "Sundby Idrætspark",
+        "realName": "Sundby Idrætspark",
+        "town": "København",
+        "capacity": 5000,
+        "built": 1960,
+        "position": [
+            55.64998,
+            12.60212
+        ],
+        "imageCount": 2
+    },
+    {
+        "id": "gentofte_stadion",
+        "name": "Gentofte Sportspark",
+        "town": "Gentofte",
+        "position": [
+            55.75814,
+            12.52721
+        ],
+        "imageCount": 2
+    },
+    {
+        "id": "ishoj_idraetscenter",
+        "name": "Ishøj Idrætscenter",
+        "town": "Ishøj",
+        "position": [
+            55.61841,
+            12.37274
+        ],
+        "imageCount": 2
+    },
+    {
+        "id": "naestved_stadion",
+        "name": "Næstved Stadion",
+        "town": "Næstved",
+        "position": [
+            55.22298,
+            11.7663
+        ],
+        "imageCount": 1
+    },
+    {
+        "id": "hancock_arena",
+        "name": "Hancock Arena",
+        "town": "Skive",
+        "position": [
+            56.56823,
+            9.03788
+        ],
+        "imageCount": 2
+    },
+    {
+        "id": "sparekassen_thy_arena",
+        "name": "Sparekassen Thy Arena",
+        "town": "Thisted",
+        "position": [
+            56.96883,
+            8.70227
+        ],
+        "imageCount": 2
+    },
+    {
+        "id": "vejlby_stadion",
+        "name": "Ceres Park Vejlby",
+        "realName": "Vejlby Stadion",
+        "town": "Aarhus",
+        "position": [
+            56.19239,
+            10.2103
+        ],
+        "imageCount": 2
+    },
+    {
+        "id": "nord_energi_arena",
+        "name": "Nord Energi Arena",
+        "town": "Hjørring",
+        "position": [
+            57.45766,
+            9.99851
+        ],
+        "imageCount": 2
+    },
+    {
+        "id": "tingbjerg_idraetspark",
+        "name": "Tingbjerg Idrætspark",
+        "town": "Brønshøj",
+        "position": [
+            55.71811,
+            12.49349
+        ],
+        "imageCount": 2
+    },
+    {
+        "id": "frederiksberg_stadion",
+        "name": "Frederiksberg Stadion",
+        "town": "Frederiksberg",
+        "position": [
+            55.68104,
+            12.49879
+        ],
+        "imageCount": 2
+    },
+    {
+        "id": "valby_idraetspark",
+        "name": "Valby Idrætspark",
+        "town": "København",
+        "position": [
+            55.6469,
+            12.51159
+        ],
+        "imageCount": 2
+    },
+    {
+        "id": "horsholm_idraetspark",
+        "name": "Hørsholm Idrætspark",
+        "town": "Rungsted Kyst",
+        "position": [
+            55.89389,
+            12.51529
+        ],
+        "imageCount": 1
+    },
+    {
+        "id": "holbaek_sportsby_stadion",
+        "name": "Holbæk Sportsby Stadion",
+        "town": "Holbæk",
+        "position": [
+            55.69823,
+            11.68561
+        ],
+        "imageCount": 2
+    },
+    {
+        "id": "lyseng_idraetspark",
+        "name": "Lyseng Idrætspark",
+        "town": "Højbjerg",
+        "position": [
+            56.1115,
+            10.19377
+        ],
+        "imageCount": 1
+    },
+    {
+        "id": "alpi_arena_naesby",
+        "name": "ALPI Arena Næsby",
+        "town": "Odense",
+        "position": [
+            55.43371,
+            10.34131
+        ],
+        "imageCount": 2
+    },
+    {
+        "id": "lollands_bank_park",
+        "name": "Lollands Bank Park",
+        "town": "Nykøbing Falster",
+        "position": [
+            54.77111,
+            11.87762
+        ],
+        "imageCount": 2
+    },
+    {
+        "id": "spektrum_park",
+        "name": "Spektrum Park",
+        "town": "Odder",
+        "position": [
+            55.97891,
+            10.15399
+        ],
+        "imageCount": 2
+    },
+    {
+        "id": "vanlose_idraetspark",
+        "name": "Vanløse Idrætspark",
+        "town": "København",
+        "position": [
+            55.68684,
+            12.47749
+        ],
+        "imageCount": 2
+    },
+    {
+        "id": "soffy_road",
+        "name": "Soffy Road",
+        "town": "Aalborg",
+        "position": [
+            57.031,
+            9.96665
+        ],
+        "imageCount": 2
+    },
+    {
+        "id": "tarnby_stadion",
+        "name": "Tårnby Stadion",
+        "town": "Kastrup",
+        "position": [
+            55.62855,
+            12.61072
+        ],
+        "imageCount": 2
+    },
+    {
+        "id": "tomrermester_jim_jensens_park",
+        "name": "Tømrermester Jim Jensens Park",
+        "town": "Rødovre",
+        "position": [
+            55.67461,
+            12.43075
+        ],
+        "imageCount": 2
+    },
+    {
+        "id": "espergaerde_stadion",
+        "name": "Espergærde Stadion",
+        "town": "Espergærde",
+        "position": [
+            55.99841,
+            12.52835
+        ],
+        "imageCount": 1
+    },
+    {
+        "id": "frederikssund_stadion",
+        "name": "Frederikssund Stadion",
+        "town": "Frederikssund",
+        "position": [
+            55.83202,
+            12.06127
+        ],
+        "imageCount": 1
+    },
+    {
+        "id": "glostrup_stadion",
+        "name": "Glostrup Stadion",
+        "town": "Glostrup",
+        "position": [
+            55.66825,
+            12.37777
+        ],
+        "imageCount": 2
+    },
+    {
+        "id": "herlev_stadion",
+        "name": "Herlev Stadion",
+        "town": "Herlev",
+        "position": [
+            55.73417,
+            12.42281
+        ],
+        "imageCount": 2
+    },
+    {
+        "id": "smorum_idraetscenter",
+        "name": "Smørum Idrætscenter",
+        "town": "Smørumnedre",
+        "position": [
+            55.73083,
+            12.30514
+        ],
+        "imageCount": 1
+    },
+    {
+        "id": "emerson_arena_kunst",
+        "name": "Emerson Arena Kunst",
+        "town": "Næstved",
+        "position": [
+            55.2207,
+            11.7679
+        ],
+        "imageCount": 1
+    },
+    {
+        "id": "saby_stadion",
+        "name": "Såby Stadion",
+        "town": "Kirke Såby",
+        "position": [
+            55.643,
+            11.87692
+        ],
+        "imageCount": 0
+    },
+    {
+        "id": "vestamagers_idraetsanlaeg",
+        "name": "Vestamagers Idrætsanlæg",
+        "town": "Tårnby",
+        "position": [
+            55.60316,
+            12.59135
+        ],
+        "imageCount": 1
+    },
+    {
+        "id": "allerod_idraetspark",
+        "name": "Allerød Idrætspark",
+        "town": "Allerød",
+        "position": [
+            55.86839,
+            12.31754
+        ],
+        "imageCount": 1
+    },
+    {
+        "id": "bagsvaerd_stadion",
+        "name": "Bagsværd Stadion",
+        "town": "Gladsaxe",
+        "position": [
+            55.76004,
+            12.46005
+        ],
+        "imageCount": 1
+    },
+    {
+        "id": "karlslunde_stadion",
+        "name": "Karlslunde Stadion",
+        "town": "Karlslunde",
+        "position": [
+            55.56205,
+            12.25003
+        ],
+        "imageCount": 1
+    },
+    {
+        "id": "fredensborg_stadion",
+        "name": "Fredensborg Stadion",
+        "town": "Fredensborg",
+        "position": [
+            55.97617,
+            12.41179
+        ],
+        "imageCount": 2
+    },
+    {
+        "id": "nymosen",
+        "name": "Nymosen",
+        "town": "Gentofte",
+        "position": [
+            55.74517,
+            12.51616
+        ],
+        "imageCount": 2
+    },
+    {
+        "id": "gorslev_stadion",
+        "name": "Gørslev Stadion",
+        "town": "Gørslev",
+        "position": [
+            55.42878,
+            11.98821
+        ],
+        "imageCount": 1
+    },
+    {
+        "id": "hvidovre_ifs_baner",
+        "name": "Hvidovre IFs Baner",
+        "town": "Hvidovre",
+        "position": [
+            55.63318,
+            12.48429
+        ],
+        "imageCount": 0
+    },
+    {
+        "id": "ringsted_stadion",
+        "name": "Ringsted Stadion",
+        "town": "Ringsted",
+        "position": [
+            55.44682,
+            11.80762
+        ],
+        "imageCount": 1
+    },
+    {
+        "id": "faelledparken",
+        "name": "Fælledparken",
+        "town": "København",
+        "position": [
+            55.7,
+            12.57117
+        ],
+        "imageCount": 0
+    },
+    {
+        "id": "skovshoved_idraetspark",
+        "name": "Skovshoved Idrætspark",
+        "town": "Klampenborg",
+        "position": [
+            55.76356,
+            12.58793
+        ],
+        "imageCount": 2
+    },
+    {
+        "id": "tess_arena_-_kunstgraesbane_5",
+        "name": "TESS Arena - Kunstgræsbane 5",
+        "town": "Esbjerg",
+        "position": [
+            55.4858,
+            8.43853
+        ],
+        "imageCount": 0
+    },
+    {
+        "id": "hedensted_stadion",
+        "name": "Hedensted Stadion",
+        "town": "Hedensted",
+        "position": [
+            55.77438,
+            9.69152
+        ],
+        "imageCount": 1
+    },
+    {
+        "id": "jydsk_miljo_rengoring_-_kunst_arena",
+        "name": "Jydsk Miljø Rengøring - Kunst Arena",
+        "town": "Horsens",
+        "position": [
+            55.87078,
+            9.86053
+        ],
+        "imageCount": 1
+    },
+    {
+        "id": "marienlystcenteret",
+        "name": "Marienlystcenteret",
+        "town": "Odense",
+        "position": [
+            55.42195,
+            10.39419
+        ],
+        "imageCount": 2
+    },
+    {
+        "id": "okson-park",
+        "name": "OKSON-Park",
+        "town": "Odense",
+        "position": [
+            55.38995,
+            10.40951
+        ],
+        "imageCount": 1
+    },
+    {
+        "id": "obs_anlaeg",
+        "name": "ØBs Anlæg",
+        "town": "Odense",
+        "position": [
+            55.41224,
+            10.41649
+        ],
+        "imageCount": 1
+    },
+    {
+        "id": "green_arena",
+        "name": "Green Arena",
+        "town": "Ringkøbing",
+        "position": [
+            56.08446,
+            8.26602
+        ],
+        "imageCount": 2
+    },
+    {
+        "id": "spar_nord_arena",
+        "name": "Spar Nord Arena",
+        "town": "Svendborg",
+        "position": [
+            55.05454,
+            10.59514
+        ],
+        "imageCount": 2
+    },
+    {
+        "id": "home_tarup_park",
+        "name": "Home Tarup Park",
+        "town": "Odense",
+        "position": [
+            55.40949,
+            10.31247
+        ],
+        "imageCount": 2
+    },
+    {
+        "id": "soholt_idraetspark",
+        "name": "Søholt Idrætspark",
+        "town": "Silkeborg",
+        "position": [
+            56.18077,
+            9.58616
+        ],
+        "imageCount": 1
+    },
+    {
+        "id": "asa_grounds",
+        "name": "ASA Grounds",
+        "town": "Aarhus",
+        "position": [
+            56.14316,
+            10.19651
+        ],
+        "imageCount": 0
+    },
+    {
+        "id": "hojlyngen",
+        "name": "Højlyngen",
+        "town": "Aarhus",
+        "position": [
+            56.17187,
+            10.17777
+        ],
+        "imageCount": 0
+    },
+    {
+        "id": "kroyer_park",
+        "name": "Krøyer Park",
+        "town": "Holsterbro",
+        "position": [
+            56.36593,
+            8.63164
+        ],
+        "imageCount": 2
+    },
+    {
+        "id": "nordjyske_bank_arena",
+        "name": "Nordjyske Bank Arena",
+        "town": "Nørresundby",
+        "position": [
+            57.07912,
+            9.90018
+        ],
+        "imageCount": 1
+    },
+    {
+        "id": "viby_idraetspark",
+        "name": "Viby Idrætspark",
+        "town": "Viby J",
+        "position": [
+            56.12625,
+            10.15544
+        ],
+        "imageCount": 2
+    },
+    {
+        "id": "xl_park_vorup",
+        "name": "XL Park, Vorup",
+        "town": "Vorup",
+        "position": [
+            56.42112,
+            10.03015
+        ],
+        "imageCount": 1
+    },
+    {
+        "id": "nes_park",
+        "name": "NES Park",
+        "town": "Risskov",
+        "position": [
+            56.19374,
+            10.2484
+        ],
+        "imageCount": 1
+    },
+    {
+        "id": "gardlan_park",
+        "name": "Gardlan Park",
+        "town": "Aalborg",
+        "position": [
+            57.05269,
+            9.89015
+        ],
+        "imageCount": 1
+    }
+]

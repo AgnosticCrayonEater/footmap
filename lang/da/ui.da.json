@@ -1,0 +1,58 @@
+{
+  "filter": {
+    "label": "Filtrer efter række",
+    "allOption": "Alle",
+    "accoladeLabel": "Filtrer efter trofæer"
+  },
+  "infoBoxKeys": {
+    "town": "By",
+    "league": "Række",
+    "founded": "Grundlagt",
+    "website": "Hjemmeside",
+    "nickname": "Kaldenavn",
+    "championships": "Mesterskaber",
+    "nationalCup": "Pokaltitler",
+    "leagueCup": "Ligacup",
+    "otherClubs": "Andre klubber på dette stadion:",
+    "stadiumName": "Oprindeligt Stadionnavn",
+    "capacity": "Kapacitet",
+    "built": "Bygget"
+  },
+  "leagues": {
+    "Superliga": "Superliga",
+    "1st Division": "1. Division",
+    "2nd Division": "2. Division",
+    "3rd Division": "3. Division",
+    "Danmark Series Group 1": "Danmarksserien: Gruppe 1",
+    "Danmark Series Group 2": "Danmarksserien: Gruppe 2",
+    "Danmark Series Group 3": "Danmarksserien: Gruppe 3",
+    "Danmark Series Group 4": "Danmarksserien: Gruppe 4"
+  },
+  "settings": {
+    "title": "Indstillinger",
+    "countryLabel": "Land",
+    "languageLabel": "Sprog",
+    "themeLabel": "Tema",
+    "fontLabel": "Skrifttype",
+    "clusterLabel": "Klynge-markører",
+    "simpleMarkersLabel": "Simple markører"
+  },
+  "search": {
+    "placeholder": "Søg efter en klub...",
+    "title": "Søg"
+  },
+  "towns": {
+    "København": "København"
+  },
+  "infoModal": {
+    "title": "Sådan bruges kortet",
+    "countries": "<strong><i class='fa-solid fa-flag'></i> Udforsk lande:</strong> Brug flagvælgeren øverst til at skifte mellem lande. Dobbeltklik på det aktive lands flag for at nulstille visningen.",
+    "markers": "<strong><i class='fa-solid fa-map-marker-alt'></i> Klubmarkører:</strong> Klik på en markør på kortet for at se detaljeret information om den pågældende klub i infoboksen.",
+    "filter": "<strong><i class='fa-solid fa-filter'></i> Filtrer klubber:</strong> Brug filterknappen nederst til venstre for at vise klubber fra en bestemt række.",
+    "settings": "<strong><i class='fa-solid fa-cog'></i> Indstillinger:</strong> Brug indstillingsknappen til at ændre kortets tema, skifte sprog eller slå klynge/simple markører til/fra."
+  },
+  "creditsModal": {
+    "title": "Kreditering & Attribueringer",
+    "linkText": "Kilde"
+  }
+}

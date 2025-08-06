@@ -1,0 +1,1449 @@
+[
+  {
+    "id": "emirates_stadium",
+    "name": "Emirates Stadium",
+    "realName": "Ashburton Grove",
+    "town": "London",
+    "capacity": 60704,
+    "built": 2006,  
+    "position": [
+      51.55504,
+      -0.1084
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "villa_park",
+    "name": "Villa Park",
+    "realName": "Aston Lower Grounds",
+    "town": "Birmingham",
+    "capacity": 42918,
+    "built": 1897,
+    "position": [
+      52.50913,
+      -1.88487
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "vitality_stadium",
+    "name": "Vitality Stadium",
+    "realName": "Dean Court",
+    "town": "Bournemouth",
+    "capacity": 11307,
+    "built": 1910,
+    "position": [
+      50.73517,
+      -1.83833
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "gtech_community_stadium",
+    "name": "Gtech Community Stadium",
+    "realName": "Brentford Community Stadium",
+    "town": "London",
+    "capacity": 17250,
+    "built": 2020,
+    "position": [
+      51.49074,
+      -0.2888
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "falmer_stadium",
+    "name": "American Express Community Stadium",
+    "realName": "Falmer Stadium",
+    "town": "Brighton",
+    "capacity": 31876,
+    "built": 2011,
+    "position": [
+      50.86155,
+      -0.08367
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "turf_moor",
+    "name": "Turf Moor",
+    "town": "Burnley",
+    "capacity": 21944,
+    "built": 1883,
+    "position": [
+      53.78894,
+      -2.2302
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "stamford_bridge",
+    "name": "Stamford Bridge",
+    "town": "London",
+    "capacity": 40173,
+    "built": 1877,
+    "position": [
+      51.48169,
+      -0.19098
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "selhurst_park",
+    "name": "Selhurst Park",
+    "town": "London",
+    "capacity": 25486,
+    "built": 1924,
+    "position": [
+      51.39825,
+      -0.08542
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "hill_dickinson_stadium",
+    "name": "Hill Dickinson Stadium",
+    "realName": "Everton Stadium",
+    "town": "Liverpool",
+    "capacity": 52769,
+    "built": 2025,
+    "position": [
+      53.42495,
+      -3.00276
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "craven_cottage",
+    "name": "Craven Cottage",
+    "town": "London",
+    "capacity": 28800,
+    "built": 1896,
+    "position": [
+      51.47492,
+      -0.22168
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "elland_road",
+    "name": "Elland Road",
+    "realName": "Old Peacock Ground",
+    "town": "Leeds",
+    "capacity": 37645,
+    "built": 1897,
+    "position": [
+      53.7778,
+      -1.57217
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "anfield",
+    "name": "Anfield",
+    "town": "Liverpool",
+    "capacity": 61276,
+    "built": 1884,
+    "position": [
+      53.43083,
+      -2.96083
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "etihad_stadium",
+    "name": "Etihad Stadium",
+    "realName": "City of Manchester Stadium",
+    "town": "Manchester",
+    "capacity": 52900,
+    "built": 2003,
+    "position": [
+      53.48316,
+      -2.20047
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "old_trafford",
+    "name": "Old Trafford",
+    "town": "Manchester",
+    "capacity": 74197,
+    "built": 1910,
+    "position": [
+      53.46306,
+      -2.29139
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "st_james_park",
+    "name": "St James' Park",
+    "town": "Newcastle upon Tyne",
+    "capacity": 52305,
+    "built": 1892,
+    "position": [
+      54.97551,
+      -1.62159
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "the_city_ground",
+    "name": "City Ground",
+    "town": "Nottingham",
+    "capacity": 30404,
+    "built": 1898,
+    "position": [
+      52.93993,
+      -1.13288
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "stadium_of_light",
+    "name": "Stadium of Light",
+    "town": "Sunderland",
+    "capacity": 49000,
+    "built": 1997,
+    "position": [
+      54.91445,
+      -1.3882
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "tottenham_hotspur_stadium",
+    "name": "Tottenham Hotspur Stadium",
+    "town": "London",
+    "capacity": 62850,
+    "built": 2019,
+    "position": [
+      51.60415,
+      -0.06626
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "london_stadium",
+    "name": "London Stadium",
+    "realName": "Olympic Stadium",
+    "town": "London",
+    "capacity": 66000,
+    "built": 2012,
+    "position": [
+      51.53866,
+      -0.01651
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "molineux_stadium",
+    "name": "Molineux Stadium",
+    "town": "Wolverhampton",
+    "capacity": 31750,
+    "built": 1889,
+    "position": [
+      52.59019,
+      -2.13041
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "st_andrews",
+    "name": "St. Andrew's @ Knighthead Park",
+    "realName": "St. Andrew's",
+    "town": "Birmingham",
+    "capacity": 29409,
+    "built": 1906,
+    "position": [
+      52.47569,
+      -1.86812
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "ewood_park",
+    "name": "Ewood Park",
+    "town": "Blackburn",
+    "capacity": 31367,
+    "built": 1882,
+    "position": [
+      53.72854,
+      -2.48921
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "ashton_gate",
+    "name": "Ashton Gate",
+    "town": "Bristol",
+    "capacity": 26462,
+    "built": 1887,
+    "position": [
+      51.44011,
+      -2.62038
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "the_valley",
+    "name": "The Valley",
+    "town": "London",
+    "capacity": 27111,
+    "built": 1919,
+    "position": [
+      51.48645,
+      0.03654
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "coventry_building_society_arena",
+    "name": "Coventry Building Society Arena",
+    "realName": "Ricoh Arena",
+    "town": "Coventry",
+    "capacity": 32753,
+    "built": 2005,
+    "position": [
+      52.4481,
+      -1.49563
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "pride_park_stadium",
+    "name": "Pride Park",
+    "town": "Derby",
+    "capacity": 33597,
+    "built": 1997,
+    "position": [
+      52.91488,
+      -1.44726
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "mkm_stadium",
+    "name": "MKM Stadium",
+    "realName": "KC Stadium",
+    "town": "Hull",
+    "capacity": 25586,
+    "built": 2002,
+    "position": [
+      53.74625,
+      -0.36776
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "portman_road",
+    "name": "Portman Road",
+    "town": "Ipswich",
+    "capacity": 30056,
+    "built": 1884,
+    "position": [
+      52.05493,
+      1.1453
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "king_power_stadium",
+    "name": "King Power Stadium",
+    "realName": "Walkers Stadium",
+    "town": "Leicester",
+    "capacity": 32259,
+    "built": 2002,
+    "position": [
+      52.62034,
+      -1.14219
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "riverside_stadium",
+    "name": "Riverside Stadium",
+    "town": "Middlesbrough",
+    "capacity": 34742,
+    "built": 1995,
+    "position": [
+      54.57819,
+      -1.21677
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "the_den",
+    "name": "The Den",
+    "realName": "The New Den",
+    "town": "London",
+    "capacity": 20146,
+    "built": 1993,
+    "position": [
+      51.48592,
+      -0.05089
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "carrow_road",
+    "name": "Carrow Road",
+    "town": "Norwich",
+    "capacity": 27150,
+    "built": 1935,
+    "position": [
+      52.62208,
+      1.30923
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "kassam_stadium",
+    "name": "The Kassam Stadium",
+    "town": "Oxford",
+    "capacity": 12500,
+    "built": 2001,
+    "position": [
+      51.71648,
+      -1.20786
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "fratton_park",
+    "name": "Fratton Park",
+    "town": "Portsmouth",
+    "capacity": 20889,
+    "built": 1899,
+    "position": [
+      50.79632,
+      -1.06384
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "deepdale",
+    "name": "Deepdale",
+    "town": "Preston",
+    "capacity": 23404,
+    "built": 1878,
+    "position": [
+      53.7722,
+      -2.68847
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "loftus_road",
+    "name": "MARTRADE Loftus Road",
+    "realName": "Loftus Road",
+    "town": "London",
+    "capacity": 18439,
+    "built": 1904,
+    "position": [
+      51.50927,
+      -0.23215
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "bramall_lane",
+    "name": "Bramall Lane",
+    "town": "Sheffield",
+    "capacity": 32050,
+    "built": 1855,
+    "position": [
+      53.37037,
+      -1.47083
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "hillsborough",
+    "name": "Hillsborough",
+    "town": "Sheffield",
+    "capacity": 39732,
+    "built": 1899,
+    "position": [
+      53.41142,
+      -1.50066
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "st_marys_stadium",
+    "name": "St Mary's Stadium",
+    "town": "Southampton",
+    "capacity": 32384,
+    "built": 2001,
+    "position": [
+      50.90583,
+      -1.39094
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "bet365_stadium",
+    "name": "Bet365 Stadium",
+    "town": "Stoke-on-Trent",
+    "capacity": 30027,
+    "built": 1997,
+    "position": [
+      52.98835,
+      -2.17543
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "swanseacom_stadium",
+    "name": "Swansea.com Stadium",
+    "realName": "Liberty Stadium",
+    "town": "Swansea",
+    "capacity": 21088,
+    "built": 2005,
+    "position": [
+      51.64275,
+      -3.93462
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "vicarage_road",
+    "name": "Vicarage Road",
+    "town": "Watford",
+    "capacity": 22220,
+    "built": 1921,
+    "position": [
+      51.64987,
+      -0.40151
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "the_hawthorns",
+    "name": "The Hawthorns",
+    "town": "West Bromwich",
+    "capacity": 26804,
+    "built": 1900,
+    "position": [
+      52.50904,
+      -1.96392
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "racecourse_ground",
+    "name": "STōK Racecourse Ground",
+    "realName": "Racecourse Ground",
+    "town": "Wrexham",
+    "capacity": 10771,
+    "built": 1864,
+    "position": [
+      53.05192,
+      -3.00383
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "plough_lane",
+    "name": "Cherry Red Records Stadium",
+    "realName": "Plough Lane",
+    "town": "London",
+    "capacity": 9215,
+    "built": 2020,
+    "position": [
+      51.4315,
+      -0.18669
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "oakwell",
+    "name": "Oakwell",
+    "town": "Barnsley",
+    "capacity": 23287,
+    "built": 1888,
+    "position": [
+      53.55226,
+      -1.4676
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "bloomfield_road",
+    "name": "Bloomfield Road",
+    "town": "Blackpool",
+    "capacity": 16500,
+    "built": 1899,
+    "position": [
+      53.80483,
+      -3.04815
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "toughsheet_community_stadium",
+    "name": "The Toughsheet Community Stadium",
+    "realName": "University of Bolton Stadium ",
+    "town": "Bolton",
+    "capacity": 28723,
+    "built": 1997,
+    "position": [
+      53.58054,
+      -2.53571
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "valley_parade",
+    "name": "The University of Bradford Stadium",
+    "realName": "Valley Parade",
+    "town": "Bradford",
+    "capacity": 24840,
+    "built": 1886,
+    "position": [
+      53.80418,
+      -1.75905
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "pirelli_stadium",
+    "name": "Pirelli Stadium",
+    "town": "Burton upon Trent",
+    "capacity": 6912,
+    "built": 2005,
+    "position": [
+      52.82188,
+      -1.62683
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "cardiff_city_stadium",
+    "name": "Cardiff City Stadium",
+    "town": "Cardiff",
+    "capacity": 33280,
+    "built": 2009,
+    "position": [
+      51.4728,
+      -3.20302
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "eco_power_stadium",
+    "name": "Eco-Power Stadium",
+    "realName": "Keepmoat Stadium",
+    "town": "Doncaster",
+    "capacity": 15231,
+    "built": 2007,
+    "position": [
+      53.50977,
+      -1.11378
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "st_james_park_exeter",
+    "name": "St James Park",
+    "town": "Exeter",
+    "capacity": 8219,
+    "built": 1904,
+    "position": [
+      50.73069,
+      -3.52104
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "john_smiths_stadium",
+    "name": "Accu Stadium",
+    "realName": "Kirkless Stadium",
+    "town": "Huddersfield",
+    "capacity": 24121,
+    "built": 1994,
+    "position": [
+      53.6542,
+      -1.76835
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "brisbane_road",
+    "name": "BetWright Stadium",
+    "realName": "Brisbane Road",
+    "town": "London",
+    "capacity": 9271,
+    "built": 1890,
+    "position": [
+      51.56008,
+      -0.01261
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "sincil_bank",
+    "name": "LNER Stadium",
+    "town": "Lincoln",
+    "capacity": 10669,
+    "built": 1895,
+    "position": [
+      53.21827,
+      -0.5409
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "kenilworth_road",
+    "name": "Kenilworth Road",
+    "town": "Luton",
+    "capacity": 12056,
+    "built": 1905,
+    "position": [
+      51.8842,
+      -0.4317
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "field_mill",
+    "name": "One Call Stadium",
+    "realName": "Field Mill",
+    "town": "Mansfield",
+    "capacity": 9186,
+    "built": 1861,
+    "position": [
+      53.13803,
+      -1.20079
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "sixfields_stadium",
+    "name": "Sixfields",
+    "town": "Northampton",
+    "capacity": 7947,
+    "built": 1994,
+    "position": [
+      52.23513,
+      -0.93352
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "london_road_stadium",
+    "name": "Weston Homes Stadium",
+    "realName": "London Road Stadium",
+    "town": "Peterborough",
+    "capacity": 15314,
+    "built": 1913,
+    "position": [
+      52.56465,
+      -0.24041
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "home_park",
+    "name": "Home Park",
+    "town": "Plymouth",
+    "capacity": 17900,
+    "built": 1893,
+    "position": [
+      50.38805,
+      -4.15087
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "vale_park",
+    "name": "Vale Park",
+    "town": "Stoke-on-Trent",
+    "capacity": 15695,
+    "built": 1950,
+    "position": [
+      53.05008,
+      -2.19268
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "madejski_stadium",
+    "name": "Select Car Leasing Stadium",
+    "realName": "Madejski Stadium",
+    "town": "Reading",
+    "capacity": 24161,
+    "built": 1998,
+    "position": [
+      51.42233,
+      -0.98265
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "new_york_stadium",
+    "name": "AESSEAL New York Stadium",
+    "realName": "New York Stadium",
+    "town": "Rotherham",
+    "capacity": 12021,
+    "built": 2012,
+    "position": [
+      53.42689,
+      -1.36244
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "broadhall_way",
+    "name": "The Lamex Stadium",
+    "realName": "Broadhall Way",
+    "town": "Stevenage",
+    "capacity": 7300,
+    "built": 1961,
+    "position": [
+      51.8898,
+      -0.19367
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "edgeley_park",
+    "name": "Edgeley Park",
+    "town": "Stockport",
+    "capacity": 10852,
+    "built": 1891,
+    "position": [
+      53.39964,
+      -2.1663
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "dw_stadium",
+    "name": "The Brick Community Stadium",
+    "town": "Wigan",
+    "capacity": 25138,
+    "built": 1999,
+    "position": [
+      53.54766,
+      -2.65403
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "adams_park",
+    "name": "Adams Park",
+    "town": "High Wycombe",
+    "capacity": 10446,
+    "built": 1990,
+    "position": [
+      51.63052,
+      -0.80022
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "wham_stadium",
+    "name": "Wham Stadium",
+    "realName": "Crown Ground",
+    "town": "Accrington",
+    "capacity": 5450,
+    "built": 1968,
+    "position": [
+      53.76538,
+      -2.37104
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "the_hive_stadium",
+    "name": "The Hive Stadium",
+    "town": "London",
+    "capacity": 6500,
+    "built": 2013,
+    "position": [
+      51.60263,
+      -0.29174
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "holker_street",
+    "name": "Holker Street",
+    "town": "Barrow-in-Furness",
+    "capacity": 6500,
+    "built": 1909,
+    "position": [
+      54.12321,
+      -3.23493
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "memorial_stadium",
+    "name": "Memorial Stadium",
+    "realName": "Memorial Ground",
+    "town": "Bristol",
+    "capacity": 12500,
+    "built": 1921,
+    "position": [
+      51.48626,
+      -2.58316
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "hayes_lane",
+    "name": "Copperjax Community Stadium",
+    "realName": "Hayes Lane",
+    "capacity": 5000,
+    "built": 1938,
+    "town": "Bromley",
+    "position": [
+      51.39007,
+      0.02109
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "abbey_stadium",
+    "name": "Cledara Abbey Stadium",
+    "realName": "Abbey Stadium",
+    "town": "Cambridge",
+    "capacity": 7937,
+    "built": 1932,
+    "position": [
+      52.21204,
+      0.15419
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "whaddon_road",
+    "name": "EV Charger Points Stadium",
+    "realName": "Whaddon Road",
+    "capacity": 7066,
+    "built": 1927,
+    "town": "Cheltenham",
+    "position": [
+      51.90619,
+      -2.06018
+    ],
+    "imageCount": 0
+  },
+  {
+    "id": "smh_group_stadium",
+    "name": "SMH Group Stadium",
+    "town": "Chesterfield",
+    "capacity": 10292,
+    "built": 2010,
+    "position": [
+      53.25355,
+      -1.42576
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "colchester_community_stadium",
+    "name": "JobServe Community Stadium",
+    "realName": "Colchester Community Stadium",
+    "capacity": 10105,
+    "built": 2008,
+    "town": "Colchester",
+    "position": [
+      51.92328,
+      0.89776
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "broadfield_stadium",
+    "name": "Broadfield Stadium",
+    "town": "Crawley",
+    "capacity": 6134,
+    "built": 1997,
+    "position": [
+      51.09967,
+      -0.19475
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "gresty_road",
+    "name": "Mornflake Stadium",
+    "realName": "Gresty Road",
+    "town": "Crewe",
+    "capacity": 10153,
+    "built": 1906,
+    "position": [
+      53.08741,
+      -2.43567
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "highbury_stadium_fleetwood",
+    "name": "Highbury Stadium",
+    "town": "Fleetwood",
+    "capacity": 5327,
+    "built": 1939,
+    "position": [
+      53.91646,
+      -3.02481
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "priestfield_stadium",
+    "name": "MEMS Priestfield Stadium",
+    "realName": "Priestfield Stadium",
+    "town": "Gillingham",
+    "capacity": 11582,
+    "built": 1893,
+    "position": [
+      51.3842,
+      0.56077
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "blundell_park",
+    "name": "Blundell Park",
+    "town": "Cleethorpes",
+    "capacity": 9052,
+    "built": 1899,
+    "position": [
+      53.57015,
+      -0.04654
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "wetherby_road",
+    "name": "Exercise Stadium",
+    "realName": "Wetherby Road",
+    "town": "Harrogate",
+    "capacity": 5000,
+    "built": 1920,
+    "position": [
+      53.99168,
+      -1.5145
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "stadium_mk",
+    "name": "Stadium MK",
+    "town": "Milton Keynes",
+    "capacity": 30500,
+    "built": 2007,
+    "position": [
+      52.00965,
+      -0.73356
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "rodney_parade",
+    "name": "Rodney Parade",
+    "town": "Newport",
+    "capacity": 8700,
+    "built": 1877,
+    "position": [
+      51.58822,
+      -2.98803
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "meadow_lane",
+    "name": "Meadow Lane",
+    "town": "Nottingham",
+    "capacity": 19841,
+    "built": 1910,
+    "position": [
+      52.9426,
+      -1.13714
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "boundary_park",
+    "name": "Boundary Park",
+    "town": "Oldham",
+    "capacity": 13186,
+    "built": 1904,
+    "position": [
+      53.55511,
+      -2.12842
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "moor_lane",
+    "name": "Peninsula Stadium",
+    "realName": "Moor Lane",
+    "town": "Salford",
+    "capacity": 5108,
+    "built": 1978,
+    "position": [
+      53.51362,
+      -2.27679
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "new_meadow",
+    "name": "The Croud Meadow",
+    "realName": "New Meadow",
+    "town": "Shrewsbury",
+    "capacity": 9875,
+    "built": 2007,
+    "position": [
+      52.68857,
+      -2.74927
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "county_ground",
+    "name": "County Ground",
+    "town": "Swindon",
+    "capacity": 15728,
+    "built": 1892,
+    "position": [
+      51.56444,
+      -1.77106
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "prenton_park",
+    "name": "Prenton Park",
+    "town": "Birkenhead",
+    "capacity": 16587,
+    "built": 1912,
+    "position": [
+      53.37373,
+      -3.03253
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "bescot_stadium",
+    "name": " Pallet-Track Bescot Stadium",
+    "realName": "Bescot Stadium",
+    "town": "Walsall",
+    "capacity": 11300,
+    "built": 1990,
+    "position": [
+      52.56534,
+      -1.99044
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "recreation_ground",
+    "name": " The EBB Stadium at The Recreation Ground",
+    "realName": "Recreation Ground",
+    "town": "Aldershot",
+    "capacity": 7100,
+    "built": 1927,
+    "position": [
+      51.24836,
+      -0.75467
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "moss_lane",
+    "name": "J. Davison Stadium",
+    "realName": "Moss Lane",
+    "town": "Altrincham",
+    "capacity": 7873,
+    "built": 1910,
+    "position": [
+      53.38339,
+      -2.33519
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "meadow_park_borehamwood",
+    "name": "Mangata Pay UK Stadium Meadow Park",
+    "realName": "Meadow Park",
+    "town": "Borehamwood",
+    "capacity": 4500,
+    "built": 1963,
+    "position": [
+      51.66189,
+      -0.27239
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "jakemans_community_stadium",
+    "name": "Jakemans Community Stadium",
+    "realName": "Boston Community Stadium",
+    "town": "Boston",
+    "capacity": 5061,
+    "built": 2020,
+    "position": [
+      52.95632,
+      -0.02860
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "st_james_park_brackley",
+    "name": "St. James Park",
+    "town": "Brackley",
+    "capacity": 3500,
+    "built": 1974,
+    "position": [
+      52.02457,
+      -1.14404
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "cressing_road",
+    "name": "Rare Breed Meat Co. Stadium",
+    "realName": "Cressing Road",
+    "town": "Braintree",
+    "capacity": 6000,
+    "built": 1923,
+    "position": [
+      51.87528,
+      0.57297
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "brunton_park",
+    "name": "Brunton Park",
+    "town": "Carlisle",
+    "capacity": 17949,
+    "built": 1909,
+    "position": [
+      54.89551,
+      -2.91356
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "silverlake_stadium",
+    "name": "Silverlake Stadium",
+    "realName": "Ten Acres",
+    "town": "Eastleigh",
+    "capacity": 5192,
+    "built": 1957,
+    "position": [
+      50.95224,
+      -1.37203
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "the_shay",
+    "name": "The Shay",
+    "town": "Halifax",
+    "capacity": 10401,
+    "built": 1921,
+    "position": [
+      53.71610,
+      -1.85913
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "the_new_lawn",
+    "name": "The Bolt New Lawn",
+    "realName": "The New Lawn",
+    "town": "Nailsworth",
+    "capacity": 5147,
+    "built": 2006,
+    "position": [
+      51.69901,
+      -2.23788
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "gateshead_international_stadium",
+    "name": "Gateshead International Stadium",
+    "town": "Gateshead",
+    "capacity": 11800,
+    "built": 1955,
+    "position": [
+      54.96099,
+      -1.57969
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "victoria_park",
+    "name": "The Prestige Group Stadium",
+    "realName": "Victoria Park",
+    "town": "Hartlepool",
+    "capacity": 7858,
+    "built": 1886,
+    "position": [
+      54.68905,
+      -1.21265
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "mazuma_stadium",
+    "name": "Mazuma Mobile Stadium",
+    "realName": "Globe Arena",
+    "town": "Morecambe",
+    "capacity": 6476,
+    "built": 2010,
+    "position": [
+      54.06144,
+      -2.86720
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "spotland_stadium",
+    "name": "Crown Oil Arena",
+    "realName": "Spotland Stadium",
+    "town": "Rochdale",
+    "capacity": 10249,
+    "built": 1878,
+    "position": [
+      53.62076,
+      -2.17999
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "glanford_park",
+    "name": "The Attis Arena",
+    "realName": "Glanford Park",
+    "town": "Scunthorpe",
+    "capacity": 9088,
+    "built": 1988,
+    "position": [
+      53.58661,
+      -0.69520
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "damson_park",
+    "name": "ARMCO Arena",
+    "realName": "Damson Park",
+    "town": "Solihull",
+    "capacity": 5500,
+    "built": 1998,
+    "position": [
+      52.43888,
+      -1.75723
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "roots_hall",
+    "name": "Roots Hall",
+    "town": "Southend-on-Sea",
+    "capacity": 12392,
+    "built": 1955,
+    "position": [
+      51.54896,
+      0.70157
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "gander_green_lane",
+    "name": "VBS Community Stadium",
+    "realName": "Gander Green Lane",
+    "town": "Sutton",
+    "capacity": 5013,
+    "built": 1898,
+    "position": [
+      51.36751,
+      -0.20431
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "the_lamb_ground",
+    "name": "The Lamb Ground",
+    "town": "Tamworth",
+    "capacity": 4000,
+    "built": 1934,
+    "position": [
+      52.62834,
+      -1.68890
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "truro_city_stadium",
+    "name": "Truro City Stadium",
+    "town": "Kenwyn",
+    "capacity": 3000,
+    "built": 2024,
+    "position": [
+      50.26763,
+      -5.12343
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "grosvenor_vale",
+    "name": "Grosvenor Vale",
+    "town": "Ruislip",
+    "capacity": 4085,
+    "built": 1947,
+    "position": [
+      51.56938,
+      -0.41662
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "kingfield_stadium",
+    "name": "Kingfield Stadium",
+    "realName": "The Laithwaite Community Stadium",
+    "town": "Woking",
+    "capacity": 6036,
+    "built": 1921,
+    "position": [
+      51.30626,
+      -0.55891
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "huish_park",
+    "name": "Huish Park",
+    "town": "Yeovil",
+    "capacity": 9565,
+    "built": 1990,
+    "position": [
+      50.95016,
+      -2.67396
+    ],
+    "imageCount": 2
+  },
+  {
+    "id": "york_community_stadium",
+    "name": "LNER Community Stadium",
+    "realName": "York Community Stadium",
+    "town": "York",
+    "capacity": 8500,
+    "built": 2021,
+    "position": [
+      53.98433,
+      -1.05293
+    ],
+    "imageCount": 2
+  }
+]

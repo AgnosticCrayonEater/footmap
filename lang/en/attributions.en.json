@@ -1,0 +1,27 @@
+{
+    "sections": [
+        {
+            "title": "Club Logos",
+            "text": "All club logos are the property of their respective owners. They are used here under fair use for informational and editorial purposes only. All logos are taken from the 'FMG Standard Logos Megapack'",
+            "link": "https://footballmanagergraphics.com/files/file/677-fmg-standard-logos-megapack/"
+        },
+        {
+            "title": "Stadium images",
+            "text": "All stadium images are the property of their respective owners. They are used here under fair use for informational and editorial purposes only. All stadium images are taken from the 'sortitoutsi Background and Stadium Packs'",
+            "link": "https://sortitoutsi.net/graphics/style/17/sortitoutsi-backgrounds-megapack"
+        },        
+        {
+            "title": "Flag Icons",
+            "text": "Flag icons created by Freepik - Flaticon.",
+            "link": "https://www.flaticon.com/packs/countrys-flags"
+        },        
+        {
+            "title": "Map Data",
+            "text": "Map tiles by Carto, under CC BY 3.0. Data by OpenStreetMap, under ODbL."
+        },
+        {
+            "title": "Application",
+            "text": "Developed by UnaX.dk"
+        }
+    ]
+}

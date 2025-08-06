@@ -1,0 +1,235 @@
+/* style/dark.css */
+
+body.dark-mode {
+    background-color: #111827;
+    color: #d1d5db;
+}
+
+body.dark-mode .leaflet-tile {
+    filter: invert(1) hue-rotate(180deg) brightness(95%) contrast(90%);
+}
+
+body.dark-mode .ui-panel {
+    background: rgba(31, 41, 55, 0.95);
+    color: #f9fafb;
+    border: 1px solid #374151;
+}
+
+body.dark-mode #search-btn {
+    background-color: rgba(31, 41, 55, 0.95);
+    color: #f9fafb;
+    border: 1px solid #374151;
+}
+
+body.dark-mode #search-btn:hover {
+    background-color: #374151;
+}
+
+body.dark-mode #search-widget {
+    background-color: rgba(31, 41, 55, 0.95);
+    border: 1px solid #374151;
+}
+
+body.dark-mode #search-input {
+    color: #f9fafb;
+}
+
+body.dark-mode #search-clear-btn {
+    color: #9ca3af;
+}
+
+body.dark-mode .search-result-item:hover {
+    background-color: #374151;
+}
+
+body.dark-mode .search-result-text .league {
+    color: #9ca3af;
+}
+
+
+body.dark-mode #settings-btn,
+body.dark-mode #filter-btn,
+body.dark-mode #info-btn,
+body.dark-mode #credits-btn {
+    background-color: rgba(31, 41, 55, 0.95);
+    color: #f9fafb;
+    border: 1px solid #374151;
+}
+
+body.dark-mode #settings-btn:hover,
+body.dark-mode #filter-btn:hover,
+body.dark-mode #info-btn:hover,
+body.dark-mode #credits-btn:hover {
+    background-color: #374151;
+}
+
+body.dark-mode .panel-title {
+    border-bottom-color: #374151;
+}
+
+body.dark-mode #language-select button.active {
+    border-color: #3b82f6;
+}
+
+body.dark-mode #leagueFilter,
+body.dark-mode .settings-select {
+    background-color: #374151;
+    color: #f9fafb;
+    border-color: #4b5563;
+}
+
+body.dark-mode #info-box img {
+    filter: drop-shadow(0px 0px 3px rgba(255, 255, 255, 0.5));
+}
+
+body.dark-mode .info-box-header.no-theme .club-name {
+    border-bottom-color: #374151;
+    color: #f9fafb !important;
+}
+
+body.dark-mode .info-box-content .club-nickname {
+    color: #9ca3af;
+}
+
+body.dark-mode .info-box-content .club-fullname {
+    color: #6b7280;
+}
+
+body.dark-mode .info-box-content a {
+    color: #60a5fa;
+}
+
+body.dark-mode .info-box-content a:hover {
+    color: #93c5fd;
+}
+
+/* --- Custom Zoom Control Styling (Dark Mode) --- */
+body.dark-mode .leaflet-control-zoom.leaflet-bar {
+    background: rgba(31, 41, 55, 0.95) !important;
+    border-color: #374151 !important;
+}
+
+body.dark-mode .leaflet-control-zoom.leaflet-bar a {
+    color: #f9fafb !important;
+}
+
+body.dark-mode .leaflet-control-zoom.leaflet-bar a.leaflet-control-zoom-out {
+    border-top-color: #374151 !important;
+}
+
+body.dark-mode .leaflet-control-zoom.leaflet-bar a:hover {
+    background-color: #374151 !important;
+}
+
+/* --- Dark Mode for Country Dock --- */
+body.dark-mode #country-dock {
+    background: rgba(31, 41, 55, 0.95);
+    border-color: #374151;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-mode .scroll-arrow {
+    background-color: #374151;
+    color: #d1d5db;
+    border-color: #4b5563;
+}
+
+body.dark-mode .scroll-arrow:hover {
+    background-color: #4b5563;
+    border-color: #6b7280;
+}
+
+body.dark-mode #country-dock .country-flags-container button.active {
+    border-color: #3b82f6;
+}
+
+body.dark-mode .toggle-switch input:checked~.slider {
+    background-color: #374151;
+}
+
+body.dark-mode .toggle-switch input:checked~.slider:before {
+    background-color: #FEFCD7;
+}
+
+body.dark-mode .marker-cluster div {
+    color: #f9fafb;
+}
+
+body.dark-mode #info-modal-close-btn,
+body.dark-mode #credits-modal-close-btn {
+    color: #9ca3af;
+}
+
+body.dark-mode #info-modal-close-btn:hover,
+body.dark-mode #credits-modal-close-btn:hover {
+    color: #f9fafb;
+}
+
+body.dark-mode .info-content p i {
+    color: #3b82f6;
+}
+
+body.dark-mode .credit-section h4 {
+    border-bottom-color: #374151;
+}
+
+body.dark-mode #credits-modal .info-content a {
+    color: #60a5fa;
+}
+
+body.dark-mode #credits-modal .info-content a:hover {
+    color: #93c5fd;
+}
+
+
+/* --- Dark Mode for Stadium Info Box --- */
+body.dark-mode .info-divider {
+    border-top-color: #374151;
+}
+
+body.dark-mode .stadium-title {
+    color: #f9fafb;
+}
+
+body.dark-mode .stadium-image-reel {
+    background-color: transparent;
+}
+
+body.dark-mode .gallery-button {
+    background-color: #374151;
+    border-color: #4b5563;
+    color: #d1d5db;
+}
+
+body.dark-mode .gallery-button:hover {
+    background-color: #4b5563;
+}
+
+/* Active state is handled by JS, no dark mode override needed */
+
+body.dark-mode .stadium-details-list {
+    color: #f9fafb;
+}
+
+body.dark-mode .other-clubs-list li {
+    background-color: #374151;
+}
+
+body.dark-mode .info-box-content a.website-button {
+    background-color: rgba(31, 41, 55, 0.95);
+    border-color: #374151;
+    color: #f9fafb;
+}
+
+body.dark-mode .website-button:hover {
+    background-color: #374151;
+}
+
+/* --- Dark Mode Scrollbar --- */
+body.dark-mode .custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+body.dark-mode .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}

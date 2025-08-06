@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <!-- External Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/leaflet.markercluster.js"></script>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.Default.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Lato:wght@400;700&family=Lexend&family=Roboto:wght@400;500&family=Source+Sans+Pro:wght@400;600&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style/default.css">
+</head>
+
+<body>
+  <div id="search-container">
+    <div id="search-widget">
+      <input type="text" id="search-input" placeholder="Search for a club...">
+      <button id="search-clear-btn" class="hidden"><i class="fa-solid fa-times"></i></button>
+    </div>
+    <button id="search-btn"><i class="fa-solid fa-search"></i></button>
+    <div id="search-results" class="ui-panel custom-scrollbar"></div>
+  </div>
+
+  <div id="country-dock" class="ui-panel">
+    <button class="scroll-arrow" id="scroll-left-btn" title="Scroll Left"><i
+        class="fa-solid fa-chevron-left"></i></button>
+    <div class="country-flags-container" id="country-flags-wrapper"></div>
+    <button class="scroll-arrow" id="scroll-right-btn" title="Scroll Right"><i
+        class="fa-solid fa-chevron-right"></i></button>
+  </div>
+
+  <div id="info-box" class="ui-panel custom-scrollbar"></div>
+
+  <div id="settings-container">
+    <button id="info-btn" title="Information">
+      <i class="fa-solid fa-question"></i>
+    </button>
+    <button id="credits-btn" title="Credits">
+      <i class="fa-solid fa-copyright"></i>
+    </button>
+    <button id="filter-btn" title="Filter">
+      <i class="fa-solid fa-filter"></i>
+    </button>
+    <button id="settings-btn" title="Settings">
+      <i class="fa-solid fa-cog"></i>
+    </button>
+
+    <div id="filter-box" class="ui-panel">
+      <div class="filter-section">
+        <label for="leagueFilter" id="filter-label"><strong></strong></label><br>
+        <select id="leagueFilter">
+          <option value="all"></option>
+        </select>
+      </div>
+      <div id="accolade-filter-section" class="filter-section">
+        <strong id="accolade-filter-label"></strong>
+        <div id="accolade-filters">
+          <!-- Checkboxes will be dynamically inserted here -->
+        </div>
+      </div>
+    </div>
+
+    <div id="settings-modal" class="ui-panel">
+      <strong class="panel-title">Settings</strong>
+      <div class="setting-option">
+        <label>Language</label>
+        <div id="language-select">
+          <button id="lang-da" title="Dansk"><img src="graphics/flags/da.png" alt="Danish Flag"></button>
+          <button id="lang-en" title="English"><img src="graphics/flags/en.png" alt="English Flag"></button>
+        </div>
+      </div>
+      <div class="setting-option">
+        <label for="theme-switch">Theme</label>
+        <label class="toggle-switch">
+          <input type="checkbox" id="theme-switch">
+          <i class="fa-solid fa-sun icon-sun"></i>
+          <i class="fa-solid fa-moon icon-moon"></i>
+          <span class="slider"></span>
+        </label>
+      </div>
+      <div class="setting-option">
+        <label for="font-switch" id="font-setting-label">Font</label>
+        <select id="font-switch" class="settings-select">
+          <option value="Inter">Inter</option>
+          <option value="Roboto">Roboto</option>
+          <option value="Lato">Lato</option>
+          <option value="Source Sans Pro">Source Sans Pro</option>
+          <option value="Lexend">Lexend</option>
+        </select>
+      </div>
+      <div class="setting-option">
+        <label for="cluster-switch">Cluster Markers</label>
+        <label class="toggle-switch">
+          <input type="checkbox" id="cluster-switch">
+          <span class="slider"></span>
+        </label>
+      </div>
+      <div class="setting-option">
+        <label for="simple-markers-switch" id="simple-markers-label">Simple Markers</label>
+        <label class="toggle-switch">
+          <input type="checkbox" id="simple-markers-switch">
+          <span class="slider"></span>
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <div class="folium-map" id="map_danish_pyramid"></div>
+
+  <div id="info-modal-overlay">
+    <div id="info-modal" class="ui-panel">
+      <button id="info-modal-close-btn" title="Close">&times;</button>
+      <h2 id="info-modal-title" class="panel-title"></h2>
+      <div class="info-content">
+        <p id="info-modal-countries"></p>
+        <p id="info-modal-markers"></p>
+        <p id="info-modal-filter"></p>
+        <p id="info-modal-settings"></p>
+      </div>
+    </div>
+  </div>
+
+  <div id="credits-modal-overlay">
+    <div id="credits-modal" class="ui-panel">
+      <button id="credits-modal-close-btn" title="Close">&times;</button>
+      <h2 id="credits-modal-title" class="panel-title"></h2>
+      <div id="credits-modal-content" class="info-content">
+      </div>
+    </div>
+  </div>
+
+  <div id="loading-overlay">
+    <div class="spinner-container">
+      <div class="spinner"></div>
+      <i class="fa-solid fa-futbol spinner-icon"></i>
+    </div>
+  </div>
+
+  <script type="module" src="script/app.js"></script>
+</body>
+
+</html>

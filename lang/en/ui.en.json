@@ -1,0 +1,58 @@
+{
+  "filter": {
+    "label": "Filter by league",
+    "allOption": "All",
+    "accoladeLabel": "Filter by Trophies"
+  },
+  "infoBoxKeys": {
+    "town": "Town",
+    "league": "League",
+    "founded": "Founded",
+    "website": "Website",
+    "nickname": "Nickname",
+    "championships": "Championships",
+    "nationalCup": "National Cups",
+    "leagueCup": "League Cups",
+    "otherClubs": "Other clubs at this stadium:",
+    "stadiumName": "Origianal Stadium Name",
+    "capacity": "Capacity",
+    "built": "Built"
+  },
+  "leagues": {
+    "Superliga": "Superliga",
+    "1st Division": "1st Division",
+    "2nd Division": "2nd Division",
+    "3rd Division": "3rd Division",
+    "Danmark Series Group 1": "Danmark Series: Group 1",
+    "Danmark Series Group 2": "Danmark Series: Group 2",
+    "Danmark Series Group 3": "Danmark Series: Group 3",
+    "Danmark Series Group 4": "Danmark Series: Group 4"
+  },
+  "settings": {
+    "title": "Settings",
+    "countryLabel": "Country",
+    "languageLabel": "Language",
+    "themeLabel": "Theme",
+    "fontLabel": "Font",
+    "clusterLabel": "Cluster Markers",
+    "simpleMarkersLabel": "Simple Markers"
+  },
+  "search": {
+    "placeholder": "Search for a club...",
+    "title": "Search"
+  },
+  "towns": {
+    "København": "Copenhagen"
+  },
+  "infoModal": {
+    "title": "How to Use the Map",
+    "countries": "<strong><i class='fa-solid fa-flag'></i> Explore Countries:</strong> Use the flag selector at the top to switch between countries. Double-click the active country's flag to reset the view.",
+    "markers": "<strong><i class='fa-solid fa-map-marker-alt'></i> Club Markers:</strong> Click on any marker on the map to see detailed information about that club in the info-box.",
+    "filter": "<strong><i class='fa-solid fa-filter'></i> Filter Clubs:</strong> Use the filter button in the bottom-left to show clubs from a specific league.",
+    "settings": "<strong><i class='fa-solid fa-cog'></i> Settings:</strong> Use the settings button to change the map's theme, switch language, or toggle cluster/simple markers."
+  },
+  "creditsModal": {
+    "title": "Credits & Attributions",
+    "linkText": "Source"
+  }
+}

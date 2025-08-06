@@ -1,0 +1,1990 @@
+[
+  {
+    "id": 600,
+    "name": "AFC Bournemouth",
+    "fullname": "AFC Bournemouth",
+    "nickname": "The Cherries",
+    "town": "Bournemouth",
+    "league": "Premier League",
+    "founded": 1899,
+    "website": "https://afcb.co.uk",
+    "primaryColor": "#ed1c24",
+    "secondaryColor": "#000000",
+    "stadiumId": "vitality_stadium"
+  },
+  {
+    "id": 602,
+    "name": "Arsenal",
+    "fullname": "Arsenal Football Club",
+    "nickname": "The Gunners",
+    "town": "London",
+    "league": "Premier League",
+    "founded": 1886,
+    "championships": [
+      1931,
+      1933,
+      1934,
+      1935,
+      1938,
+      1948,
+      1953,
+      1971,
+      1989,
+      1991,
+      1998,
+      2002,
+      2004
+    ],
+    "nationalCup": [
+      1930,
+      1936,
+      1950,
+      1971,
+      1979,
+      1993,
+      1998,
+      2002,
+      2003,
+      2005,
+      2014,
+      2015,
+      2017,
+      2020
+    ],
+    "leagueCup": [
+      1987,
+      1993
+    ],
+    "website": "https://www.arsenal.com",
+    "primaryColor": "#db0007",
+    "secondaryColor": "#ffffff",
+    "stadiumId": "emirates_stadium"
+  },
+  {
+    "id": 603,
+    "name": "Aston Villa",
+    "fullname": "Aston Villa Football Club",
+    "nickname": "The Villans",
+    "town": "Birmingham",
+    "league": "Premier League",
+    "founded": 1874,
+    "championships": [
+      1894,
+      1896,
+      1897,
+      1899,
+      1900,
+      1910,
+      1981
+    ],
+    "nationalCup": [
+      1887,
+      1895,
+      1897,
+      1905,
+      1913,
+      1920,
+      1957
+    ],
+    "leagueCup": [
+      1961,
+      1975,
+      1977,
+      1994,
+      1996
+    ],
+    "website": "https://www.avfc.co.uk",
+    "primaryColor": "#670E36",
+    "secondaryColor": "#95BFE5",
+    "stadiumId": "villa_park"
+  },
+  {
+    "id": 617,
+    "name": "Brentford",
+    "fullname": "Brentford Football Club",
+    "nickname": "The Bees",
+    "town": "London",
+    "league": "Premier League",
+    "founded": 1889,
+    "website": "https://www.brentfordfc.com",
+    "primaryColor": "#c61d23",
+    "secondaryColor": "#ffffff",
+    "stadiumId": "gtech_community_stadium"
+  },
+  {
+    "id": 618,
+    "name": "Brighton & Hove Albion",
+    "fullname": "Brighton & Hove Albion Football Club",
+    "nickname": "The Seagulls",
+    "town": "Brighton",
+    "league": "Premier League",
+    "founded": 1901,
+    "website": "https://www.brightonandhovealbion.com",
+    "primaryColor": "#005daa",
+    "secondaryColor": "#ffffff",
+    "stadiumId": "falmer_stadium"
+  },
+  {
+    "id": 622,
+    "name": "Burnley",
+    "fullname": "Burnley Football Club",
+    "nickname": "The Clarets",
+    "town": "Burnley",
+    "league": "Premier League",
+    "founded": 1882,
+    "championships": [
+      1921,
+      1960
+    ],
+    "nationalCup": [
+      1914
+    ],
+    "website": "https://www.burnleyfootballclub.com",
+    "primaryColor": "#5f0041",
+    "secondaryColor": "#64c8f5",
+    "stadiumId": "turf_moor"
+  },
+  {
+    "id": 630,
+    "name": "Chelsea",
+    "fullname": "Chelsea Football Club",
+    "nickname": "The Blues",
+    "town": "London",
+    "league": "Premier League",
+    "founded": 1905,
+    "championships": [
+      1955,
+      2005,
+      2006,
+      2010,
+      2015,
+      2017
+    ],
+    "nationalCup": [
+      1970,
+      1997,
+      2000,
+      2007,
+      2009,
+      2010,
+      2012,
+      2018
+    ],
+    "leagueCup": [
+      1965,
+      1998,
+      2005,
+      2007,
+      2015
+    ],
+    "website": "https://www.chelseafc.com",
+    "primaryColor": "#001489",
+    "secondaryColor": "#ffffff",
+    "stadiumId": "stamford_bridge"
+  },
+  {
+    "id": 642,
+    "name": "Crystal Palace",
+    "fullname": "Crystal Palace Football Club",
+    "nickname": "The Eagles",
+    "town": "London",
+    "league": "Premier League",
+    "founded": 1905,
+    "website": "https://www.cpfc.co.uk",
+    "primaryColor": "#dd1c11",
+    "secondaryColor": "#0055a5",
+    "stadiumId": "selhurst_park"
+  },
+  {
+    "id": 650,
+    "name": "Everton FC",
+    "fullname": "Everton Football Club",
+    "nickname": "The Toffees",
+    "town": "Liverpool",
+    "league": "Premier League",
+    "founded": 1878,
+    "championships": [
+      1891,
+      1915,
+      1928,
+      1932,
+      1939,
+      1963,
+      1970,
+      1985,
+      1987
+    ],
+    "nationalCup": [
+      1906,
+      1933,
+      1966,
+      1984,
+      1995
+    ],
+    "website": "https://www.evertonfc.com",
+    "primaryColor": "#274488",
+    "secondaryColor": "#ffffff",
+    "stadiumId": "hill_dickinson_stadium"
+  },
+  {
+    "id": 654,
+    "name": "Fulham",
+    "fullname": "Fulham Football Club",
+    "nickname": "The Cottagers",
+    "town": "London",
+    "league": "Premier League",
+    "founded": 1879,
+    "website": "https://www.fulhamfc.com",
+    "primaryColor": "#ffffff",
+    "secondaryColor": "#000000",
+    "stadiumId": "craven_cottage"
+  },
+  {
+    "id": 671,
+    "name": "Leeds United",
+    "fullname": "Leeds United Football Club",
+    "nickname": "The Whites",
+    "town": "Leeds",
+    "league": "Premier League",
+    "founded": 1919,
+    "championships": [
+      1969,
+      1974,
+      1992
+    ],
+    "nationalCup": [
+      1972
+    ],
+    "leagueCup": [
+      1968
+    ],
+    "website": "https://www.leedsunited.com",
+    "primaryColor": "#FFFFFF",
+    "secondaryColor": "#1D428A",
+    "stadiumId": "elland_road"
+  },
+  {
+    "id": 676,
+    "name": "Liverpool",
+    "fullname": "Liverpool Football Club",
+    "nickname": "The Reds",
+    "town": "Liverpool",
+    "league": "Premier League",
+    "founded": 1892,
+    "championships": [
+      1901,
+      1906,
+      1922,
+      1923,
+      1947,
+      1964,
+      1966,
+      1973,
+      1976,
+      1977,
+      1979,
+      1980,
+      1982,
+      1983,
+      1984,
+      1986,
+      1988,
+      1990,
+      2020
+    ],
+    "nationalCup": [
+      1965,
+      1974,
+      1986,
+      1989,
+      1992,
+      2001,
+      2006,
+      2022
+    ],
+    "leagueCup": [
+      1981,
+      1982,
+      1983,
+      1984,
+      1995,
+      2001,
+      2003,
+      2012,
+      2022,
+      2024
+    ],
+    "website": "https://www.liverpoolfc.com",
+    "primaryColor": "#D00027",
+    "secondaryColor": "#FFFFFF",
+    "stadiumId": "anfield"
+  },
+  {
+    "id": 679,
+    "name": "Manchester City",
+    "fullname": "Manchester City Football Club",
+    "nickname": "The Citizens",
+    "town": "Manchester",
+    "league": "Premier League",
+    "founded": 1880,
+    "championships": [
+      1937,
+      1968,
+      2012,
+      2014,
+      2018,
+      2019,
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "nationalCup": [
+      1904,
+      1934,
+      1956,
+      1969,
+      2011,
+      2019,
+      2023
+    ],
+    "leagueCup": [
+      1970,
+      1976,
+      2014,
+      2016,
+      2018,
+      2019,
+      2020,
+      2021
+    ],
+    "website": "https://www.mancity.com",
+    "primaryColor": "#6CADDF",
+    "secondaryColor": "#FFFFFF",
+    "stadiumId": "etihad_stadium"
+  },
+  {
+    "id": 680,
+    "name": "Manchester United",
+    "fullname": "Manchester United Football Club",
+    "nickname": "The Red Devils",
+    "town": "Manchester",
+    "league": "Premier League",
+    "founded": 1878,
+    "championships": [
+      1908,
+      1911,
+      1952,
+      1956,
+      1957,
+      1965,
+      1967,
+      1993,
+      1994,
+      1996,
+      1997,
+      1999,
+      2000,
+      2001,
+      2003,
+      2007,
+      2008,
+      2009,
+      2011,
+      2013
+    ],
+    "nationalCup": [
+      1909,
+      1948,
+      1963,
+      1977,
+      1983,
+      1985,
+      1990,
+      1994,
+      1996,
+      1999,
+      2004,
+      2016,
+      2024
+    ],
+    "leagueCup": [
+      1992,
+      2006,
+      2009,
+      2010,
+      2017,
+      2023
+    ],
+    "website": "https://www.manutd.com",
+    "primaryColor": "#DA0106",
+    "secondaryColor": "#000000",
+    "stadiumId": "old_trafford"
+  },
+  {
+    "id": 688,
+    "name": "Newcastle United",
+    "fullname": "Newcastle United Football Club",
+    "nickname": "The Magpies",
+    "town": "Newcastle upon Tyne",
+    "league": "Premier League",
+    "founded": 1892,
+    "championships": [
+      1905,
+      1907,
+      1909,
+      1927
+    ],
+    "nationalCup": [
+      1910,
+      1924,
+      1932,
+      1961,
+      1952,
+      1955
+    ],
+    "website": "https://www.nufc.co.uk",
+    "primaryColor": "#000000",
+    "secondaryColor": "#FFFFFF",
+    "stadiumId": "st_james_park"
+  },
+  {
+    "id": 692,
+    "name": "Nottingham Forest",
+    "fullname": "Nottingham Forest Football Club",
+    "nickname": "The Tricky Trees",
+    "town": "Nottingham",
+    "league": "Premier League",
+    "founded": 1865,
+    "championships": [
+      1978
+    ],
+    "nationalCup": [
+      1898,
+      1959
+    ],
+    "leagueCup": [
+      1978,
+      1979,
+      1989,
+      1990
+    ],
+    "website": "https://www.nottinghamforest.co.uk",
+    "primaryColor": "#E53233",
+    "secondaryColor": "#FFFFFF",
+    "stadiumId": "the_city_ground"
+  },
+  {
+    "id": 722,
+    "name": "Sunderland",
+    "fullname": "Sunderland Association Football Club",
+    "nickname": "The Black Cats",
+    "town": "Sunderland",
+    "league": "Premier League",
+    "founded": 1879,
+    "championships": [
+      1892,
+      1893,
+      1895,
+      1902,
+      1913,
+      1936
+    ],
+    "nationalCup": [
+      1937,
+      1973
+    ],
+    "website": "https://www.safc.com",
+    "primaryColor": "#EB172B",
+    "secondaryColor": "#FFFFFF",
+    "stadiumId": "stadium_of_light"
+  },
+  {
+    "id": 728,
+    "name": "Tottenham Hotspur",
+    "fullname": "Tottenham Hotspur Football Club",
+    "nickname": "Spurs",
+    "town": "London",
+    "league": "Premier League",
+    "founded": 1882,
+    "championships": [
+      1951,
+      1961
+    ],
+    "nationalCup": [
+      1901,
+      1921,
+      1961,
+      1962,
+      1967,
+      1981,
+      1982,
+      1991
+    ],
+    "leagueCup": [
+      1971,
+      1973,
+      1999,
+      2008
+    ],
+    "website": "https://www.tottenhamhotspur.com",
+    "primaryColor": "#FFFFFF",
+    "secondaryColor": "#132257",
+    "stadiumId": "tottenham_hotspur_stadium"
+  },
+  {
+    "id": 735,
+    "name": "West Ham United",
+    "fullname": "West Ham United Football Club",
+    "nickname": "The Hammers",
+    "town": "London",
+    "league": "Premier League",
+    "founded": 1895,
+    "nationalCup": [
+      1964,
+      1975,
+      1980
+    ],
+    "website": "https://www.whufc.com",
+    "primaryColor": "#7A263A",
+    "secondaryColor": "#274780",
+    "stadiumId": "london_stadium"
+  },
+  {
+    "id": 740,
+    "name": "Wolverhampton Wanderes",
+    "fullname": "Wolverhampton Wanderers Football Club",
+    "nickname": "The Wolves",
+    "town": "Wolverhampton",
+    "league": "Premier League",
+    "founded": 1877,
+    "championships": [
+      1954,
+      1958,
+      1959
+    ],
+    "nationalCup": [
+      1893,
+      1908,
+      1949,
+      1960
+    ],
+    "leagueCup": [
+      1974,
+      1980
+    ],
+    "website": "https://www.wolves.co.uk",
+    "primaryColor": "#FDB913",
+    "secondaryColor": "#000000",
+    "stadiumId": "molineux_stadium"
+  },
+  {
+    "id": 609,
+    "name": "Birmingham City",
+    "fullname": "Birmingham City Football Club",
+    "nickname": "The Blues",
+    "town": "Birmingham",
+    "league": "Championship",
+    "founded": 1875,
+    "leagueCup": [
+      1963,
+      2011
+    ],
+    "website": "https://www.bcfc.com",
+    "primaryColor": "#0033A0",
+    "secondaryColor": "#FFFFFF",
+    "stadiumId": "st_andrews"
+  },
+  {
+    "id": 612,
+    "name": "Blackburn Rovers",
+    "fullname": "Blackburn Rovers Football Club",
+    "nickname": "The Rovers",
+    "town": "Blackburn",
+    "league": "Championship",
+    "founded": 1875,
+    "championships": [
+      1912,
+      1914,
+      1995
+    ],
+    "nationalCup": [
+      1884,
+      1885,
+      1886,
+      1890,
+      1891,
+      1928
+    ],
+    "leagueCup": [
+      2002
+    ],
+    "website": "https://www.rovers.co.uk",
+    "primaryColor": "#0000FF",
+    "secondaryColor": "#FFFFFF",
+    "stadiumId": "ewood_park"
+  },
+  {
+    "id": 619,
+    "name": "Bristol City",
+    "fullname": "Bristol City Football Club",
+    "nickname": "The Robins",
+    "town": "Bristol",
+    "league": "Championship",
+    "founded": 1894,
+    "website": "https://www.bcfc.co.uk",
+    "primaryColor": "#E30613",
+    "secondaryColor": "#FFFFFF",
+    "stadiumId": "ashton_gate"
+  },
+  {
+    "id": 628,
+    "name": "Charlton Athletic",
+    "fullname": "Charlton Athletic Football Club",
+    "nickname": "The Addicks",
+    "town": "London",
+    "league": "Championship",
+    "founded": 1905,
+    "nationalCup": [
+      1947
+    ],
+    "website": "https://www.cafc.co.uk",
+    "primaryColor": "#E02126",
+    "secondaryColor": "#FFFFFF",
+    "stadiumId": "the_valley"
+  },
+  {
+    "id": 639,
+    "name": "Coventry City",
+    "fullname": "Coventry City Football Club",
+    "nickname": "The Sky Blues",
+    "town": "Coventry",
+    "league": "Championship",
+    "founded": 1883,
+    "nationalCup": [
+      1987
+    ],
+    "website": "https://www.ccfc.co.uk",
+    "primaryColor": "#87CEEB",
+    "secondaryColor": "#FFFFFF",
+    "stadiumId": "coventry_building_society_arena"
+  },
+  {
+    "id": 645,
+    "name": "Derby County",
+    "fullname": "Derby County Football Club",
+    "nickname": "The Rams",
+    "town": "Derby",
+    "league": "Championship",
+    "founded": 1884,
+    "championships": [
+      1972,
+      1975
+    ],
+    "nationalCup": [
+      1946
+    ],
+    "website": "https://www.dcfc.co.uk",
+    "primaryColor": "#FFFFFF",
+    "secondaryColor": "#000000",
+    "stadiumId": "pride_park_stadium"
+  },
+  {
+    "id": 665,
+    "name": "Hull City",
+    "fullname": "Hull City Association Football Club",
+    "nickname": "The Tigers",
+    "town": "Hull",
+    "league": "Championship",
+    "founded": 1904,
+    "website": "https://www.hullcitytigers.com",
+    "primaryColor": "#F5AB1A",
+    "secondaryColor": "#000000",
+    "stadiumId": "mkm_stadium"
+  },
+  {
+    "id": 667,
+    "name": "Ipswich Town",
+    "fullname": "Ipswich Town Football Club",
+    "nickname": "The Tractor Boys",
+    "town": "Ipswich",
+    "league": "Championship",
+    "founded": 1878,
+    "championships": [
+      1962
+    ],
+    "nationalCup": [
+      1978
+    ],
+    "website": "https://www.itfc.co.uk",
+    "primaryColor": "#0033A0",
+    "secondaryColor": "#FFFFFF",
+    "stadiumId": "portman_road"
+  },
+  {
+    "id": 673,
+    "name": "Leicester City",
+    "fullname": "Leicester City Football Club",
+    "nickname": "The Foxes",
+    "town": "Leicester",
+    "league": "Championship",
+    "founded": 1884,
+    "championships": [
+      2016
+    ],
+    "nationalCup": [
+      2021
+    ],
+    "leagueCup": [
+      1964,
+      1997,
+      2000
+    ],
+    "website": "https://www.lcfc.com",
+    "primaryColor": "#0053A0",
+    "secondaryColor": "#FFFFFF",
+    "stadiumId": "king_power_stadium"
+  },
+  {
+    "id": 685,
+    "name": "Middlesbrough",
+    "fullname": "Middlesbrough Football Club",
+    "nickname": "Boro",
+    "town": "Middlesbrough",
+    "league": "Championship",
+    "founded": 1876,
+    "leagueCup": [
+      2004
+    ],
+    "website": "https://www.mfc.co.uk",
+    "primaryColor": "#E30613",
+    "secondaryColor": "#FFFFFF",
+    "stadiumId": "riverside_stadium"
+  },
+  {
+    "id": 686,
+    "name": "Millwall",
+    "fullname": "Millwall Football Club",
+    "nickname": "The Lions",
+    "town": "London",
+    "league": "Championship",
+    "founded": 1885,
+    "website": "https://www.millwallfc.co.uk",
+    "primaryColor": "#0033A0",
+    "secondaryColor": "#FFFFFF",
+    "stadiumId": "the_den"
+  },
+  {
+    "id": 691,
+    "name": "Norwich City",
+    "fullname": "Norwich City Football Club",
+    "nickname": "The Canaries",
+    "town": "Norwich",
+    "league": "Championship",
+    "founded": 1902,
+    "leagueCup": [
+      1962,
+      1985
+    ],
+    "website": "https://www.canaries.co.uk",
+    "primaryColor": "#FEF200",
+    "secondaryColor": "#00A650",
+    "stadiumId": "carrow_road"
+  },
+  {
+    "id": 695,
+    "name": "Oxford United",
+    "fullname": "Oxford United Football Club",
+    "nickname": "The U's",
+    "town": "Oxford",
+    "league": "Championship",
+    "founded": 1893,
+    "leagueCup": [
+      1986
+    ],
+    "website": "https://www.oufc.co.uk",
+    "primaryColor": "#FBE122",
+    "secondaryColor": "#002147",
+    "stadiumId": "kassam_stadium"
+  },
+  {
+    "id": 699,
+    "name": "Portsmouth",
+    "fullname": "Portsmouth Football Club",
+    "nickname": "Pompey",
+    "town": "Portsmouth",
+    "league": "Championship",
+    "founded": 1898,
+    "nationalCup": [
+      1939,
+      2008
+    ],
+    "website": "https://www.portsmouthfc.co.uk",
+    "primaryColor": "#0033A0",
+    "secondaryColor": "#FFFFFF",
+    "stadiumId": "fratton_park"
+  },
+  {
+    "id": 700,
+    "name": "Preston North End",
+    "fullname": "Preston North End Football Club",
+    "nickname": "The Lilywhites",
+    "town": "Preston",
+    "league": "Championship",
+    "founded": 1880,
+    "championships": [
+      1889,
+      1890
+    ],
+    "nationalCup": [
+      1889,
+      1938
+    ],
+    "website": "https://www.pnefc.net",
+    "primaryColor": "#FFFFFF",
+    "secondaryColor": "#002D62",
+    "stadiumId": "deepdale"
+  },
+  {
+    "id": 701,
+    "name": "Queens Park Rangers",
+    "fullname": "Queens Park Rangers Football Club",
+    "nickname": "QPR",
+    "town": "London",
+    "league": "Championship",
+    "founded": 1886,
+    "leagueCup": [
+      1967
+    ],
+    "website": "https://www.qpr.co.uk",
+    "primaryColor": "#005CAA",
+    "secondaryColor": "#FFFFFF",
+    "stadiumId": "loftus_road"
+  },
+  {
+    "id": 708,
+    "name": "Sheffield United",
+    "fullname": "Sheffield United Football Club",
+    "nickname": "The Blades",
+    "town": "Sheffield",
+    "league": "Championship",
+    "founded": 1889,
+    "championships": [
+      1898
+    ],
+    "nationalCup": [
+      1899,
+      1902,
+      1915,
+      1925
+    ],
+    "website": "https://www.sufc.co.uk",
+    "primaryColor": "#EE2737",
+    "secondaryColor": "#FFFFFF",
+    "stadiumId": "bramall_lane"
+  },
+  {
+    "id": 709,
+    "name": "Sheffield Wednesday",
+    "fullname": "Sheffield Wednesday Football Club",
+    "nickname": "The Owls",
+    "town": "Sheffield",
+    "league": "Championship",
+    "founded": 1867,
+    "championships": [
+      1903,
+      1904,
+      1929,
+      1930
+    ],
+    "nationalCup": [
+      1896,
+      1907,
+      1935
+    ],
+    "leagueCup": [
+      1991
+    ],
+    "website": "https://www.swfc.co.uk",
+    "primaryColor": "#005CAA",
+    "secondaryColor": "#FFFFFF",
+    "stadiumId": "hillsborough"
+  },
+  {
+    "id": 713,
+    "name": "Southampton",
+    "fullname": "Southampton Football Club",
+    "nickname": "The Saints",
+    "town": "Southampton",
+    "league": "Championship",
+    "founded": 1885,
+    "nationalCup": [
+      1976
+    ],
+    "website": "https://www.southamptonfc.com",
+    "primaryColor": "#D71920",
+    "secondaryColor": "#FFFFFF",
+    "stadiumId": "st_marys_stadium"
+  },
+  {
+    "id": 721,
+    "name": "Stoke City",
+    "fullname": "Stoke City Football Club",
+    "nickname": "The Potters",
+    "town": "Stoke-on-Trent",
+    "league": "Championship",
+    "founded": 1863,
+    "leagueCup": [
+      1972
+    ],
+    "website": "https://www.stokecityfc.com",
+    "primaryColor": "#E30613",
+    "secondaryColor": "#FFFFFF",
+    "stadiumId": "bet365_stadium"
+  },
+  {
+    "id": 724,
+    "name": "Swansea City",
+    "fullname": "Swansea City Association Football Club",
+    "nickname": "The Swans",
+    "town": "Swansea",
+    "league": "Championship",
+    "founded": 1912,
+    "leagueCup": [
+      2013
+    ],
+    "website": "https://www.swanseacity.com",
+    "primaryColor": "#FFFFFF",
+    "secondaryColor": "#000000",
+    "stadiumId": "swanseacom_stadium"
+  },
+  {
+    "id": 732,
+    "name": "Watford",
+    "fullname": "Watford Football Club",
+    "nickname": "The Hornets",
+    "town": "Watford",
+    "league": "Championship",
+    "founded": 1881,
+    "website": "https://www.watfordfc.com",
+    "primaryColor": "#FBEE23",
+    "secondaryColor": "#ED2127",
+    "stadiumId": "vicarage_road"
+  },
+  {
+    "id": 734,
+    "name": "West Bromwich Albion",
+    "fullname": "West Bromwich Albion Football Club",
+    "nickname": "The Baggies",
+    "town": "West Bromwich",
+    "league": "Championship",
+    "founded": 1878,
+    "championships": [
+      1920
+    ],
+    "nationalCup": [
+      1888,
+      1892,
+      1931,
+      1954,
+      1968
+    ],
+    "leagueCup": [
+      1966
+    ],
+    "website": "https://www.wba.co.uk",
+    "primaryColor": "#FFFFFF",
+    "secondaryColor": "#122F67",
+    "stadiumId": "the_hawthorns"
+  },
+  {
+    "id": 741,
+    "name": "Wrexham",
+    "fullname": "Wrexham Association Football Club",
+    "nickname": "The Red Dragons",
+    "town": "Wrexham",
+    "league": "Championship",
+    "founded": 1864,
+    "website": "https://www.wrexhamafc.co.uk",
+    "primaryColor": "#E30613",
+    "secondaryColor": "#FFFFFF",
+    "stadiumId": "racecourse_ground"
+  },
+  {
+    "id": 5110769,
+    "name": "AFC Wimbledon",
+    "fullname": "AFC Wimbledon",
+    "nickname": "The Dons",
+    "town": "London",
+    "league": "League One",
+    "founded": 2002,
+    "website": "https://www.afcwimbledon.co.uk",
+    "primaryColor": "#1C3C8A",
+    "secondaryColor": "#F7D92E",
+    "stadiumId": "plough_lane"
+  },
+  {
+    "id": 606,
+    "name": "Barnsley",
+    "fullname": "Barnsley Football Club",
+    "nickname": "The Tykes",
+    "town": "Barnsley",
+    "league": "League One",
+    "founded": 1887,
+    "nationalCup": [
+      1912
+    ],
+    "website": "https://www.barnsleyfc.co.uk",
+    "primaryColor": "#D71920",
+    "secondaryColor": "#FFFFFF",
+    "stadiumId": "oakwell"
+  },
+  {
+    "id": 613,
+    "name": "Blackpool",
+    "fullname": "Blackpool Football Club",
+    "nickname": "The Seasiders",
+    "town": "Blackpool",
+    "league": "League One",
+    "founded": 1887,
+    "nationalCup": [
+      1953
+    ],
+    "website": "https://www.blackpoolfc.co.uk",
+    "primaryColor": "#F68E1E",
+    "secondaryColor": "#FFFFFF",
+    "stadiumId": "bloomfield_road"
+  },
+  {
+    "id": 614,
+    "name": "Bolton Wanderers",
+    "fullname": "Bolton Wanderers Football Club",
+    "nickname": "The Trotters",
+    "town": "Bolton",
+    "league": "League One",
+    "founded": 1874,
+    "nationalCup": [
+      1923,
+      1926,
+      1929,
+      1958
+    ],
+    "website": "https://www.bwfc.co.uk",
+    "primaryColor": "#FFFFFF",
+    "secondaryColor": "#00205B",
+    "stadiumId": "toughsheet_community_stadium"
+  },
+  {
+    "id": 616,
+    "name": "Bradford City",
+    "fullname": "Bradford City Association Football Club",
+    "nickname": "The Bantams",
+    "town": "Bradford",
+    "league": "League One",
+    "founded": 1903,
+    "nationalCup": [
+      1911
+    ],
+    "website": "https://www.bradfordcityafc.com",
+    "primaryColor": "#8A0D2A",
+    "secondaryColor": "#FDB913",
+    "stadiumId": "valley_parade"
+  },
+  {
+    "id": 4001706,
+    "name": "Burton Albion",
+    "fullname": "Burton Albion Football Club",
+    "nickname": "The Brewers",
+    "town": "Burton upon Trent",
+    "league": "League One",
+    "founded": 1950,
+    "website": "https://www.burtonalbionfc.co.uk",
+    "primaryColor": "#FBB900",
+    "secondaryColor": "#000000",
+    "stadiumId": "pirelli_stadium"
+  },
+  {
+    "id": 625,
+    "name": "Cardiff City",
+    "fullname": "Cardiff City Football Club",
+    "nickname": "The Bluebirds",
+    "town": "Cardiff",
+    "league": "League One",
+    "founded": 1899,
+    "nationalCup": [
+      1927
+    ],
+    "website": "https://www.cardiffcityfc.co.uk",
+    "primaryColor": "#0070B5",
+    "secondaryColor": "#FFFFFF",
+    "stadiumId": "cardiff_city_stadium"
+  },
+  {
+    "id": 646,
+    "name": "Doncaster Rovers",
+    "fullname": "Doncaster Rovers Football Club",
+    "nickname": "Donny",
+    "town": "Doncaster",
+    "league": "League One",
+    "founded": 1879,
+    "website": "https://www.doncasterroversfc.co.uk",
+    "primaryColor": "#D71920",
+    "secondaryColor": "#FFFFFF",
+    "stadiumId": "eco_power_stadium"
+  },
+  {
+    "id": 651,
+    "name": "Exeter City",
+    "fullname": "Exeter City Football Club",
+    "nickname": "The Grecians",
+    "town": "Exeter",
+    "league": "League One",
+    "founded": 1901,
+    "website": "https://www.exetercityfc.co.uk",
+    "primaryColor": "#ED1C24",
+    "secondaryColor": "#FFFFFF",
+    "stadiumId": "st_james_park_exeter"
+  },
+  {
+    "id": 664,
+    "name": "Huddersfield Town",
+    "fullname": "Huddersfield Town Association Football Club",
+    "nickname": "The Terriers",
+    "town": "Huddersfield",
+    "league": "League One",
+    "founded": 1908,
+    "championships": [
+      1924,
+      1925,
+      1926
+    ],
+    "nationalCup": [
+      1922
+    ],
+    "website": "https://www.htafc.com",
+    "primaryColor": "#0E63AD",
+    "secondaryColor": "#FFFFFF",
+    "stadiumId": "john_smiths_stadium"
+  },
+  {
+    "id": 674,
+    "name": "Leyton Orient",
+    "fullname": "Leyton Orient Football Club",
+    "nickname": "The O's",
+    "town": "London",
+    "league": "League One",
+    "founded": 1881,
+    "website": "https://www.leytonorient.com",
+    "primaryColor": "#DA291C",
+    "secondaryColor": "#FFFFFF",
+    "stadiumId": "brisbane_road"
+  },
+  {
+    "id": 675,
+    "name": "Lincoln City",
+    "fullname": "Lincoln City Football Club",
+    "nickname": "The Imps",
+    "town": "Lincoln",
+    "league": "League One",
+    "founded": 1884,
+    "website": "https://www.weareimps.com",
+    "primaryColor": "#E20F16",
+    "secondaryColor": "#FFFFFF",
+    "stadiumId": "sincil_bank"
+  },
+  {
+    "id": 677,
+    "name": "Luton Town",
+    "fullname": "Luton Town Football Club",
+    "nickname": "The Hatters",
+    "town": "Luton",
+    "league": "League One",
+    "founded": 1885,
+    "leagueCup": [
+      1988
+    ],
+    "website": "https://www.lutontown.co.uk",
+    "primaryColor": "#F78F1E",
+    "secondaryColor": "#000044",
+    "stadiumId": "kenilworth_road"
+  },
+  {
+    "id": 681,
+    "name": "Mansfield Town",
+    "fullname": "Mansfield Town Football Club",
+    "nickname": "The Stags",
+    "town": "Mansfield",
+    "league": "League One",
+    "founded": 1897,
+    "website": "https://www.mansfieldtown.net",
+    "primaryColor": "#FBB900",
+    "secondaryColor": "#002F65",
+    "stadiumId": "field_mill"
+  },
+  {
+    "id": 689,
+    "name": "Northampton Town",
+    "fullname": "Northampton Town Football Club",
+    "nickname": "The Cobblers",
+    "town": "Northampton",
+    "league": "League One",
+    "founded": 1897,
+    "website": "https://www.ntfc.co.uk",
+    "primaryColor": "#8A1B41",
+    "secondaryColor": "#FFFFFF",
+    "stadiumId": "sixfields_stadium"
+  },
+  {
+    "id": 696,
+    "name": "Peterborough United",
+    "fullname": "Peterborough United Football Club",
+    "nickname": "The Posh",
+    "town": "Peterborough",
+    "league": "League One",
+    "founded": 1934,
+    "website": "https://www.theposh.com",
+    "primaryColor": "#0072CE",
+    "secondaryColor": "#FFFFFF",
+    "stadiumId": "london_road_stadium"
+  },
+  {
+    "id": 697,
+    "name": "Plymouth Argyle",
+    "fullname": "Plymouth Argyle Football Club",
+    "nickname": "The Pilgrims",
+    "town": "Plymouth",
+    "league": "League One",
+    "founded": 1886,
+    "website": "https://www.pafc.co.uk",
+    "primaryColor": "#00643B",
+    "secondaryColor": "#FFFFFF",
+    "stadiumId": "home_park"
+  },
+  {
+    "id": 698,
+    "name": "Port Vale",
+    "fullname": "Port Vale Football Club",
+    "nickname": "The Valiants",
+    "town": "Stoke-on-Trent",
+    "league": "League One",
+    "founded": 1876,
+    "website": "https://www.port-vale.co.uk",
+    "primaryColor": "#FFFFFF",
+    "secondaryColor": "#000000",
+    "stadiumId": "vale_park"
+  },
+  {
+    "id": 702,
+    "name": "Reading",
+    "fullname": "Reading Football Club",
+    "nickname": "The Royals",
+    "town": "Reading",
+    "league": "League One",
+    "founded": 1871,
+    "website": "https://www.readingfc.co.uk",
+    "primaryColor": "#0057B8",
+    "secondaryColor": "#FFFFFF",
+    "stadiumId": "madejski_stadium"
+  },
+  {
+    "id": 704,
+    "name": "Rotherham United",
+    "fullname": "Rotherham United Football Club",
+    "nickname": "The Millers",
+    "town": "Rotherham",
+    "league": "League One",
+    "founded": 1925,
+    "website": "https://www.themillers.co.uk",
+    "primaryColor": "#ED1C24",
+    "secondaryColor": "#FFFFFF",
+    "stadiumId": "new_york_stadium"
+  },
+  {
+    "id": 719,
+    "name": "Stevenage",
+    "fullname": "Stevenage Football Club",
+    "nickname": "Boro",
+    "town": "Stevenage",
+    "league": "League One",
+    "founded": 1976,
+    "website": "https://www.stevenagefc.com",
+    "primaryColor": "#ED1C24",
+    "secondaryColor": "#FFFFFF",
+    "stadiumId": "broadhall_way"
+  },
+  {
+    "id": 720,
+    "name": "Stockport County",
+    "fullname": "Stockport County Football Club",
+    "nickname": "The Hatters",
+    "town": "Stockport",
+    "league": "League One",
+    "founded": 1883,
+    "website": "https://www.stockportcounty.com",
+    "primaryColor": "#0057B8",
+    "secondaryColor": "#FFFFFF",
+    "stadiumId": "edgeley_park"
+  },
+  {
+    "id": 737,
+    "name": "Wigan Athletic",
+    "fullname": "Wigan Athletic Football Club",
+    "nickname": "The Latics",
+    "town": "Wigan",
+    "league": "League One",
+    "founded": 1932,
+    "nationalCup": [
+      2013
+    ],
+    "website": "https://wiganathletic.com",
+    "primaryColor": "#0057B8",
+    "secondaryColor": "#FFFFFF",
+    "stadiumId": "dw_stadium"
+  },
+  {
+    "id": 742,
+    "name": "Wycombe Wanderers",
+    "fullname": "Wycombe Wanderers Football Club",
+    "nickname": "The Chairboys",
+    "town": "High Wycombe",
+    "league": "League One",
+    "founded": 1887,
+    "website": "https://www.wwfc.com",
+    "primaryColor": "#8EC9F2",
+    "secondaryColor": "#00205B",
+    "stadiumId": "adams_park"
+  },
+  {
+    "id": 109210,
+    "name": "Accrington Stanley",
+    "fullname": "Accrington Stanley Football Club",
+    "nickname": "Stanley",
+    "town": "Accrington",
+    "league": "League Two",
+    "founded": 1968,
+    "website": "https://www.accringtonstanley.co.uk",
+    "primaryColor": "#ED1C24",
+    "secondaryColor": "#FFFFFF",
+    "stadiumId": "wham_stadium"
+  },
+  {
+    "id": 605,
+    "name": "Barnet",
+    "fullname": "Barnet Football Club",
+    "nickname": "The Bees",
+    "town": "London",
+    "league": "League Two",
+    "founded": 1888,
+    "website": "https://www.barnetfc.com",
+    "primaryColor": "#000000",
+    "secondaryColor": "#F78F1E",
+    "stadiumId": "the_hive_stadium"
+  },
+  {
+    "id": 607,
+    "name": "Barrow AFC",
+    "fullname": "Barrow Association Football Club",
+    "nickname": "The Bluebirds",
+    "town": "Barrow-in-Furness",
+    "league": "League Two",
+    "founded": 1901,
+    "website": "https://www.barrowafc.com",
+    "primaryColor": "#0057B8",
+    "secondaryColor": "#FFFFFF",
+    "stadiumId": "holker_street"
+  },
+  {
+    "id": 620,
+    "name": "Bristol Rovers",
+    "fullname": "Bristol Rovers Football Club",
+    "nickname": "The Pirates",
+    "town": "Bristol",
+    "league": "League Two",
+    "founded": 1883,
+    "website": "https://www.bristolrovers.co.uk",
+    "primaryColor": "#0057B8",
+    "secondaryColor": "#FFFFFF",
+    "stadiumId": "memorial_stadium"
+  },
+  {
+    "id": 5100153,
+    "name": "Bromley",
+    "fullname": "Bromley Football Club",
+    "nickname": "The Ravens",
+    "town": "Bromley",
+    "league": "League Two",
+    "founded": 1892,
+    "website": "https://www.bromleyfc.co.uk",
+    "primaryColor": "#FFFFFF",
+    "secondaryColor": "#000000",
+    "stadiumId": "hayes_lane"
+  },
+  {
+    "id": 624,
+    "name": "Cambridge United",
+    "fullname": "Cambridge United Football Club",
+    "nickname": "The U's",
+    "town": "Cambridge",
+    "league": "League Two",
+    "founded": 1912,
+    "website": "https://www.cambridgeunited.com",
+    "primaryColor": "#FBB900",
+    "secondaryColor": "#000000",
+    "stadiumId": "abbey_stadium"
+  },
+  {
+    "id": 631,
+    "name": "Cheltenham Town",
+    "fullname": "Cheltenham Town Football Club",
+    "nickname": "The Robins",
+    "town": "Cheltenham",
+    "league": "League Two",
+    "founded": 1887,
+    "website": "https://www.ctfc.com",
+    "primaryColor": "#ED1C24",
+    "secondaryColor": "#FFFFFF",
+    "stadiumId": "whaddon_road"
+  },
+  {
+    "id": 634,
+    "name": "Chesterfield",
+    "fullname": "Chesterfield Football Club",
+    "nickname": "The Spireites",
+    "town": "Chesterfield",
+    "league": "League Two",
+    "founded": 1866,
+    "website": "https://chesterfield-fc.co.uk",
+    "primaryColor": "#0057B8",
+    "secondaryColor": "#FFFFFF",
+    "stadiumId": "smh_group_stadium"
+  },
+  {
+    "id": 636,
+    "name": "Colchester United",
+    "fullname": "Colchester United Football Club",
+    "nickname": "The U's",
+    "town": "Colchester",
+    "league": "League Two",
+    "founded": 1937,
+    "website": "https://www.cu-fc.com",
+    "primaryColor": "#0057B8",
+    "secondaryColor": "#FFFFFF",
+    "stadiumId": "colchester_community_stadium"
+  },
+  {
+    "id": 640,
+    "name": "Crawley Town",
+    "fullname": "Crawley Town Football Club",
+    "nickname": "The Red Devils",
+    "town": "Crawley",
+    "league": "League Two",
+    "founded": 1896,
+    "website": "https://www.crawleytownfc.com",
+    "primaryColor": "#ED1C24",
+    "secondaryColor": "#FFFFFF",
+    "stadiumId": "broadfield_stadium"
+  },
+  {
+    "id": 641,
+    "name": "Crewe Alexandra",
+    "fullname": "Crewe Alexandra Football Club",
+    "nickname": "The Railwaymen",
+    "town": "Crewe",
+    "league": "League Two",
+    "founded": 1877,
+    "website": "https://www.crewealex.net",
+    "primaryColor": "#ED1C24",
+    "secondaryColor": "#FFFFFF",
+    "stadiumId": "gresty_road"
+  },
+  {
+    "id": 5103834,
+    "name": "Fleetwood Town",
+    "fullname": "Fleetwood Town Football Club",
+    "nickname": "The Cod Army",
+    "town": "Fleetwood",
+    "league": "League Two",
+    "founded": 1997,
+    "website": "https://www.fleetwoodtownfc.com",
+    "primaryColor": "#ED1C24",
+    "secondaryColor": "#FFFFFF",
+    "stadiumId": "highbury_stadium_fleetwood"
+  },
+  {
+    "id": 656,
+    "name": "Gillingham",
+    "fullname": "Gillingham Football Club",
+    "nickname": "The Gills",
+    "town": "Gillingham",
+    "league": "League Two",
+    "founded": 1893,
+    "website": "https://www.gillinghamfootballclub.com",
+    "primaryColor": "#0057B8",
+    "secondaryColor": "#FFFFFF",
+    "stadiumId": "priestfield_stadium"
+  },
+  {
+    "id": 658,
+    "name": "Grimsby Town",
+    "fullname": "Grimsby Town Football Club",
+    "nickname": "The Mariners",
+    "town": "Cleethorpes",
+    "league": "League Two",
+    "founded": 1878,
+    "website": "https://gtfc.co.uk",
+    "primaryColor": "#000000",
+    "secondaryColor": "#FFFFFF",
+    "stadiumId": "blundell_park"
+  },
+  {
+    "id": 5100047,
+    "name": "Harrogate Town",
+    "fullname": "Harrogate Town Association Football Club",
+    "nickname": "Town",
+    "town": "Harrogate",
+    "league": "League Two",
+    "founded": 1914,
+    "website": "https://www.harrogatetownafc.com",
+    "primaryColor": "#FBB900",
+    "secondaryColor": "#000000",
+    "stadiumId": "wetherby_road"
+  },
+  {
+    "id": 151027,
+    "name": "Milton Keynes Dons",
+    "fullname": "Milton Keynes Dons Football Club",
+    "nickname": "The Dons",
+    "town": "Milton Keynes",
+    "league": "League Two",
+    "founded": 2004,
+    "website": "https://www.mkdons.com",
+    "primaryColor": "#FFFFFF",
+    "secondaryColor": "#000000",
+    "stadiumId": "stadium_mk"
+  },
+  {
+    "id": 581,
+    "name": "Newport County",
+    "fullname": "Newport County Association Football Club",
+    "nickname": "The Exiles",
+    "town": "Newport",
+    "league": "League Two",
+    "founded": 1912,
+    "website": "https://www.newport-county.co.uk",
+    "primaryColor": "#FBB900",
+    "secondaryColor": "#000000",
+    "stadiumId": "rodney_parade"
+  },
+  {
+    "id": 693,
+    "name": "Notts County",
+    "fullname": "Notts County Football Club",
+    "nickname": "The Magpies",
+    "town": "Nottingham",
+    "league": "League Two",
+    "founded": 1862,
+    "nationalCup": [
+      1894
+    ],
+    "website": "https://www.nottscountyfc.co.uk",
+    "primaryColor": "#000000",
+    "secondaryColor": "#FFFFFF",
+    "stadiumId": "meadow_lane"
+  },
+  {
+    "id": 694,
+    "name": "Oldham Athletic",
+    "fullname": "Oldham Athletic Association Football Club",
+    "nickname": "The Latics",
+    "town": "Oldham",
+    "league": "League Two",
+    "founded": 1895,
+    "leagueCup": [
+      1990
+    ],
+    "website": "https://www.oldhamathletic.co.uk",
+    "primaryColor": "#0057B8",
+    "secondaryColor": "#FFFFFF",
+    "stadiumId": "boundary_park"
+  },
+  {
+    "id": 5103842,
+    "name": "Salford City",
+    "fullname": "Salford City Football Club",
+    "nickname": "The Ammies",
+    "town": "Salford",
+    "league": "League Two",
+    "founded": 1940,
+    "website": "https://www.salfordcityfc.co.uk",
+    "primaryColor": "#ED1C24",
+    "secondaryColor": "#FFFFFF",
+    "stadiumId": "moor_lane"
+  },
+  {
+    "id": 710,
+    "name": "Shrewsbury Town",
+    "fullname": "Shrewsbury Town Football Club",
+    "nickname": "The Shrews",
+    "town": "Shrewsbury",
+    "league": "League Two",
+    "founded": 1886,
+    "website": "https://www.shrewsburytown.com",
+    "primaryColor": "#0057B8",
+    "secondaryColor": "#FBB900",
+    "stadiumId": "new_meadow"
+  },
+  {
+    "id": 725,
+    "name": "Swindon Town",
+    "fullname": "Swindon Town Football Club",
+    "nickname": "The Robins",
+    "town": "Swindon",
+    "league": "League Two",
+    "founded": 1879,
+    "leagueCup": [
+      1969
+    ],
+    "website": "https://www.swindontownfc.co.uk",
+    "primaryColor": "#ED1C24",
+    "secondaryColor": "#FFFFFF",
+    "stadiumId": "county_ground"
+  },
+  {
+    "id": 729,
+    "name": "Tranmere Rovers",
+    "fullname": "Tranmere Rovers Football Club",
+    "nickname": "Super White Army",
+    "town": "Birkenhead",
+    "league": "League Two",
+    "founded": 1884,
+    "website": "https://www.tranmererovers.co.uk",
+    "primaryColor": "#FFFFFF",
+    "secondaryColor": "#0057B8",
+    "stadiumId": "prenton_park"
+  },
+  {
+    "id": 731,
+    "name": "Walsall",
+    "fullname": "Walsall Football Club",
+    "nickname": "The Saddlers",
+    "town": "Walsall",
+    "league": "League Two",
+    "founded": 1888,
+    "website": "https://www.saddlers.co.uk",
+    "primaryColor": "#ED1C24",
+    "secondaryColor": "#FFFFFF",
+    "stadiumId": "bescot_stadium"
+  },
+  {
+    "id": 573,
+    "name": "Aldershot Town",
+    "fullname": "Aldershot Town Football Club",
+    "nickname": "The Shots",
+    "town": "Aldershot",
+    "league": "National League",
+    "founded": 1992,
+    "website": "https://www.theshots.co.uk",
+    "primaryColor": "#ED1C24",
+    "secondaryColor": "#0057B8",
+    "stadiumId": "recreation_ground"
+  },
+  {
+    "id": 601,
+    "name": "Altrincham",
+    "fullname": "Altrincham Football Club",
+    "nickname": "The Robins",
+    "town": "Altrincham",
+    "league": "National League",
+    "founded": 1891,
+    "website": "https://www.altrinchamfc.com",
+    "primaryColor": "#ED1C24",
+    "secondaryColor": "#FFFFFF",
+    "stadiumId": "moss_lane"
+  },
+  {
+    "id": 109212,
+    "name": "Boreham Wood",
+    "fullname": "Boreham Wood Football Club",
+    "nickname": "The Wood",
+    "town": "Borehamwood",
+    "league": "National League",
+    "founded": 1948,
+    "website": "https://www.borehamwoodfootballclub.co.uk",
+    "primaryColor": "#000000",
+    "secondaryColor": "#FFFFFF",
+    "stadiumId": "meadow_park_borehamwood"
+  },
+  {
+    "id": 615,
+    "name": "Boston United",
+    "fullname": "Boston United Football Club",
+    "nickname": "The Pilgrims",
+    "town": "Boston",
+    "league": "National League",
+    "founded": 1933,
+    "website": "https://www.bostonunited.co.uk",
+    "primaryColor": "#FBB900",
+    "secondaryColor": "#000000",
+    "stadiumId": "jakemans_community_stadium"
+  },
+  {
+    "id": 5100088,
+    "name": "Brackley Town",
+    "fullname": "Brackley Town Football Club",
+    "nickname": "The Saints",
+    "town": "Brackley",
+    "league": "National League",
+    "founded": 1890,
+    "website": "https://www.brackleytownfc.com",
+    "primaryColor": "#ED1C24",
+    "secondaryColor": "#FFFFFF",
+    "stadiumId": "st_james_park_brackley"
+  },
+  {
+    "id": 134732,
+    "name": "Braintree Town",
+    "fullname": "Braintree Town Football Club",
+    "nickname": "The Iron",
+    "town": "Braintree",
+    "league": "National League",
+    "founded": 1898,
+    "website": "https://www.braintreetownfc.org.uk",
+    "primaryColor": "#FBB900",
+    "secondaryColor": "#0057B8",
+    "stadiumId": "cressing_road"
+  },
+  {
+    "id": 626,
+    "name": "Carlisle United",
+    "fullname": "Carlisle United Football Club",
+    "nickname": "The Cumbrians",
+    "town": "Carlisle",
+    "league": "National League",
+    "founded": 1904,
+    "website": "https://www.carlisleunited.co.uk",
+    "primaryColor": "#0057B8",
+    "secondaryColor": "#FFFFFF",
+    "stadiumId": "brunton_park"
+  },
+  {
+    "id": 5103760,
+    "name": "Eastleigh",
+    "fullname": "Eastleigh Football Club",
+    "nickname": "The Spitfires",
+    "town": "Eastleigh",
+    "league": "National League",
+    "founded": 1946,
+    "website": "https://www.eastleighfc.com",
+    "primaryColor": "#0057B8",
+    "secondaryColor": "#FFFFFF",
+    "stadiumId": "silverlake_stadium"
+  },
+  {
+    "id": 90002300,
+    "name": "Halifax Town",
+    "fullname": "Football Club Halifax Town",
+    "nickname": "The Shaymen",
+    "town": "Halifax",
+    "league": "National League",
+    "founded": 2008,
+    "website": "https://fchalifaxtown.com",
+    "primaryColor": "#0057B8",
+    "secondaryColor": "#FFFFFF",
+    "stadiumId": "the_shay"
+  },
+  {
+    "id": 109206,
+    "name": "Forest Green Rovers",
+    "fullname": "Forest Green Rovers Football Club",
+    "nickname": "The Rovers",
+    "town": "Nailsworth",
+    "league": "National League",
+    "founded": 1889,
+    "website": "https://www.fgr.co.uk",
+    "primaryColor": "#000000",
+    "secondaryColor": "#A2FF00",
+    "stadiumId": "the_new_lawn"
+  },
+  {
+    "id": 655,
+    "name": "Gateshead",
+    "fullname": "Gateshead Football Club",
+    "nickname": "The Heed",
+    "town": "Gateshead",
+    "league": "National League",
+    "founded": 1977,
+    "website": "https://gateshead-fc.com",
+    "primaryColor": "#FFFFFF",
+    "secondaryColor": "#000000",
+    "stadiumId": "gateshead_international_stadium"
+  },
+  {
+    "id": 661,
+    "name": "Hartlepool United",
+    "fullname": "Hartlepool United Football Club",
+    "nickname": "The Pools",
+    "town": "Hartlepool",
+    "league": "National League",
+    "founded": 1908,
+    "website": "https://www.hartlepoolunited.co.uk",
+    "primaryColor": "#0057B8",
+    "secondaryColor": "#FFFFFF",
+    "stadiumId": "victoria_park"
+  },
+  {
+    "id": 687,
+    "name": "Morecambe",
+    "fullname": "Morecambe Football Club",
+    "nickname": "The Shrimps",
+    "town": "Morecambe",
+    "league": "National League",
+    "founded": 1920,
+    "website": "https://www.morecambefc.com",
+    "primaryColor": "#ED1C24",
+    "secondaryColor": "#FFFFFF",
+    "stadiumId": "mazuma_stadium"
+  },
+  {
+    "id": 703,
+    "name": "Rochdale",
+    "fullname": "Rochdale Association Football Club",
+    "nickname": "The Dale",
+    "town": "Rochdale",
+    "league": "National League",
+    "founded": 1907,
+    "website": "https://www.rochdaleafc.co.uk",
+    "primaryColor": "#0057B8",
+    "secondaryColor": "#FFFFFF",
+    "stadiumId": "spotland_stadium"
+  },
+  {
+    "id": 707,
+    "name": "Scunthorpe United",
+    "fullname": "Scunthorpe United Football Club",
+    "nickname": "The Iron",
+    "town": "Scunthorpe",
+    "league": "National League",
+    "founded": 1899,
+    "website": "https://www.scunthorpe-united.co.uk",
+    "primaryColor": "#8A1B41",
+    "secondaryColor": "#87CEEB",
+    "stadiumId": "glanford_park"
+  },
+  {
+    "id": 30010181,
+    "name": "Solihull Moors",
+    "fullname": "Solihull Moors Football Club",
+    "nickname": "The Moors",
+    "town": "Solihull",
+    "league": "National League",
+    "founded": 2007,
+    "website": "https://www.solihullmoorsfc.co.uk",
+    "primaryColor": "#FBB900",
+    "secondaryColor": "#0057B8",
+    "stadiumId": "damson_park"
+  },
+  {
+    "id": 714,
+    "name": "Southend United",
+    "fullname": "Southend United Football Club",
+    "nickname": "The Shrimpers",
+    "town": "Southend-on-Sea",
+    "league": "National League",
+    "founded": 1906,
+    "website": "https://www.southendunited.co.uk",
+    "primaryColor": "#0057B8",
+    "secondaryColor": "#FFFFFF",
+    "stadiumId": "roots_hall"
+  },
+  {
+    "id": 723,
+    "name": "Sutton United",
+    "fullname": "Sutton United Football Club",
+    "nickname": "The U's",
+    "town": "Sutton",
+    "league": "National League",
+    "founded": 1898,
+    "website": "https://www.suttonunited.net",
+    "primaryColor": "#FBB900",
+    "secondaryColor": "#000000",
+    "stadiumId": "gander_green_lane"
+  },
+  {
+    "id": 5100078,
+    "name": "Tamworth",
+    "fullname": "Tamworth Football Club",
+    "nickname": "The Lambs",
+    "town": "Tamworth",
+    "league": "National League",
+    "founded": 1933,
+    "website": "https://www.tamworthfc.co.uk",
+    "primaryColor": "#ED1C24",
+    "secondaryColor": "#FFFFFF",
+    "stadiumId": "the_lamb_ground"
+  },
+  {
+    "id": 8325039,
+    "name": "Truro City",
+    "fullname": "Truro City Football Club",
+    "nickname": "The White Tigers",
+    "town": "Truro",
+    "league": "National League",
+    "founded": 1889,
+    "website": "https://www.trurocityfc.net",
+    "primaryColor": "#000000",
+    "secondaryColor": "#FFFFFF",
+    "stadiumId": "truro_city_stadium"
+  },
+  {
+    "id": 5100217,
+    "name": "Wealdstone",
+    "fullname": "Wealdstone Football Club",
+    "nickname": "The Stones",
+    "town": "Ruislip",
+    "league": "National League",
+    "founded": 1899,
+    "website": "https://www.wealdstone-fc.com",
+    "primaryColor": "#0057B8",
+    "secondaryColor": "#FFFFFF",
+    "stadiumId": "grosvenor_vale"
+  },
+  {
+    "id": 739,
+    "name": "Woking",
+    "fullname": "Woking Football Club",
+    "nickname": "The Cardinals",
+    "town": "Woking",
+    "league": "National League",
+    "founded": 1887,
+    "website": "https://www.wokingfc.co.uk",
+    "primaryColor": "#ED1C24",
+    "secondaryColor": "#FFFFFF",
+    "stadiumId": "kingfield_stadium"
+  },
+  {
+    "id": 743,
+    "name": "Yeovil Town",
+    "fullname": "Yeovil Town Football Club",
+    "nickname": "The Glovers",
+    "town": "Yeovil",
+    "league": "National League",
+    "founded": 1895,
+    "website": "https://www.ytfc.net",
+    "primaryColor": "#008000",
+    "secondaryColor": "#FFFFFF",
+    "stadiumId": "huish_park"
+  },
+  {
+    "id": 744,
+    "name": "York City",
+    "fullname": "York City Football Club",
+    "nickname": "The Minstermen",
+    "town": "York",
+    "league": "National League",
+    "founded": 1922,
+    "website": "https://www.yorkcityfootballclub.co.uk",
+    "primaryColor": "#ED1C24",
+    "secondaryColor": "#0057B8",
+    "stadiumId": "york_community_stadium"
+  }
+]

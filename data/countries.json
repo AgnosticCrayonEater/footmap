@@ -1,0 +1,74 @@
+[
+  {
+    "id": "da",
+    "name": "Denmark",
+    "mapCenter": [
+      56.2,
+      10.5
+    ],
+    "mapZoom": 7
+  },
+  {
+    "id": "en",
+    "name": "England",
+    "mapCenter": [
+      52.5,
+      -1.5
+    ],
+    "mapZoom": 6
+  },
+  {
+    "id": "de",
+    "name": "Germany",
+    "mapCenter": [
+      51.0,
+      10.0
+    ],
+    "mapZoom": 6
+  },
+  {
+    "id": "se",
+    "name": "Sweden",
+    "mapCenter": [
+      62.0,
+      15.0
+    ],
+    "mapZoom": 5
+  },
+  {
+    "id": "no",
+    "name": "Norway",
+    "mapCenter": [
+      62.0,
+      10.0
+    ],
+    "mapZoom": 5
+  },
+  {
+    "id": "fi",
+    "name": "Finland",
+    "mapCenter": [
+      64.0,
+      26.0
+    ],
+    "mapZoom": 5
+  },
+  {
+    "id": "fo",
+    "name": "Faroe Islands",
+    "mapCenter": [
+      62.0,
+      -7.0
+    ],
+    "mapZoom": 8
+  },
+  {
+    "id": "is",
+    "name": "Iceland",
+    "mapCenter": [
+      65.0,
+      -18.0
+    ],
+    "mapZoom": 5
+  }
+]
