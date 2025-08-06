@@ -1056,6 +1056,13 @@ input:checked~.icon-moon {
         max-height: calc(100vh - 90px);
         -webkit-overflow-scrolling: touch;
     }
+
+    #info-modal,
+    #credits-modal {
+        max-height: 85vh;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS */
+    }
     
     #search-container.active {
         width: calc(100vw - 40px);
