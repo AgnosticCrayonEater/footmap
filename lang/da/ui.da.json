@@ -36,6 +36,7 @@
     "fontLabel": "Skrifttype",
     "clusterLabel": "Klynge-markører",
     "simpleMarkersLabel": "Simple markører",
+    "markerTooltipsLabel": "Markør-værktøjstip",
     "tooltips": {
       "info": "Information",
       "credits": "Kreditering",

@@ -40,6 +40,8 @@ export const dom = {
     clusterLabel: document.querySelector('.setting-option:nth-of-type(4) > label'),
     simpleMarkersSwitch: document.getElementById('simple-markers-switch'),
     simpleMarkersLabel: document.querySelector('.setting-option:nth-of-type(5) > label'),
+    markerTooltipsSwitch: document.getElementById('marker-tooltips-switch'),
+    markerTooltipsLabel: document.getElementById('marker-tooltips-label'),
     searchContainer: document.getElementById('search-container'),
     searchBtn: document.getElementById('search-btn'),
     searchInput: document.getElementById('search-input'),
@@ -146,6 +148,10 @@ export function applySavedSimpleMarkersSetting() {
     dom.simpleMarkersSwitch.checked = savedSimpleMarkers === 'true';
 }
 
+export function applySavedMarkerTooltipsSetting() {
+    const savedMarkerTooltips = localStorage.getItem('markerTooltips') || 'false';
+    dom.markerTooltipsSwitch.checked = savedMarkerTooltips === 'true';
+}
 
 export function populateCountryDock(countries, switchCountryCallback, resetViewCallback) {
     const wrapper = dom.countryFlagsWrapper;
@@ -197,6 +203,7 @@ export function updateStaticText(translations) {
         dom.fontLabel.textContent = translations.settings.fontLabel;
         dom.clusterLabel.textContent = translations.settings.clusterLabel;
         dom.simpleMarkersLabel.textContent = translations.settings.simpleMarkersLabel;
+        dom.markerTooltipsLabel.textContent = translations.settings.markerTooltipsLabel;
 
         if (translations.settings.tooltips) {
             dom.infoBtn.setAttribute('data-tippy-content', translations.settings.tooltips.info);

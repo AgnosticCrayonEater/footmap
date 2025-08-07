@@ -36,6 +36,7 @@
     "fontLabel": "Font",
     "clusterLabel": "Cluster Markers",
     "simpleMarkersLabel": "Simple Markers",
+    "markerTooltipsLabel": "Marker Tooltips",
     "tooltips": {
       "info": "Information",
       "credits": "Credits",

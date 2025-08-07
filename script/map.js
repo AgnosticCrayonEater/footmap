@@ -89,7 +89,7 @@ function fanOutClubs(map, fanOutLayer, groupMarker, leagueRanking, currentCountr
 
 // --- MARKER CREATION ---
 
-function createClubMarker(club, leagueRanking, currentCountryId, isFannedOut, positionOverride, updateInfoBoxCallback, useSimpleMarkers) {
+function createClubMarker(club, leagueRanking, currentCountryId, isFannedOut, positionOverride, updateInfoBoxCallback, useSimpleMarkers, showTooltips) {
     if (!club.stadium || !(positionOverride || club.stadium.position)) {
         console.warn(`Club "${club.name}" (ID: ${club.id}) is missing data. Cannot create marker.`);
         return null;
@@ -141,10 +141,14 @@ function createClubMarker(club, leagueRanking, currentCountryId, isFannedOut, po
         L.DomEvent.stopPropagation(e);
     });
 
+    if (showTooltips && !isFannedOut) {
+        marker.bindTooltip(club.name);
+    }
+
     return marker;
 }
 
-function createGroupMarker(clubs, leagueRanking, currentCountryId, useSimpleMarkers, fanOutCallback) {
+function createGroupMarker(clubs, leagueRanking, currentCountryId, useSimpleMarkers, fanOutCallback, showTooltips) {
     clubs.sort((a, b) => {
         const rankA = leagueRanking.findIndex(tier => tier.includes(a.league));
         const rankB = leagueRanking.findIndex(tier => tier.includes(b.league));
@@ -222,12 +226,17 @@ function createGroupMarker(clubs, leagueRanking, currentCountryId, useSimpleMark
         L.DomEvent.stopPropagation(e);
     });
 
+    if (showTooltips) {
+        const tooltipText = clubs.map(c => c.name).join('<br>');
+        marker.bindTooltip(tooltipText);
+    }
+
     return marker;
 }
 
 
 // --- MAIN RENDERING FUNCTION ---
-export function renderMarkers(map, fanOutLayer, markers, allClubs, currentCountryId, leagueRanking, updateInfoBoxCallback, useSimpleMarkers, clubsToRender = null) {
+export function renderMarkers(map, fanOutLayer, markers, allClubs, currentCountryId, leagueRanking, updateInfoBoxCallback, useSimpleMarkers, showMarkerTooltips, clubsToRender = null) {
     markers.clearLayers();
     fanOutLayer.clearLayers();
 
@@ -266,11 +275,13 @@ export function renderMarkers(map, fanOutLayer, markers, allClubs, currentCountr
         let marker;
 
         if (clubs.length > 1) {
+            // This is one of the lines to change
             marker = createGroupMarker(clubs, leagueRanking, currentCountryId, useSimpleMarkers, (groupMarker) => {
-                fanOutClubs(map, fanOutLayer, groupMarker, leagueRanking, currentCountryId, updateInfoBoxCallback, useSimpleMarkers);
-            });
+                fanOutClubs(map, fanOutLayer, groupMarker, leagueRanking, currentCountryId, updateInfoBoxCallback, useSimpleMarkers, showMarkerTooltips);
+            }, showMarkerTooltips); // Pass the new parameter here
         } else {
-            marker = createClubMarker(clubs[0], leagueRanking, currentCountryId, false, null, updateInfoBoxCallback, useSimpleMarkers);
+            // This is the other line to change
+            marker = createClubMarker(clubs[0], leagueRanking, currentCountryId, false, null, updateInfoBoxCallback, useSimpleMarkers, showMarkerTooltips); // And pass it here
         }
 
         if (marker) {

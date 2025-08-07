@@ -21,6 +21,7 @@ const state = {
     leagueRanking: [],
     isClustered: false,
     useSimpleMarkers: false,
+    showMarkerTooltips: false,
     isSearchActive: false,
     searchQuery: '',
 };
@@ -38,12 +39,14 @@ async function init() {
     ui.applySavedFontSetting();
     ui.applySavedClusterSetting();
     ui.applySavedSimpleMarkersSetting();
+    ui.applySavedMarkerTooltipsSetting();
     ui.updateLanguageButtons(state.currentLanguage);
 
     setTheme(ui.dom.themeSwitch.checked);
     setFont(state.currentFont);
     state.isClustered = ui.dom.clusterSwitch.checked;
     state.useSimpleMarkers = ui.dom.simpleMarkersSwitch.checked;
+    state.showMarkerTooltips = ui.dom.markerTooltipsSwitch.checked;
     state.markers = mapManager.recreateMarkersLayer(state.map, state.markers, state.isClustered);
 
     try {
@@ -152,6 +155,13 @@ function setupEventListeners() {
     ui.dom.simpleMarkersSwitch.addEventListener('change', () => {
         state.useSimpleMarkers = ui.dom.simpleMarkersSwitch.checked;
         localStorage.setItem('simpleMarkers', String(state.useSimpleMarkers));
+        renderFilteredMarkers();
+    });
+
+    ui.dom.markerTooltipsSwitch.addEventListener('change', () => {
+        state.showMarkerTooltips = ui.dom.markerTooltipsSwitch.checked;
+        localStorage.setItem('markerTooltips', String(state.showMarkerTooltips));
+        // We need to re-render the markers for the tooltips to appear/disappear
         renderFilteredMarkers();
     });
 
