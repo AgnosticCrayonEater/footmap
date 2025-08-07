@@ -55,15 +55,16 @@ export function initTooltips() {
         theme: 'custom',
     };
 
-    // Initialize tooltips for the bottom-left buttons to appear on the right
-    tippy('#settings-container button', {
+    // Initialize tooltips for the bottom-left buttons and zoom controls to appear on the right
+    tippy('#settings-container button, .leaflet-control-zoom a', {
         ...defaultTooltipProps,
         placement: 'right',
     });
 
-    // Initialize all other tooltips with default (bottom) placement
-    tippy('[data-tippy-content]:not(#settings-container button)', {
+    // Initialize all other tooltips (search, country flags) with default (bottom) placement
+    tippy('#search-btn, #country-dock button', {
         ...defaultTooltipProps,
+        // No 'placement' needed, 'bottom' is the default
     });
 }
 
@@ -152,10 +153,7 @@ export function populateCountryDock(countries, switchCountryCallback, resetViewC
     countries.forEach(country => {
         const button = document.createElement('button');
         button.dataset.countryId = country.id;
-
-        // Use setAttribute for the tooltip content
         button.setAttribute('data-tippy-content', country.name);
-
         button.innerHTML = `<img src="graphics/flags/${country.id}.png" alt="${country.name} Flag">`;
 
         if (country.hasData) {
@@ -163,14 +161,13 @@ export function populateCountryDock(countries, switchCountryCallback, resetViewC
             button.addEventListener('dblclick', () => resetViewCallback(country.id));
         } else {
             button.classList.add('disabled');
-            // Update tooltip for disabled countries
             button.setAttribute('data-tippy-content', `${country.name} (data not available yet)`);
         }
 
         wrapper.appendChild(button);
     });
-    // Initialize tooltips for the country buttons
-    initTooltips();
+
+    initTooltips(); // This call remains to handle the country flags
 }
 
 export function updateActiveCountryButton(countryId) {
@@ -200,9 +197,16 @@ export function updateStaticText(translations) {
         dom.fontLabel.textContent = translations.settings.fontLabel;
         dom.clusterLabel.textContent = translations.settings.clusterLabel;
         dom.simpleMarkersLabel.textContent = translations.settings.simpleMarkersLabel;
+
+        if (translations.settings.tooltips) {
+            dom.infoBtn.setAttribute('data-tippy-content', translations.settings.tooltips.info);
+            dom.creditsBtn.setAttribute('data-tippy-content', translations.settings.tooltips.credits);
+            dom.filterBtn.setAttribute('data-tippy-content', translations.settings.tooltips.filter);
+            dom.settingsBtn.setAttribute('data-tippy-content', translations.settings.tooltips.settings);
+        }
     }
     if (translations.search) {
-        dom.searchBtn.title = translations.search.title;
+        dom.searchBtn.setAttribute('data-tippy-content', translations.search.title);
         dom.searchInput.placeholder = translations.search.placeholder;
     }
     if (translations.infoModal) {
@@ -215,16 +219,13 @@ export function updateStaticText(translations) {
     if (translations.creditsModal) {
         dom.creditsModalTitle.textContent = translations.creditsModal.title;
     }
-    if (translations.settings && translations.settings.tooltips) {
-        dom.infoBtn.setAttribute('data-tippy-content', translations.settings.tooltips.info);
-        dom.creditsBtn.setAttribute('data-tippy-content', translations.settings.tooltips.credits);
-        dom.filterBtn.setAttribute('data-tippy-content', translations.settings.tooltips.filter);
-        dom.settingsBtn.setAttribute('data-tippy-content', translations.settings.tooltips.settings);
-    }
     if (translations.mapControls) {
         document.querySelector('.leaflet-control-zoom-in')?.setAttribute('data-tippy-content', translations.mapControls.zoomIn);
         document.querySelector('.leaflet-control-zoom-out')?.setAttribute('data-tippy-content', translations.mapControls.zoomOut);
     }
+
+    // Re-initialize all tooltips after updating the text
+    initTooltips();
 }
 
 export function populateCredits(translations, attributions) {

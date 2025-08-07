@@ -33,7 +33,6 @@ async function init() {
     state.fanOutLayer = fanOutLayer;
 
     setupEventListeners();
-    ui.initTooltips();
 
     ui.applySavedTheme();
     ui.applySavedFontSetting();
