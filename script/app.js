@@ -120,12 +120,11 @@ function setupEventListeners() {
         }
     });
 
+    // Correctly implemented reset button listener
     ui.dom.filterResetBtn.addEventListener('click', () => {
-        // 1. Reset the actual filter controls
         ui.dom.leagueFilter.value = 'all';
         document.querySelectorAll('.accolade-checkbox:checked').forEach(cb => cb.checked = false);
         
-        // 2. Directly call the functions to update the map and the UI
         resetInfoBox();
         renderFilteredMarkers();
         ui.updateFilterFeedback(
@@ -375,7 +374,7 @@ function updateFullUI() {
         resetInfoBox();
     }
 
-    // Update the filter banner
+    // This is the key change to keep the banner in sync
     ui.updateFilterFeedback(
         ui.dom.leagueFilter,
         document.querySelectorAll('.accolade-checkbox:checked'),

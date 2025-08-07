@@ -256,8 +256,12 @@ export function populateCredits(translations, attributions) {
 }
 
 export function populateFilter(leagueRanking, allClubs, translations) {
-    // Populate Leagues
-    const selectedValue = dom.leagueFilter.value;
+    // 1. Preserve the current filter selections
+    const selectedLeague = dom.leagueFilter.value;
+    const checkedAccolades = Array.from(document.querySelectorAll('.accolade-checkbox:checked'))
+        .map(cb => cb.dataset.key);
+
+    // --- Populate Leagues (this part is mostly the same) ---
     dom.leagueFilter.innerHTML = '';
     const allOption = document.createElement('option');
     allOption.value = 'all';
@@ -276,9 +280,8 @@ export function populateFilter(leagueRanking, allClubs, translations) {
             dom.leagueFilter.appendChild(option);
         }
     });
-    dom.leagueFilter.value = selectedValue || 'all';
 
-    // Populate Accolades
+    // --- Populate Accolades (this part is mostly the same) ---
     dom.accoladeFilters.innerHTML = '';
     const accoladeTypes = [
         { key: 'championships', label: translations.infoBoxKeys.championships },
@@ -302,6 +305,15 @@ export function populateFilter(leagueRanking, allClubs, translations) {
     });
 
     dom.accoladeFilterSection.style.display = hasAccolades ? 'block' : 'none';
+
+    // 2. Restore the previous filter selections
+    dom.leagueFilter.value = selectedLeague;
+    checkedAccolades.forEach(key => {
+        const checkbox = document.querySelector(`.accolade-checkbox[data-key="${key}"]`);
+        if (checkbox) {
+            checkbox.checked = true;
+        }
+    });
 }
 
 export function resetInfoBox() {
