@@ -470,7 +470,8 @@ input:checked~.slider:before {
     margin-bottom: 5px;
 }
 
-#leagueFilter, .settings-select {
+#leagueFilter,
+.settings-select {
     border: 1px solid #ccc;
     border-radius: 4px;
     padding: 5px;
@@ -642,12 +643,14 @@ input:checked~.icon-moon {
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
     z-index: 2000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.3s ease;
+}
+
+#info-modal-overlay.visible #info-modal,
+#credits-modal-overlay.visible #credits-modal {
+    transform: translate(-50%, -50%) scale(1);
 }
 
 #info-modal-overlay.visible,
@@ -735,7 +738,7 @@ input:checked~.icon-moon {
     height: 70%;
     transform: rotate(45deg);
     object-fit: contain;
-    filter: drop-shadow(0 0 2px rgba(0,0,0,0.5)) drop-shadow(0 0 2px rgba(0,0,0,0.5));
+    filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.5)) drop-shadow(0 0 2px rgba(0, 0, 0, 0.5));
 }
 
 .custom-marker-pin .fallback-icon {
@@ -1067,9 +1070,10 @@ input:checked~.icon-moon {
     #credits-modal {
         max-height: 85vh;
         overflow-y: auto;
-        -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS */
+        -webkit-overflow-scrolling: touch;
+        /* For smooth scrolling on iOS */
     }
-    
+
     #search-container.active {
         width: calc(100vw - 40px);
     }
