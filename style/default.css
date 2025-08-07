@@ -1089,3 +1089,28 @@ input:checked~.icon-moon {
         max-width: calc(100vw - 70px);
     }
 }
+
+/* --- Custom Tooltip Theme --- */
+.tippy-box[data-theme~='custom'] {
+    background-color: #333;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 13px;
+    padding: 6px 10px;
+}
+
+.tippy-box[data-theme~='custom'][data-placement^='top']>.tippy-arrow::before {
+    border-top-color: #333;
+}
+
+.tippy-box[data-theme~='custom'][data-placement^='bottom']>.tippy-arrow::before {
+    border-bottom-color: #333;
+}
+
+.tippy-box[data-theme~='custom'][data-placement^='left']>.tippy-arrow::before {
+    border-left-color: #333;
+}
+
+.tippy-box[data-theme~='custom'][data-placement^='right']>.tippy-arrow::before {
+    border-right-color: #333;
+}

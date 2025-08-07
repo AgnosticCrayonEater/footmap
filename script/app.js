@@ -34,6 +34,14 @@ async function init() {
 
     setupEventListeners();
 
+    function initTooltips() {
+        tippy('[data-tippy-content]', {
+            animation: 'fade',
+            delay: [200, 0],
+            theme: 'custom', // We'll define this theme in CSS later
+        });
+    }
+
     ui.applySavedTheme();
     ui.applySavedFontSetting();
     ui.applySavedClusterSetting();
