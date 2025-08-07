@@ -27,11 +27,15 @@ const state = {
 
 // --- INITIALIZATION OF TOOLTIPS ---
 function initTooltips() {
-    tippy('[data-tippy-content]', {
-        animation: 'fade',
-        delay: [200, 0],
-        theme: 'custom',
-    });
+    if (window.tippy) {
+        tippy('[data-tippy-content]', {
+            animation: 'fade',
+            delay: [200, 0],
+            theme: 'custom',
+        });
+    } else {
+        console.error("Tippy.js library not found!");
+    }
 }
 
 // --- INITIALIZATION ---
@@ -42,7 +46,7 @@ async function init() {
     state.fanOutLayer = fanOutLayer;
 
     setupEventListeners();
-    initTooltips
+    initTooltips(); // This line was missing before
 
     ui.applySavedTheme();
     ui.applySavedFontSetting();

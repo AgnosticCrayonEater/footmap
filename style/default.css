@@ -1092,25 +1092,27 @@ input:checked~.icon-moon {
 
 /* --- Custom Tooltip Theme --- */
 .tippy-box[data-theme~='custom'] {
-    background-color: #333;
-    color: #fff;
-    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.95);
+    color: #333;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
     font-size: 13px;
-    padding: 6px 10px;
+    font-family: var(--current-font);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .tippy-box[data-theme~='custom'][data-placement^='top']>.tippy-arrow::before {
-    border-top-color: #333;
+    border-top-color: rgba(0, 0, 0, 0.08);
 }
 
 .tippy-box[data-theme~='custom'][data-placement^='bottom']>.tippy-arrow::before {
-    border-bottom-color: #333;
+    border-bottom-color: rgba(0, 0, 0, 0.08);
 }
 
 .tippy-box[data-theme~='custom'][data-placement^='left']>.tippy-arrow::before {
-    border-left-color: #333;
+    border-left-color: rgba(0, 0, 0, 0.08);
 }
 
 .tippy-box[data-theme~='custom'][data-placement^='right']>.tippy-arrow::before {
-    border-right-color: #333;
+    border-right-color: rgba(0, 0, 0, 0.08);
 }
