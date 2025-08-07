@@ -256,3 +256,27 @@ body.dark-mode .tippy-box[data-theme~='custom'][data-placement^='left']>.tippy-a
 body.dark-mode .tippy-box[data-theme~='custom'][data-placement^='right']>.tippy-arrow::before {
     border-right-color: #374151;
 }
+
+/* --- Dark Mode Leaflet Tooltips --- */
+body.dark-mode .leaflet-tooltip {
+    background-color: rgba(31, 41, 55, 0.95);
+    color: #f9fafb;
+    border: 1px solid #374151;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-mode .leaflet-tooltip-top::before {
+    border-top-color: #374151;
+}
+
+body.dark-mode .leaflet-tooltip-bottom::before {
+    border-bottom-color: #374151;
+}
+
+body.dark-mode .leaflet-tooltip-left::before {
+    border-left-color: #374151;
+}
+
+body.dark-mode .leaflet-tooltip-right::before {
+    border-right-color: #374151;
+}

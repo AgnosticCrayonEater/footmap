@@ -351,7 +351,7 @@ function updateFullUI() {
 }
 
 function renderFilteredMarkers(clubsToRender = null) {
-    mapManager.renderMarkers(state.map, state.fanOutLayer, state.markers, state.allClubs, state.currentCountryId, state.leagueRanking, updateInfoBox, state.useSimpleMarkers, clubsToRender);
+    mapManager.renderMarkers(state.map, state.fanOutLayer, state.markers, state.allClubs, state.currentCountryId, state.leagueRanking, updateInfoBox, state.useSimpleMarkers, state.showMarkerTooltips, clubsToRender);
 }
 
 function resetInfoBox() {
@@ -443,6 +443,15 @@ function handleSearchResultClick(club) {
     }, 100);
 }
 
+ui.dom.markerTooltipsSwitch.addEventListener('change', () => {
+    state.showMarkerTooltips = ui.dom.markerTooltipsSwitch.checked;
+    localStorage.setItem('markerTooltips', String(state.showMarkerTooltips));
+
+    // Add this log:
+    console.log(`[app.js] Tooltip switch changed. New state: ${state.showMarkerTooltips}`);
+
+    renderFilteredMarkers();
+});
 
 // --- START THE APP ---
 document.addEventListener('DOMContentLoaded', init);
