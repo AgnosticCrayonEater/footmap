@@ -25,27 +25,6 @@ const state = {
     searchQuery: '',
 };
 
-// --- INITIALIZATION OF TOOLTIPS ---
-function initTooltips() {
-    // Default settings for all tooltips
-    const defaultTooltipProps = {
-        animation: 'fade',
-        delay: [200, 0],
-        theme: 'custom',
-    };
-
-    // Initialize tooltips for the bottom-left buttons to appear on the right
-    tippy('#settings-container button', {
-        ...defaultTooltipProps,
-        placement: 'right',
-    });
-
-    // Initialize all other tooltips with default (bottom) placement
-    tippy('[data-tippy-content]:not(#settings-container button)', {
-        ...defaultTooltipProps,
-    });
-}
-
 // --- INITIALIZATION ---
 async function init() {
     const { map, markers, fanOutLayer } = mapManager.initMap();
@@ -54,7 +33,7 @@ async function init() {
     state.fanOutLayer = fanOutLayer;
 
     setupEventListeners();
-    initTooltips(); // This line was missing before
+    ui.initTooltips();
 
     ui.applySavedTheme();
     ui.applySavedFontSetting();

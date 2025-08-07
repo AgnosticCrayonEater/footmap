@@ -47,6 +47,26 @@ export const dom = {
     searchResults: document.getElementById('search-results')
 };
 
+export function initTooltips() {
+    // Default settings for all tooltips
+    const defaultTooltipProps = {
+        animation: 'fade',
+        delay: [200, 0],
+        theme: 'custom',
+    };
+
+    // Initialize tooltips for the bottom-left buttons to appear on the right
+    tippy('#settings-container button', {
+        ...defaultTooltipProps,
+        placement: 'right',
+    });
+
+    // Initialize all other tooltips with default (bottom) placement
+    tippy('[data-tippy-content]:not(#settings-container button)', {
+        ...defaultTooltipProps,
+    });
+}
+
 function getContrastingTextColor(hex) {
     if (!hex) return '#333';
     hex = hex.replace('#', '');
@@ -132,7 +152,10 @@ export function populateCountryDock(countries, switchCountryCallback, resetViewC
     countries.forEach(country => {
         const button = document.createElement('button');
         button.dataset.countryId = country.id;
-        button.title = country.name;
+
+        // Use setAttribute for the tooltip content
+        button.setAttribute('data-tippy-content', country.name);
+
         button.innerHTML = `<img src="graphics/flags/${country.id}.png" alt="${country.name} Flag">`;
 
         if (country.hasData) {
@@ -140,11 +163,14 @@ export function populateCountryDock(countries, switchCountryCallback, resetViewC
             button.addEventListener('dblclick', () => resetViewCallback(country.id));
         } else {
             button.classList.add('disabled');
-            button.title = `${country.name} (data not available yet)`;
+            // Update tooltip for disabled countries
+            button.setAttribute('data-tippy-content', `${country.name} (data not available yet)`);
         }
 
         wrapper.appendChild(button);
     });
+    // Initialize tooltips for the country buttons
+    initTooltips();
 }
 
 export function updateActiveCountryButton(countryId) {
@@ -188,6 +214,16 @@ export function updateStaticText(translations) {
     }
     if (translations.creditsModal) {
         dom.creditsModalTitle.textContent = translations.creditsModal.title;
+    }
+    if (translations.settings && translations.settings.tooltips) {
+        dom.infoBtn.setAttribute('data-tippy-content', translations.settings.tooltips.info);
+        dom.creditsBtn.setAttribute('data-tippy-content', translations.settings.tooltips.credits);
+        dom.filterBtn.setAttribute('data-tippy-content', translations.settings.tooltips.filter);
+        dom.settingsBtn.setAttribute('data-tippy-content', translations.settings.tooltips.settings);
+    }
+    if (translations.mapControls) {
+        document.querySelector('.leaflet-control-zoom-in')?.setAttribute('data-tippy-content', translations.mapControls.zoomIn);
+        document.querySelector('.leaflet-control-zoom-out')?.setAttribute('data-tippy-content', translations.mapControls.zoomOut);
     }
 }
 

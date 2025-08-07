@@ -35,7 +35,13 @@
     "themeLabel": "Theme",
     "fontLabel": "Font",
     "clusterLabel": "Cluster Markers",
-    "simpleMarkersLabel": "Simple Markers"
+    "simpleMarkersLabel": "Simple Markers",
+    "tooltips": {
+      "info": "Information",
+      "credits": "Credits",
+      "filter": "Filter",
+      "settings": "Settings"
+    }
   },
   "search": {
     "placeholder": "Search for a club...",
@@ -54,5 +60,9 @@
   "creditsModal": {
     "title": "Credits & Attributions",
     "linkText": "Source"
+  },
+  "mapControls": {
+    "zoomIn": "Zoom in",
+    "zoomOut": "Zoom out"
   }
 }

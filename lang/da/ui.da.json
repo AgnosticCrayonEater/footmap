@@ -35,7 +35,13 @@
     "themeLabel": "Tema",
     "fontLabel": "Skrifttype",
     "clusterLabel": "Klynge-markører",
-    "simpleMarkersLabel": "Simple markører"
+    "simpleMarkersLabel": "Simple markører",
+    "tooltips": {
+      "info": "Information",
+      "credits": "Kreditering",
+      "filter": "Filter",
+      "settings": "Indstillinger"
+    }
   },
   "search": {
     "placeholder": "Søg efter en klub...",
@@ -54,5 +60,9 @@
   "creditsModal": {
     "title": "Kreditering & Attribueringer",
     "linkText": "Kilde"
+  },
+  "mapControls": {
+    "zoomIn": "Zoom ind",
+    "zoomOut": "Zoom ud"
   }
 }
