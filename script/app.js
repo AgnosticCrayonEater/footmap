@@ -415,7 +415,11 @@ function clearSearch() {
 
 function handleSearchResultClick(club) {
     deactivateSearch();
-    state.map.setView(club.stadium.position, 15);
+    
+    // Use flyTo instead of setView for a smooth animation
+    state.map.flyTo(club.stadium.position, 15, {
+        duration: 1.5 // Animation duration in seconds
+    });
 
     // Find the corresponding marker to activate it
     let markerToActivate;
@@ -425,8 +429,7 @@ function handleSearchResultClick(club) {
         } else if (layer.getAllChildMarkers) { // Check clusters
             layer.getAllChildMarkers().forEach(child => {
                 if (child.clubId === club.id) {
-                    // We can't directly activate a clustered marker, but we can zoom to it
-                    state.map.setView(child.getLatLng(), 18);
+                    state.map.flyTo(child.getLatLng(), 18, { duration: 1.5 });
                 }
             });
         }
@@ -440,7 +443,7 @@ function handleSearchResultClick(club) {
             // If marker was in a cluster and not immediately available, we just show the info
             updateInfoBox(club, L.marker(club.stadium.position)); // Dummy marker for state
         }
-    }, 100);
+    }, 1600); // Increased delay to match animation duration
 }
 
 ui.dom.markerTooltipsSwitch.addEventListener('change', () => {
