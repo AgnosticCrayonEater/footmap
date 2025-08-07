@@ -27,15 +27,23 @@ const state = {
 
 // --- INITIALIZATION OF TOOLTIPS ---
 function initTooltips() {
-    if (window.tippy) {
-        tippy('[data-tippy-content]', {
-            animation: 'fade',
-            delay: [200, 0],
-            theme: 'custom',
-        });
-    } else {
-        console.error("Tippy.js library not found!");
-    }
+    // Default settings for all tooltips
+    const defaultTooltipProps = {
+        animation: 'fade',
+        delay: [200, 0],
+        theme: 'custom',
+    };
+
+    // Initialize tooltips for the bottom-left buttons to appear on the right
+    tippy('#settings-container button', {
+        ...defaultTooltipProps,
+        placement: 'right',
+    });
+
+    // Initialize all other tooltips with default (bottom) placement
+    tippy('[data-tippy-content]:not(#settings-container button)', {
+        ...defaultTooltipProps,
+    });
 }
 
 // --- INITIALIZATION ---
