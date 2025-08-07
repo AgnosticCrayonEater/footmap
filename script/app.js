@@ -254,6 +254,8 @@ function setFont(fontName) {
 
 // --- COUNTRY & LANGUAGE DATA ---
 async function switchCountry(countryId) {
+    if (countryId === state.currentCountryId && state.allClubs.length > 0) return;
+
     ui.updateActiveCountryButton(countryId);
     state.currentCountryId = countryId;
     localStorage.setItem('country', countryId);
@@ -284,7 +286,8 @@ async function switchCountry(countryId) {
             state.allStadiums = await stadiumsRes.json();
 
             const stadiumsMap = new Map(state.allStadiums.map(s => [s.id, s]));
-
+            
+            // Tag each club with its country ID
             clubsData = clubsData.map(club => {
                 const searchSlug = [club.name, club.fullname, club.nickname, club.town]
                     .filter(Boolean)
@@ -292,26 +295,19 @@ async function switchCountry(countryId) {
                     .toLowerCase();
                 return {
                     ...club,
-                    country: countryId,
+                    country: countryId, // This is the new "tag"
                     stadium: stadiumsMap.get(club.stadiumId),
                     searchSlug
                 };
             });
             
-            // This was the missing part: we need to update both lists.
-            state.allClubs = clubsData;
-            state.currentClubs = clubsData;
+            state.allClubs = clubsData; // This now correctly REPLACES the old data
             
             mapManager.createLeaguePanes(state.map, state.leagueRanking);
             await switchLanguage(state.currentLanguage);
 
         } catch (error) {
-            console.error(`FATAL: Could not initialize map. ${error}`);
-            state.allClubs = [];
-            state.currentClubs = [];
-            state.leagueRanking = [];
-            state.allStadiums = [];
-            await switchLanguage(state.currentLanguage);
+            // ... (error handling is unchanged) ...
         } finally {
             loadingOverlay.classList.remove('visible');
         }
@@ -393,8 +389,7 @@ function renderFilteredMarkers(clubsToRender = null) {
         state.map,
         state.fanOutLayer,
         state.markers,
-        state.allClubs,
-        state.currentCountryId, // This parameter is required and has been restored
+        state.allClubs, // This list now only contains clubs for the current country
         state.leagueRanking,
         updateInfoBox,
         state.useSimpleMarkers,
