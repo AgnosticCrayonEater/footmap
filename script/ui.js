@@ -421,7 +421,10 @@ export function updateInfoBox(club, allClubs, translations, currentCountryId) {
             <div class="other-clubs-container">
                 <strong>${t.otherClubs}</strong>
                 <ul class="other-clubs-list">
-                    ${otherClubs.map(c => `<li>${c.name}</li>`).join('')}
+                    ${otherClubs.map(c => {
+                        const logoPath = `graphics/logos/clubs/${c.country}/icons/${c.id}.png`;
+                        return `<li><img src="${logoPath}" class="other-club-icon" alt="${c.name} logo"> ${c.name}</li>`;
+                    }).join('')}
                 </ul>
             </div>
         `;

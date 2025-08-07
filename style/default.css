@@ -1148,3 +1148,10 @@ input:checked~.icon-moon {
 #filter-reset-btn:hover {
     color: #333;
 }
+
+.other-club-icon {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
