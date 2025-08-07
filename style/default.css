@@ -663,14 +663,16 @@ input:checked~.icon-moon {
 #credits-modal {
     max-width: 500px;
     width: 90%;
-    position: relative;
-    transform: scale(0.95);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.95);
     transition: transform 0.3s ease;
 }
 
 #info-modal-overlay.visible #info-modal,
 #credits-modal-overlay.visible #credits-modal {
-    transform: scale(1);
+    transform: translate(-50%, -50%) scale(1);
 }
 
 #info-modal-close-btn,
@@ -1068,10 +1070,13 @@ input:checked~.icon-moon {
 
     #info-modal,
     #credits-modal {
-        max-height: 85vh;
+        width: calc(100% - 40px);
+        /* Ensures 20px padding on left/right */
+        max-height: calc(100% - 40px);
+        /* Ensures 20px padding on top/bottom */
         overflow-y: auto;
+        /* Adds scrollbar if content is too tall */
         -webkit-overflow-scrolling: touch;
-        /* For smooth scrolling on iOS */
     }
 
     #search-container.active {
