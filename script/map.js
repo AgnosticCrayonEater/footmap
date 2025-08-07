@@ -21,6 +21,8 @@ export function initMap() {
     const map = L.map("map_danish_pyramid", { zoomControl: false, preferCanvas: false });
     L.control.zoom({ position: 'bottomleft' }).addTo(map);
 
+    map.getPane('tooltipPane').style.zIndex = 750;
+
     map.createPane('fanOutPane');
     map.getPane('fanOutPane').style.zIndex = 700;
 
