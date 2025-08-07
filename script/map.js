@@ -64,23 +64,22 @@ export function updateMapTheme(map, tileLayer, TILE_LAYERS, TILE_ATTRIBUTION) {
 }
 
 // --- FAN-OUT LOGIC ---
-
-function fanOutClubs(map, fanOutLayer, groupMarker, leagueRanking, currentCountryId, updateInfoBoxCallback, useSimpleMarkers) {
+function fanOutClubs(map, fanOutLayer, groupMarker, leagueRanking, currentCountryId, updateInfoBoxCallback, useSimpleMarkers, showTooltips) {
     fanOutLayer.clearLayers();
     const clubs = groupMarker.clubs;
-    const centerPoint = map.latLngToLayerPoint(groupMarker.getLatLng());
     const angleStep = clubs.length > 1 ? 110 / (clubs.length - 1) : 0;
     const startAngle = -125;
     const fanOutDistance = 55;
 
     clubs.forEach((club, index) => {
+        const centerPoint = map.latLngToLayerPoint(groupMarker.getLatLng());
         const angle = startAngle + (index * angleStep);
         const radian = angle * (Math.PI / 180);
         const x = centerPoint.x + fanOutDistance * Math.cos(radian);
         const y = centerPoint.y + fanOutDistance * Math.sin(radian);
         const newLatLng = map.layerPointToLatLng([x, y]);
 
-        const fanMarker = createClubMarker(club, leagueRanking, currentCountryId, true, newLatLng, updateInfoBoxCallback, useSimpleMarkers);
+        const fanMarker = createClubMarker(club, leagueRanking, currentCountryId, true, newLatLng, updateInfoBoxCallback, useSimpleMarkers, showTooltips);
         if (fanMarker) {
             fanOutLayer.addLayer(fanMarker);
         }
@@ -191,9 +190,10 @@ function createGroupMarker(clubs, leagueRanking, currentCountryId, useSimpleMark
         icon = L.divIcon({
             html: markerHtml,
             className: 'split-marker-wrapper',
-            iconSize: [40, 52],
-            iconAnchor: [20, 52]
+            iconSize: [36, 48],
+            iconAnchor: [18, 48]
         });
+        iconAnchor = [18, 48];
 
     } else if (useSimpleMarkers) {
         const markerColor = primaryClub.primaryColor || RANK_COLORS[rank] || DEFAULT_COLOR;
@@ -247,9 +247,6 @@ function createGroupMarker(clubs, leagueRanking, currentCountryId, useSimpleMark
 
 // --- MAIN RENDERING FUNCTION ---
 export function renderMarkers(map, fanOutLayer, markers, allClubs, currentCountryId, leagueRanking, updateInfoBoxCallback, useSimpleMarkers, showMarkerTooltips, clubsToRender = null) {
-
-    console.log(`[map.js] renderMarkers called. showMarkerTooltips is: ${showMarkerTooltips}`);
-
     markers.clearLayers();
     fanOutLayer.clearLayers();
 
@@ -288,13 +285,12 @@ export function renderMarkers(map, fanOutLayer, markers, allClubs, currentCountr
         let marker;
 
         if (clubs.length > 1) {
-            // This is one of the lines to change
             marker = createGroupMarker(clubs, leagueRanking, currentCountryId, useSimpleMarkers, (groupMarker) => {
+                // This is the updated call
                 fanOutClubs(map, fanOutLayer, groupMarker, leagueRanking, currentCountryId, updateInfoBoxCallback, useSimpleMarkers, showMarkerTooltips);
-            }, showMarkerTooltips); // Pass the new parameter here
+            }, showMarkerTooltips);
         } else {
-            // This is the other line to change
-            marker = createClubMarker(clubs[0], leagueRanking, currentCountryId, false, null, updateInfoBoxCallback, useSimpleMarkers, showMarkerTooltips); // And pass it here
+            marker = createClubMarker(clubs[0], leagueRanking, currentCountryId, false, null, updateInfoBoxCallback, useSimpleMarkers, showMarkerTooltips);
         }
 
         if (marker) {
@@ -309,9 +305,7 @@ export function renderMarkers(map, fanOutLayer, markers, allClubs, currentCountr
     }
 }
 
-
 // --- MARKER STATE MANAGEMENT ---
-
 export function setActiveMarker(marker, activeMarker) {
     if (activeMarker) {
         resetActiveMarker(activeMarker);
