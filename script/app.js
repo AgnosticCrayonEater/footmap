@@ -25,6 +25,15 @@ const state = {
     searchQuery: '',
 };
 
+// --- INITIALIZATION OF TOOLTIPS ---
+function initTooltips() {
+    tippy('[data-tippy-content]', {
+        animation: 'fade',
+        delay: [200, 0],
+        theme: 'custom',
+    });
+}
+
 // --- INITIALIZATION ---
 async function init() {
     const { map, markers, fanOutLayer } = mapManager.initMap();
@@ -33,14 +42,7 @@ async function init() {
     state.fanOutLayer = fanOutLayer;
 
     setupEventListeners();
-
-    function initTooltips() {
-        tippy('[data-tippy-content]', {
-            animation: 'fade',
-            delay: [200, 0],
-            theme: 'custom', // We'll define this theme in CSS later
-        });
-    }
+    initTooltips
 
     ui.applySavedTheme();
     ui.applySavedFontSetting();
