@@ -88,6 +88,10 @@ async function init() {
 }
 
 function setupEventListeners() {
+    // Prevent the map from capturing clicks on the filter feedback banner
+    const filterFeedbackContainer = document.getElementById('filter-feedback-container');
+    L.DomEvent.disableClickPropagation(filterFeedbackContainer);
+
     document.addEventListener('click', (e) => {
         if (ui.dom.filterBox.classList.contains('visible') && !ui.dom.filterBox.contains(e.target) && !ui.dom.filterBtn.contains(e.target)) {
             ui.toggleFilterModal();
@@ -103,17 +107,39 @@ function setupEventListeners() {
     ui.dom.langDaBtn.addEventListener('click', () => switchLanguage('da'));
     ui.dom.langEnBtn.addEventListener('click', () => switchLanguage('en'));
 
+    // --- Filter Listeners ---
     ui.dom.filterBox.addEventListener('change', (e) => {
         if (e.target.matches('#leagueFilter, .accolade-checkbox')) {
             resetInfoBox();
             renderFilteredMarkers();
+            ui.updateFilterFeedback(
+                ui.dom.leagueFilter,
+                document.querySelectorAll('.accolade-checkbox:checked'),
+                state.translations
+            );
         }
+    });
+
+    ui.dom.filterResetBtn.addEventListener('click', () => {
+        // 1. Reset the actual filter controls
+        ui.dom.leagueFilter.value = 'all';
+        document.querySelectorAll('.accolade-checkbox:checked').forEach(cb => cb.checked = false);
+        
+        // 2. Directly call the functions to update the map and the UI
+        resetInfoBox();
+        renderFilteredMarkers();
+        ui.updateFilterFeedback(
+            ui.dom.leagueFilter,
+            document.querySelectorAll('.accolade-checkbox:checked'),
+            state.translations
+        );
     });
 
     state.map.on('click', () => {
         resetInfoBox();
     });
 
+    // --- Modal and Settings Listeners ---
     ui.dom.infoBtn.addEventListener('click', ui.toggleInfoModal);
     ui.dom.infoModalCloseBtn.addEventListener('click', ui.toggleInfoModal);
     ui.dom.infoModalOverlay.addEventListener('click', (e) => {
@@ -161,10 +187,10 @@ function setupEventListeners() {
     ui.dom.markerTooltipsSwitch.addEventListener('change', () => {
         state.showMarkerTooltips = ui.dom.markerTooltipsSwitch.checked;
         localStorage.setItem('markerTooltips', String(state.showMarkerTooltips));
-        // We need to re-render the markers for the tooltips to appear/disappear
         renderFilteredMarkers();
     });
 
+    // --- Country Dock Scroll Listeners ---
     const wrapper = ui.dom.countryFlagsWrapper;
     const scrollAmount = 200;
     ui.dom.scrollLeftBtn.addEventListener('click', () => {
@@ -183,7 +209,6 @@ function setupEventListeners() {
     });
 
     ui.dom.searchInput.addEventListener('input', handleSearchInput);
-
     ui.dom.searchClearBtn.addEventListener('click', clearSearch);
 }
 
@@ -229,8 +254,6 @@ function setFont(fontName) {
 
 // --- COUNTRY & LANGUAGE DATA ---
 async function switchCountry(countryId) {
-    if (countryId === state.currentCountryId && state.allClubs.length > 0) return;
-
     ui.updateActiveCountryButton(countryId);
     state.currentCountryId = countryId;
     localStorage.setItem('country', countryId);
@@ -256,29 +279,36 @@ async function switchCountry(countryId) {
             ]);
             if (!clubsRes.ok || !leaguesRes.ok || !stadiumsRes.ok) throw new Error(`Could not fetch data for ${state.currentCountryId}`);
 
-            const clubsData = await clubsRes.json();
+            let clubsData = await clubsRes.json();
             state.leagueRanking = await leaguesRes.json();
             state.allStadiums = await stadiumsRes.json();
 
             const stadiumsMap = new Map(state.allStadiums.map(s => [s.id, s]));
-            state.allClubs = clubsData.map(club => {
+
+            clubsData = clubsData.map(club => {
                 const searchSlug = [club.name, club.fullname, club.nickname, club.town]
                     .filter(Boolean)
                     .join('|')
                     .toLowerCase();
                 return {
                     ...club,
+                    country: countryId,
                     stadium: stadiumsMap.get(club.stadiumId),
                     searchSlug
                 };
             });
-
+            
+            // This was the missing part: we need to update both lists.
+            state.allClubs = clubsData;
+            state.currentClubs = clubsData;
+            
             mapManager.createLeaguePanes(state.map, state.leagueRanking);
             await switchLanguage(state.currentLanguage);
 
         } catch (error) {
-            console.error("Failed to load country data:", error);
+            console.error(`FATAL: Could not initialize map. ${error}`);
             state.allClubs = [];
+            state.currentClubs = [];
             state.leagueRanking = [];
             state.allStadiums = [];
             await switchLanguage(state.currentLanguage);
@@ -348,10 +378,29 @@ function updateFullUI() {
     } else {
         resetInfoBox();
     }
+
+    // Update the filter banner
+    ui.updateFilterFeedback(
+        ui.dom.leagueFilter,
+        document.querySelectorAll('.accolade-checkbox:checked'),
+        state.translations
+    );
 }
 
 function renderFilteredMarkers(clubsToRender = null) {
-    mapManager.renderMarkers(state.map, state.fanOutLayer, state.markers, state.allClubs, state.currentCountryId, state.leagueRanking, updateInfoBox, state.useSimpleMarkers, state.showMarkerTooltips, clubsToRender);
+    if (!state.allClubs) return;
+    mapManager.renderMarkers(
+        state.map,
+        state.fanOutLayer,
+        state.markers,
+        state.allClubs,
+        state.currentCountryId, // This parameter is required and has been restored
+        state.leagueRanking,
+        updateInfoBox,
+        state.useSimpleMarkers,
+        state.showMarkerTooltips,
+        clubsToRender
+    );
 }
 
 function resetInfoBox() {

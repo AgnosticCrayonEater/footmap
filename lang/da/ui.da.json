@@ -65,5 +65,10 @@
   "mapControls": {
     "zoomIn": "Zoom ind",
     "zoomOut": "Zoom ud"
+  },
+  "filterFeedback": {
+    "showing": "Viser",
+    "withTrophies": "med Trofæer",
+    "and": "og"
   }
 }

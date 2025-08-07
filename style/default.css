@@ -1116,3 +1116,35 @@ input:checked~.icon-moon {
 .tippy-box[data-theme~='custom'][data-placement^='right']>.tippy-arrow::before {
     border-right-color: rgba(0, 0, 0, 0.08);
 }
+
+/* --- Filter Feedback Banner --- */
+#filter-feedback-container {
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1002; /* Changed from 1000 to be above the map and country dock */
+    padding: 6px 10px;
+    display: none;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+}
+
+#filter-feedback-container.visible {
+    display: flex;
+}
+
+#filter-reset-btn {
+    background: none;
+    border: none;
+    color: #888;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 1;
+    padding: 0 5px;
+}
+
+#filter-reset-btn:hover {
+    color: #333;
+}

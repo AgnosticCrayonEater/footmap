@@ -5,6 +5,9 @@ export const dom = {
     filterBtn: document.getElementById('filter-btn'),
     filterBox: document.getElementById('filter-box'),
     filterLabel: document.querySelector('#filter-label strong'),
+    filterFeedbackContainer: document.getElementById('filter-feedback-container'),
+    filterFeedbackText: document.getElementById('filter-feedback-text'),
+    filterResetBtn: document.getElementById('filter-reset-btn'),
     leagueFilter: document.getElementById('leagueFilter'),
     accoladeFilterSection: document.getElementById('accolade-filter-section'),
     accoladeFilterLabel: document.getElementById('accolade-filter-label'),
@@ -519,3 +522,32 @@ export function populateSearchResults(results, translations, currentCountryId, o
     }
 }
 
+export function updateFilterFeedback(leagueFilter, accoladeCheckboxes, translations) {
+    const leagueValue = leagueFilter.value;
+    const selectedLeagueText = leagueFilter.options[leagueFilter.selectedIndex].text.replace(/\s*\(\d+\)$/, '');
+
+    const activeAccoladeNames = Array.from(accoladeCheckboxes)
+        .map(checkbox => {
+            const label = document.querySelector(`label[for="${checkbox.id}"]`);
+            return label ? label.textContent : '';
+        });
+
+    let feedbackParts = [];
+
+    // Build the descriptive text based on what's selected
+    if (leagueValue !== 'all') {
+        feedbackParts.push(selectedLeagueText);
+    }
+    if (activeAccoladeNames.length > 0) {
+        const trophyText = `${translations.filterFeedback.withTrophies} (${activeAccoladeNames.join(', ')})`;
+        feedbackParts.push(trophyText);
+    }
+
+    if (feedbackParts.length > 0) {
+        const feedbackText = `${translations.filterFeedback.showing}: ${feedbackParts.join(` ${translations.filterFeedback.and} `)}`;
+        dom.filterFeedbackText.textContent = feedbackText;
+        dom.filterFeedbackContainer.classList.add('visible');
+    } else {
+        dom.filterFeedbackContainer.classList.remove('visible');
+    }
+}

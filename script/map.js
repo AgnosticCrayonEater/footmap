@@ -89,23 +89,18 @@ function fanOutClubs(map, fanOutLayer, groupMarker, leagueRanking, currentCountr
 }
 
 // --- MARKER CREATION ---
-function createClubMarker(club, leagueRanking, currentCountryId, isFannedOut, positionOverride, updateInfoBoxCallback, useSimpleMarkers, showTooltips) {
+function createClubMarker(club, leagueRanking, isFannedOut, positionOverride, updateInfoBoxCallback, useSimpleMarkers, showTooltips) {
     if (!club.stadium || !(positionOverride || club.stadium.position)) {
         console.warn(`Club "${club.name}" (ID: ${club.id}) is missing data. Cannot create marker.`);
         return null;
     }
 
     let marker;
-    let isCustom = false;
     const position = positionOverride || club.stadium.position;
-
     let rank = leagueRanking.findIndex(tier => tier.includes(club.league));
-    if (rank === -1) {
-        rank = leagueRanking.length;
-    }
+    if (rank === -1) rank = leagueRanking.length;
     const paneName = isFannedOut ? 'fanOutPane' : `tier-${rank}`;
-
-    let iconHtml, iconClassName, iconSize, iconAnchor;
+    let iconAnchor;
 
     if (useSimpleMarkers) {
         const markerColor = club.primaryColor || RANK_COLORS[rank] || DEFAULT_COLOR;
@@ -116,7 +111,7 @@ function createClubMarker(club, leagueRanking, currentCountryId, isFannedOut, po
         iconAnchor = [16, 42];
     } else {
         isCustom = true;
-        const logoPath = `graphics/logos/clubs/${currentCountryId}/icons/${club.id}.png`;
+        const logoPath = `graphics/logos/clubs/${club.country}/icons/${club.id}.png`; // Uses club.country
         const iconColor = getContrastingTextColor(club.primaryColor);
         iconHtml = `<div class="custom-marker-pin" style="background-color: ${club.primaryColor || '#CCC'}; border-color: ${club.secondaryColor || '#333'};">
                        <img class="logo-image" src="${logoPath}" alt="${club.name}" onerror="this.parentElement.classList.add('no-logo')">
@@ -131,7 +126,7 @@ function createClubMarker(club, leagueRanking, currentCountryId, isFannedOut, po
     marker = L.marker(position, { icon: icon, pane: paneName });
 
     marker.clubId = club.id;
-    marker.isCustom = isCustom;
+    marker.isCustom = !useSimpleMarkers;
     marker.isSimple = useSimpleMarkers;
 
     marker.on('click', (e) => {
@@ -139,12 +134,8 @@ function createClubMarker(club, leagueRanking, currentCountryId, isFannedOut, po
         L.DomEvent.stopPropagation(e);
     });
 
-    // This condition is now corrected
     if (showTooltips) {
-        marker.bindTooltip(club.name, {
-            direction: 'top',
-            offset: L.point(0, -iconAnchor[1])
-        });
+        marker.bindTooltip(club.name, { direction: 'top', offset: L.point(0, -iconAnchor[1]) });
     }
 
     return marker;
@@ -172,8 +163,8 @@ function createGroupMarker(clubs, leagueRanking, currentCountryId, useSimpleMark
     if (clubs.length === 2 && !useSimpleMarkers) {
         const club1 = clubs[0];
         const club2 = clubs[1];
-        const logoPath1 = `graphics/logos/clubs/${currentCountryId}/icons/${club1.id}.png`;
-        const logoPath2 = `graphics/logos/clubs/${currentCountryId}/icons/${club2.id}.png`;
+        const logoPath1 = `graphics/logos/clubs/${club1.country}/icons/${club1.id}.png`;
+        const logoPath2 = `graphics/logos/clubs/${club2.country}/icons/${club2.id}.png`;
 
         const markerHtml = `
             <div class="split-marker-pin">
