@@ -664,15 +664,18 @@ input:checked~.icon-moon {
     max-width: 500px;
     width: 90%;
     position: absolute;
-    top: 50%;
+    top: 20px;
+    /* Position it 20px from the top */
     left: 50%;
-    transform: translate(-50%, -50%) scale(0.95);
-    transition: transform 0.3s ease;
+    transform: translateX(-50%) scale(0.95);
+    /* Only center horizontally */
+    transition: transform 0.3s ease, top 0.3s ease;
+    /* Added top to transition */
 }
 
 #info-modal-overlay.visible #info-modal,
 #credits-modal-overlay.visible #credits-modal {
-    transform: translate(-50%, -50%) scale(1);
+    transform: translateX(-50%) scale(1);
 }
 
 #info-modal-close-btn,
