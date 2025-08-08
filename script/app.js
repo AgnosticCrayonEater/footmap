@@ -105,21 +105,16 @@ function setupEventListeners() {
     });
 
     ui.dom.infoBox.addEventListener('click', (e) => {
-        // Use .closest() to find a button, even if the user clicks the icon or text inside it
         const button = e.target.closest('.other-club-button');
 
-        if (button) {
+        if (button && state.activeMarker) { // Also check if there's an active marker
             const clubId = parseInt(button.dataset.clubId, 10);
             const clubToSwitchTo = state.allClubs.find(c => c.id === clubId);
 
             if (clubToSwitchTo) {
-                // Find the marker on the map for the new club
-                const markerToActivate = findMarkerByClubId(clubId);
-
                 // Re-use the existing updateInfoBox function to switch the view
-                if (markerToActivate) {
-                    updateInfoBox(clubToSwitchTo, markerToActivate);
-                }
+                // We pass the NEW club data, but the EXISTING active marker
+                updateInfoBox(clubToSwitchTo, state.activeMarker);
             }
         }
     });
