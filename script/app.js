@@ -124,7 +124,7 @@ function setupEventListeners() {
     ui.dom.filterResetBtn.addEventListener('click', () => {
         ui.dom.leagueFilter.value = 'all';
         document.querySelectorAll('.accolade-checkbox:checked').forEach(cb => cb.checked = false);
-        
+
         resetInfoBox();
         renderFilteredMarkers();
         ui.updateFilterFeedback(
@@ -285,7 +285,7 @@ async function switchCountry(countryId) {
             state.allStadiums = await stadiumsRes.json();
 
             const stadiumsMap = new Map(state.allStadiums.map(s => [s.id, s]));
-            
+
             // Tag each club with its country ID
             clubsData = clubsData.map(club => {
                 const searchSlug = [club.name, club.fullname, club.nickname, club.town]
@@ -299,9 +299,9 @@ async function switchCountry(countryId) {
                     searchSlug
                 };
             });
-            
+
             state.allClubs = clubsData; // This now correctly REPLACES the old data
-            
+
             mapManager.createLeaguePanes(state.map, state.leagueRanking);
             await switchLanguage(state.currentLanguage);
 
@@ -320,6 +320,7 @@ function resetCountryView(countryId) {
         if (countryConfig) {
             state.map.setView(countryConfig.mapCenter, countryConfig.mapZoom);
         }
+        resetInfoBox();
     }
 }
 
@@ -458,7 +459,7 @@ function clearSearch() {
 
 function handleSearchResultClick(club) {
     deactivateSearch();
-    
+
     // Use flyTo instead of setView for a smooth animation
     state.map.flyTo(club.stadium.position, 15, {
         duration: 1.5 // Animation duration in seconds
