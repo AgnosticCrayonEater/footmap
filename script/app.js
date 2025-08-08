@@ -104,6 +104,26 @@ function setupEventListeners() {
         }
     });
 
+    ui.dom.infoBox.addEventListener('click', (e) => {
+        // Use .closest() to find a button, even if the user clicks the icon or text inside it
+        const button = e.target.closest('.other-club-button');
+
+        if (button) {
+            const clubId = parseInt(button.dataset.clubId, 10);
+            const clubToSwitchTo = state.allClubs.find(c => c.id === clubId);
+
+            if (clubToSwitchTo) {
+                // Find the marker on the map for the new club
+                const markerToActivate = findMarkerByClubId(clubId);
+
+                // Re-use the existing updateInfoBox function to switch the view
+                if (markerToActivate) {
+                    updateInfoBox(clubToSwitchTo, markerToActivate);
+                }
+            }
+        }
+    });
+
     ui.dom.langDaBtn.addEventListener('click', () => switchLanguage('da'));
     ui.dom.langEnBtn.addEventListener('click', () => switchLanguage('en'));
 

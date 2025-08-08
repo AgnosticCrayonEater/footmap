@@ -1123,7 +1123,8 @@ input:checked~.icon-moon {
     top: 80px;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 1002; /* Changed from 1000 to be above the map and country dock */
+    z-index: 1002;
+    /* Changed from 1000 to be above the map and country dock */
     padding: 6px 10px;
     display: none;
     align-items: center;
@@ -1154,4 +1155,24 @@ input:checked~.icon-moon {
     height: 16px;
     vertical-align: middle;
     margin-right: 5px;
+}
+
+/* --- Other Clubs List Button --- */
+.other-club-button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    cursor: pointer;
+    text-align: left;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.other-club-button:hover span {
+    text-decoration: underline;
 }

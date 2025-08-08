@@ -418,16 +418,24 @@ export function updateInfoBox(club, allClubs, translations, currentCountryId) {
     let otherClubsHtml = '';
     if (otherClubs.length > 0) {
         otherClubsHtml = `
-            <div class="other-clubs-container">
-                <strong>${t.otherClubs}</strong>
-                <ul class="other-clubs-list">
-                    ${otherClubs.map(c => {
-                        const logoPath = `graphics/logos/clubs/${c.country}/icons/${c.id}.png`;
-                        return `<li><img src="${logoPath}" class="other-club-icon" alt="${c.name} logo"> ${c.name}</li>`;
-                    }).join('')}
-                </ul>
-            </div>
-        `;
+        <div class="other-clubs-container">
+            <strong>${t.otherClubs}</strong>
+            <ul class="other-clubs-list">
+                ${otherClubs.map(c => {
+            const logoPath = `graphics/logos/clubs/${c.country}/icons/${c.id}.png`;
+            // Each list item is now a button with a data-club-id
+            return `
+                        <li>
+                            <button class="other-club-button" data-club-id="${c.id}">
+                                <img src="${logoPath}" class="other-club-icon" alt="${c.name} logo">
+                                <span>${c.name}</span>
+                            </button>
+                        </li>
+                    `;
+        }).join('')}
+            </ul>
+        </div>
+    `;
     }
 
     const stadiumDetailsHtml = `
