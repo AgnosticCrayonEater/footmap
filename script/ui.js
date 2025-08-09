@@ -255,11 +255,9 @@ export function populateCredits(translations, attributions) {
     dom.creditsModalContent.innerHTML = contentHtml;
 }
 
-export function populateFilter(leagueRanking, allClubs, translations) {
-    // 1. Preserve the current filter selections
-    const selectedLeague = dom.leagueFilter.value;
-    const checkedAccolades = Array.from(document.querySelectorAll('.accolade-checkbox:checked'))
-        .map(cb => cb.dataset.key);
+export function populateFilter(leagueRanking, allClubs, translations, cupNames) {
+    const selectedValue = dom.leagueFilter.value;
+    const checkedAccolades = Array.from(document.querySelectorAll('.accolade-checkbox:checked')).map(cb => cb.dataset.key);
 
     // --- Populate Leagues (this part is mostly the same) ---
     dom.leagueFilter.innerHTML = '';
@@ -281,12 +279,14 @@ export function populateFilter(leagueRanking, allClubs, translations) {
         }
     });
 
-    // --- Populate Accolades (this part is mostly the same) ---
+
     dom.accoladeFilters.innerHTML = '';
+    
+    // This is the updated section
     const accoladeTypes = [
         { key: 'championships', label: translations.infoBoxKeys.championships },
-        { key: 'nationalCup', label: translations.infoBoxKeys.nationalCup },
-        { key: 'leagueCup', label: translations.infoBoxKeys.leagueCup }
+        { key: 'nationalCup', label: cupNames.nationalCup || translations.infoBoxKeys.nationalCup },
+        { key: 'leagueCup', label: cupNames.leagueCup || translations.infoBoxKeys.leagueCup }
     ];
 
     let hasAccolades = false;
@@ -294,25 +294,16 @@ export function populateFilter(leagueRanking, allClubs, translations) {
         const hasData = allClubs.some(club => club[type.key] && club[type.key].length > 0);
         if (hasData) {
             hasAccolades = true;
-            const checkboxHtml = `
-                <div class="accolade-option">
-                    <input type="checkbox" id="filter-${type.key}" class="accolade-checkbox" data-key="${type.key}">
-                    <label for="filter-${type.key}">${type.label}</label>
-                </div>
-            `;
+            const checkboxHtml = `<div class="accolade-option"><input type="checkbox" id="filter-${type.key}" class="accolade-checkbox" data-key="${type.key}"><label for="filter-${type.key}">${type.label}</label></div>`;
             dom.accoladeFilters.innerHTML += checkboxHtml;
         }
     });
-
     dom.accoladeFilterSection.style.display = hasAccolades ? 'block' : 'none';
 
-    // 2. Restore the previous filter selections
-    dom.leagueFilter.value = selectedLeague;
+    dom.leagueFilter.value = selectedValue;
     checkedAccolades.forEach(key => {
         const checkbox = document.querySelector(`.accolade-checkbox[data-key="${key}"]`);
-        if (checkbox) {
-            checkbox.checked = true;
-        }
+        if (checkbox) checkbox.checked = true;
     });
 }
 
@@ -323,7 +314,7 @@ export function resetInfoBox() {
     dom.infoBox.innerHTML = ''; // Clear content to prevent dead zones
 }
 
-export function updateInfoBox(club, allClubs, translations, currentCountryId) {
+export function updateInfoBox(club, allClubs, translations, currentCountryId, cupNames) {
     if (!club || !club.stadium) {
         resetInfoBox();
         return;
@@ -347,6 +338,7 @@ export function updateInfoBox(club, allClubs, translations, currentCountryId) {
         websiteHtml = `<a href="${club.website}" class="website-button" target="_blank" rel="noopener noreferrer" title="${t.website}"><i class="fa-solid fa-globe"></i></a>`;
     }
 
+    // --- THIS IS THE ONLY LOGIC CHANGE ---
     let championshipsHtml = '';
     if (club.championships && club.championships.length > 0) {
         championshipsHtml = `<strong>${t.championships}:</strong> ${club.championships.length} (${club.championships.join(', ')})<br>`;
@@ -354,13 +346,16 @@ export function updateInfoBox(club, allClubs, translations, currentCountryId) {
 
     let nationalCupHtml = '';
     if (club.nationalCup && club.nationalCup.length > 0) {
-        nationalCupHtml = `<strong>${t.nationalCup}:</strong> ${club.nationalCup.length} (${club.nationalCup.join(', ')})<br>`;
+        const cupName = cupNames.nationalCup || t.nationalCup;
+        nationalCupHtml = `<strong>${cupName}:</strong> ${club.nationalCup.length} (${club.nationalCup.join(', ')})<br>`;
     }
 
     let leagueCupHtml = '';
     if (club.leagueCup && club.leagueCup.length > 0) {
-        leagueCupHtml = `<strong>${t.leagueCup}:</strong> ${club.leagueCup.length} (${club.leagueCup.join(', ')})<br>`;
+        const cupName = cupNames.leagueCup || t.leagueCup;
+        leagueCupHtml = `<strong>${cupName}:</strong> ${club.leagueCup.length} (${club.leagueCup.join(', ')})<br>`;
     }
+    // --- END OF LOGIC CHANGE ---
 
     let nicknameHtml = club.nickname ? `<p class="club-nickname">"${club.nickname}"</p>` : '';
     const formattedFullname = formatClubFullname(club.fullname);
@@ -422,9 +417,8 @@ export function updateInfoBox(club, allClubs, translations, currentCountryId) {
             <strong>${t.otherClubs}</strong>
             <ul class="other-clubs-list">
                 ${otherClubs.map(c => {
-            const logoPath = `graphics/logos/clubs/${c.country}/icons/${c.id}.png`;
-            // Each list item is now a button with a data-club-id
-            return `
+                    const logoPath = `graphics/logos/clubs/${c.country}/icons/${c.id}.png`;
+                    return `
                         <li>
                             <button class="other-club-button" data-club-id="${c.id}">
                                 <img src="${logoPath}" class="other-club-icon" alt="${c.name} logo">
@@ -432,10 +426,10 @@ export function updateInfoBox(club, allClubs, translations, currentCountryId) {
                             </button>
                         </li>
                     `;
-        }).join('')}
+                }).join('')}
             </ul>
         </div>
-    `;
+        `;
     }
 
     const stadiumDetailsHtml = `
