@@ -270,8 +270,6 @@ function setFont(fontName) {
 
 // --- COUNTRY & LANGUAGE DATA ---
 async function switchCountry(countryId) {
-    console.log('Entering switchCountry. The value of state.currentClubs is:', state.currentClubs);
-
     if (state.currentCountryId === countryId && state.currentClubs.length > 0) {
         state.map.setView(state.countries.find(c => c.id === countryId).mapCenter, state.countries.find(c => c.id === countryId).mapZoom);
         return;
