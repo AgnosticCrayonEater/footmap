@@ -255,38 +255,62 @@ export function populateCredits(translations, attributions) {
     dom.creditsModalContent.innerHTML = contentHtml;
 }
 
-export function populateFilter(leagueRanking, allClubs, translations) {
-    // 1. Preserve the current filter selections
-    const selectedLeague = dom.leagueFilter.value;
-    const checkedAccolades = Array.from(document.querySelectorAll('.accolade-checkbox:checked'))
-        .map(cb => cb.dataset.key);
+export function populateFilter(leagueRanking, allClubs, translations, cupNames) {
+    const selectedValue = dom.leagueFilter.value;
+    const checkedAccolades = Array.from(document.querySelectorAll('.accolade-checkbox:checked')).map(cb => cb.dataset.key);
 
-    // --- Populate Leagues (this part is mostly the same) ---
     dom.leagueFilter.innerHTML = '';
     const allOption = document.createElement('option');
     allOption.value = 'all';
     allOption.textContent = `${translations.filter?.allOption || 'All'} (${allClubs.length})`;
     dom.leagueFilter.appendChild(allOption);
 
-    const allLeagues = leagueRanking.flat();
+    leagueRanking.forEach(tier => {
+        if (typeof tier === 'string') {
+            const count = allClubs.filter(c => c.league === tier).length;
+            if (count > 0) {
+                const option = document.createElement('option');
+                option.value = tier;
+                option.textContent = `${translations.leagues?.[tier] || tier} (${count})`;
+                dom.leagueFilter.appendChild(option);
+            }
+        } else if (typeof tier === 'object' && tier.groupName) {
+            const optgroup = document.createElement('optgroup');
+            optgroup.label = translations.leagues?.[tier.groupName] || tier.groupName;
+            
+            const groupLeagues = tier.leagues;
+            const allInGroupCount = allClubs.filter(c => groupLeagues.includes(c.league)).length;
+            
+            if (allInGroupCount > 0) {
+                const allGroupOption = document.createElement('option');
+                allGroupOption.value = JSON.stringify(groupLeagues);
+                allGroupOption.textContent = `${translations.filter?.allOption || 'All'} ${optgroup.label} (${allInGroupCount})`;
+                optgroup.appendChild(allGroupOption);
+            }
 
-    allLeagues.forEach(league => {
-        const count = allClubs.filter(club => club.league === league).length;
-        if (count > 0) {
-            const option = document.createElement('option');
-            option.value = league;
-            const displayLeague = translations.leagues?.[league] || league;
-            option.textContent = `${displayLeague} (${count})`;
-            dom.leagueFilter.appendChild(option);
+            groupLeagues.forEach(league => {
+                const count = allClubs.filter(c => c.league === league).length;
+                if (count > 0) {
+                    const option = document.createElement('option');
+                    option.value = league;
+                    option.textContent = `${translations.leagues?.[league] || league} (${count})`;
+                    optgroup.appendChild(option);
+                }
+            });
+
+            if (optgroup.children.length > 0) {
+                dom.leagueFilter.appendChild(optgroup);
+            }
         }
     });
 
-    // --- Populate Accolades (this part is mostly the same) ---
     dom.accoladeFilters.innerHTML = '';
+    
+    // This is the updated section
     const accoladeTypes = [
         { key: 'championships', label: translations.infoBoxKeys.championships },
-        { key: 'nationalCup', label: translations.infoBoxKeys.nationalCup },
-        { key: 'leagueCup', label: translations.infoBoxKeys.leagueCup }
+        { key: 'nationalCup', label: cupNames.nationalCup || translations.infoBoxKeys.nationalCup },
+        { key: 'leagueCup', label: cupNames.leagueCup || translations.infoBoxKeys.leagueCup }
     ];
 
     let hasAccolades = false;
@@ -294,25 +318,16 @@ export function populateFilter(leagueRanking, allClubs, translations) {
         const hasData = allClubs.some(club => club[type.key] && club[type.key].length > 0);
         if (hasData) {
             hasAccolades = true;
-            const checkboxHtml = `
-                <div class="accolade-option">
-                    <input type="checkbox" id="filter-${type.key}" class="accolade-checkbox" data-key="${type.key}">
-                    <label for="filter-${type.key}">${type.label}</label>
-                </div>
-            `;
+            const checkboxHtml = `<div class="accolade-option"><input type="checkbox" id="filter-${type.key}" class="accolade-checkbox" data-key="${type.key}"><label for="filter-${type.key}">${type.label}</label></div>`;
             dom.accoladeFilters.innerHTML += checkboxHtml;
         }
     });
-
     dom.accoladeFilterSection.style.display = hasAccolades ? 'block' : 'none';
 
-    // 2. Restore the previous filter selections
-    dom.leagueFilter.value = selectedLeague;
+    dom.leagueFilter.value = selectedValue;
     checkedAccolades.forEach(key => {
         const checkbox = document.querySelector(`.accolade-checkbox[data-key="${key}"]`);
-        if (checkbox) {
-            checkbox.checked = true;
-        }
+        if (checkbox) checkbox.checked = true;
     });
 }
 
