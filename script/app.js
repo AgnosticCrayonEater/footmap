@@ -269,6 +269,8 @@ function setFont(fontName) {
 
 // --- COUNTRY & LANGUAGE DATA ---
 async function switchCountry(countryId) {
+    console.log('Entering switchCountry. The value of state.currentClubs is:', state.currentClubs);
+
     if (countryId === state.currentCountryId && state.allClubs.length > 0) return;
 
     ui.updateActiveCountryButton(countryId);
