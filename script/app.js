@@ -9,6 +9,7 @@ const state = {
     fanOutLayer: null,
     tileLayer: null,
     allClubs: [],
+    currentClubs: [],
     allStadiums: [],
     translations: {},
     attributions: {},
