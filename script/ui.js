@@ -323,7 +323,7 @@ export function resetInfoBox() {
     dom.infoBox.innerHTML = ''; // Clear content to prevent dead zones
 }
 
-export function updateInfoBox(club, allClubs, translations, currentCountryId) {
+export function updateInfoBox(club, allClubs, translations, currentCountryId, cupNames) {
     if (!club || !club.stadium) {
         resetInfoBox();
         return;
@@ -347,6 +347,7 @@ export function updateInfoBox(club, allClubs, translations, currentCountryId) {
         websiteHtml = `<a href="${club.website}" class="website-button" target="_blank" rel="noopener noreferrer" title="${t.website}"><i class="fa-solid fa-globe"></i></a>`;
     }
 
+    // --- THIS IS THE ONLY LOGIC CHANGE ---
     let championshipsHtml = '';
     if (club.championships && club.championships.length > 0) {
         championshipsHtml = `<strong>${t.championships}:</strong> ${club.championships.length} (${club.championships.join(', ')})<br>`;
@@ -354,13 +355,16 @@ export function updateInfoBox(club, allClubs, translations, currentCountryId) {
 
     let nationalCupHtml = '';
     if (club.nationalCup && club.nationalCup.length > 0) {
-        nationalCupHtml = `<strong>${t.nationalCup}:</strong> ${club.nationalCup.length} (${club.nationalCup.join(', ')})<br>`;
+        const cupName = cupNames.nationalCup || t.nationalCup;
+        nationalCupHtml = `<strong>${cupName}:</strong> ${club.nationalCup.length} (${club.nationalCup.join(', ')})<br>`;
     }
 
     let leagueCupHtml = '';
     if (club.leagueCup && club.leagueCup.length > 0) {
-        leagueCupHtml = `<strong>${t.leagueCup}:</strong> ${club.leagueCup.length} (${club.leagueCup.join(', ')})<br>`;
+        const cupName = cupNames.leagueCup || t.leagueCup;
+        leagueCupHtml = `<strong>${cupName}:</strong> ${club.leagueCup.length} (${club.leagueCup.join(', ')})<br>`;
     }
+    // --- END OF LOGIC CHANGE ---
 
     let nicknameHtml = club.nickname ? `<p class="club-nickname">"${club.nickname}"</p>` : '';
     const formattedFullname = formatClubFullname(club.fullname);
@@ -422,9 +426,8 @@ export function updateInfoBox(club, allClubs, translations, currentCountryId) {
             <strong>${t.otherClubs}</strong>
             <ul class="other-clubs-list">
                 ${otherClubs.map(c => {
-            const logoPath = `graphics/logos/clubs/${c.country}/icons/${c.id}.png`;
-            // Each list item is now a button with a data-club-id
-            return `
+                    const logoPath = `graphics/logos/clubs/${c.country}/icons/${c.id}.png`;
+                    return `
                         <li>
                             <button class="other-club-button" data-club-id="${c.id}">
                                 <img src="${logoPath}" class="other-club-icon" alt="${c.name} logo">
@@ -432,10 +435,10 @@ export function updateInfoBox(club, allClubs, translations, currentCountryId) {
                             </button>
                         </li>
                     `;
-        }).join('')}
+                }).join('')}
             </ul>
         </div>
-    `;
+        `;
     }
 
     const stadiumDetailsHtml = `
