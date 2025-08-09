@@ -1445,5 +1445,31 @@
       -1.05293
     ],
     "imageCount": 2
+  },
+  {
+    "id": "mill_farm_wesham",
+    "name": "Mill Farm",
+    "realName": "Mill Farm",
+    "town": "Wesham",
+    "capacity": 6000,
+    "built": 2016,
+    "position": [
+      53.79734,
+      -2.88945
+    ],
+    "imageCount": 0
+  },
+  {
+    "id": "north_street_alfreton",
+    "name": "Impact Arena",
+    "realName": "North Street",
+    "town": "Alfreton",
+    "capacity": 3600,
+    "built": 1959,
+    "position": [
+      53.09448,
+      -1.38129
+    ],
+    "imageCount": 0
   }
 ]

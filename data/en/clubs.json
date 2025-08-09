@@ -1986,5 +1986,31 @@
     "primaryColor": "#ED1C24",
     "secondaryColor": "#0057B8",
     "stadiumId": "york_community_stadium"
+  },
+    {
+    "id": 8601358,
+    "name": "AFC Fylde",
+    "fullname": "Association Football Club Fylde",
+    "nickname": "The Coasters",
+    "town": "Wesham",
+    "league": "National League North",
+    "founded": 1988,
+    "website": "http://www.afcfylde.co.uk/",
+    "primaryColor": "#FFFFFF",
+    "secondaryColor": "#003c7f",
+    "stadiumId": "mill_farm_wesham"
+  },
+    {
+    "id": 5100015,
+    "name": "Alfreton Town",
+    "fullname": "Alfreton Town Football Club",
+    "nickname": "The Reds",
+    "town": "Alfreton",
+    "league": "National League North",
+    "founded": 1959,
+    "website": "https://www.alfretontownfootballclub.com",
+    "primaryColor": "#db1a28",
+    "secondaryColor": "#FFFFFF",
+    "stadiumId": "north_street_alfreton"
   }
 ]
