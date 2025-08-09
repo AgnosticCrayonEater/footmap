@@ -434,7 +434,7 @@ function updateInfoBox(club, marker) {
     state.fanOutLayer.clearLayers();
     state.activeMarker = mapManager.setActiveMarker(marker, state.activeMarker);
     state.selectedClubId = club.id;
-    ui.updateInfoBox(club, state.allClubs, state.translations, state.currentCountryId);
+    ui.updateInfoBox(club, state.allClubs, state.translations, state.currentCountryId, state.cupNames);
 }
 
 // --- SEARCH LOGIC ---
@@ -503,10 +503,10 @@ function handleSearchResultClick(club) {
     // A short delay ensures the map has panned before opening the infobox
     setTimeout(() => {
         if (markerToActivate) {
-            updateInfoBox(club, markerToActivate);
+            updateInfoBox(club, markerToActivate, state.cupNames);
         } else {
             // If marker was in a cluster and not immediately available, we just show the info
-            updateInfoBox(club, L.marker(club.stadium.position)); // Dummy marker for state
+            updateInfoBox(club, L.marker(club.stadium.position), state.cupNames); // Dummy marker for state
         }
     }, 1600); // Increased delay to match animation duration
 }
