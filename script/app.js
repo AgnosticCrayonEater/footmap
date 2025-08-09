@@ -272,7 +272,10 @@ function setFont(fontName) {
 async function switchCountry(countryId) {
     console.log('Entering switchCountry. The value of state.currentClubs is:', state.currentClubs);
 
-    if (countryId === state.currentCountryId && state.allClubs.length > 0) return;
+    if (state.currentCountryId === countryId && state.currentClubs.length > 0) {
+        state.map.setView(state.countries.find(c => c.id === countryId).mapCenter, state.countries.find(c => c.id === countryId).mapZoom);
+        return;
+    }
 
     ui.updateActiveCountryButton(countryId);
     state.currentCountryId = countryId;
@@ -290,47 +293,46 @@ async function switchCountry(countryId) {
     const loadingOverlay = document.getElementById('loading-overlay');
     loadingOverlay.classList.add('visible');
 
-    state.map.once('moveend', async () => {
-        try {
-            const [clubsRes, leaguesRes, stadiumsRes] = await Promise.all([
-                fetch(`data/${state.currentCountryId}/clubs.json`),
-                fetch(`data/${state.currentCountryId}/leagues.json`),
-                fetch(`data/${state.currentCountryId}/stadiums.json`)
-            ]);
-            if (!clubsRes.ok || !leaguesRes.ok || !stadiumsRes.ok) throw new Error(`Could not fetch data for ${state.currentCountryId}`);
+    try {
+        // Add cupsRes to the Promise.all call
+        const [clubsRes, leaguesRes, stadiumsRes, cupsRes] = await Promise.all([
+            fetch(`data/${countryId}/clubs.json`),
+            fetch(`data/${countryId}/leagues.json`),
+            fetch(`data/${countryId}/stadiums.json`),
+            // Fetch the new file, with a .catch to prevent errors if it doesn't exist
+            fetch(`data/${countryId}/cups.json`).catch(() => ({ ok: false }))
+        ]);
 
-            let clubsData = await clubsRes.json();
-            state.leagueRanking = await leaguesRes.json();
-            state.allStadiums = await stadiumsRes.json();
+        if (!clubsRes.ok || !leaguesRes.ok || !stadiumsRes.ok) throw new Error(`Could not fetch core data for ${countryId}`);
 
-            const stadiumsMap = new Map(state.allStadiums.map(s => [s.id, s]));
+        state.currentClubs = await clubsRes.json();
+        state.leagueRanking = await leaguesRes.json();
+        state.allStadiums = await stadiumsRes.json();
+        // Store the cup names, or an empty object if the fetch failed
+        state.cupNames = cupsRes.ok ? await cupsRes.json() : {};
 
-            // Tag each club with its country ID
-            clubsData = clubsData.map(club => {
-                const searchSlug = [club.name, club.fullname, club.nickname, club.town]
-                    .filter(Boolean)
-                    .join('|')
-                    .toLowerCase();
-                return {
-                    ...club,
-                    country: countryId, // This is the new "tag"
-                    stadium: stadiumsMap.get(club.stadiumId),
-                    searchSlug
-                };
-            });
+        const stadiumsMap = new Map(state.allStadiums.map(s => [s.id, s]));
+        state.allClubs = state.currentClubs.map(club => ({
+            ...club,
+            country: countryId,
+            stadium: stadiumsMap.get(club.stadiumId),
+            searchSlug: [club.name, club.fullname, club.nickname, club.town].filter(Boolean).join('|').toLowerCase()
+        }));
 
-            state.allClubs = clubsData; // This now correctly REPLACES the old data
+        mapManager.createLeaguePanes(state.map, state.leagueRanking);
+        await switchLanguage(state.currentLanguage, true);
 
-            mapManager.createLeaguePanes(state.map, state.leagueRanking);
-            await switchLanguage(state.currentLanguage);
-
-        } catch (error) {
-            // ... (error handling is unchanged) ...
-        } finally {
-            loadingOverlay.classList.remove('visible');
-        }
-    });
-    state.map.setView(countryConfig.mapCenter, countryConfig.mapZoom);
+    } catch (error) {
+        console.error(`Failed to load data for ${countryId}:`, error);
+        state.allClubs = [];
+        state.currentClubs = [];
+        state.leagueRanking = [];
+        state.cupNames = {};
+        await switchLanguage(state.currentLanguage, true);
+    } finally {
+        loadingOverlay.classList.remove('visible');
+        state.map.setView(countryConfig.mapCenter, countryConfig.mapZoom);
+    }
 }
 
 function resetCountryView(countryId) {
