@@ -1461,10 +1461,10 @@
   },
   {
     "id": "new_bucks_head_telford",
-    "name": "New Bucks Head",
+    "name": "SEAH Stadium",
     "realName": "New Bucks Head",
     "town": "Telford",
-    "capacity": 6380,
+    "capacity": 6300,
     "built": 2003,
     "position": [
       52.69735,
@@ -1487,10 +1487,10 @@
   },
   {
     "id": "the_eyrie_bedford",
-    "name": "The Eyrie",
-    "realName": "The Eyrie",
+    "name": "The New Eyrie",
+    "realName": "The New Eyrie",
     "town": "Bedford",
-    "capacity": 3400,
+    "capacity": 3000,
     "built": 1993,
     "position": [
       52.12877,
@@ -1501,7 +1501,7 @@
   {
     "id": "silverlands_buxton",
     "name": "Tarmac Silverlands Stadium",
-    "realName": "The Silverlands",
+    "realName": "Silverlands",
     "town": "Buxton",
     "capacity": 4000,
     "built": 1884,
@@ -1516,7 +1516,7 @@
     "name": "Deva Stadium",
     "realName": "Deva Stadium",
     "town": "Chester",
-    "capacity": 6500,
+    "capacity": 5400,
     "built": 1992,
     "position": [
       53.18920,
@@ -1555,8 +1555,8 @@
     "name": "Blackwell Meadows",
     "realName": "Blackwell Meadows",
     "town": "Darlington",
-    "capacity": 3300,
-    "built": 1900,
+    "capacity": 3281,
+    "built": 2016,
     "position": [
       54.50935,
       -1.56417
@@ -1565,7 +1565,7 @@
   },
   {
     "id": "edgar_street_hereford",
-    "name": "Edgar Street",
+    "name": "MandM Edgar Street Stadium",
     "realName": "Edgar Street",
     "town": "Hereford",
     "capacity": 5250,
@@ -1581,8 +1581,8 @@
     "name": "Aggborough Stadium",
     "realName": "Aggborough",
     "town": "Kidderminster",
-    "capacity": 6250,
-    "built": 1890,
+    "capacity": 6444,
+    "built": 1884,
     "position": [
       52.38046,
       -2.24269
@@ -1595,7 +1595,7 @@
     "realName": "The Walks",
     "town": "King's Lynn",
     "capacity": 8200,
-    "built": 1879,
+    "built": 1881,
     "position": [
       52.75003,
       0.40742
@@ -1607,7 +1607,7 @@
     "name": "Your Co-op Community Stadium",
     "realName": "New Windmill Ground",
     "town": "Leamington Spa",
-    "capacity": 3050,
+    "capacity": 2300,
     "built": 2000,
     "position": [
       52.24427,
@@ -1617,10 +1617,10 @@
   },
   {
     "id": "moss_rose_macclesfield",
-    "name": "Moss Rose",
+    "name": "Leasing.com Stadium",
     "realName": "Moss Rose",
     "town": "Macclesfield",
-    "capacity": 6355,
+    "capacity": 5300,
     "built": 1891,
     "position": [
       53.24279,
@@ -1633,8 +1633,8 @@
     "name": "Marine Travel Arena",
     "realName": "Rossett Park",
     "town": "Crosby",
-    "capacity": 3185,
-    "built": 1903,
+    "capacity": 2300,
+    "built": 1884,
     "position": [
       53.48517,
       -3.03362
@@ -1646,7 +1646,7 @@
     "name": "Penydarren Park",
     "realName": "Penydarren Park",
     "town": "Merthyr Tydfil",
-    "capacity": 4500,
+    "capacity": 4000,
     "built": 1908,
     "position": [
       51.75123,
@@ -1656,7 +1656,7 @@
   },
   {
     "id": "marsh_lane_oxford",
-    "name": "RAW Charging Stadium",
+    "name": "MGroup Stadium",
     "realName": "Marsh Lane",
     "town": "Oxford",
     "capacity": 3500,
@@ -1722,7 +1722,7 @@
   {
     "id": "haig_avenue_southport",
     "name": "Haig Avenue",
-    "realName": "Haig Avenue",
+    "realName": "Ash Lane",
     "town": "Southport",
     "capacity": 6008,
     "built": 1905,
@@ -1750,7 +1750,7 @@
     "name": "Sandy Lane",
     "realName": "Sandy Lane",
     "town": "Worksop",
-    "capacity": 3500,
+    "capacity": 2000,
     "built": 1992,
     "position": [
       53.31154,
@@ -1776,7 +1776,7 @@
     "name": "Twerton Park",
     "realName": "Twerton Park",
     "town": "Bath",
-    "capacity": 4070,
+    "capacity": 8840,
     "built": 1909,
     "position": [
       51.37882,
@@ -1825,7 +1825,7 @@
   },
   {
     "id": "victoria_road_london",
-    "name": "Victoria Road",
+    "name": "Chigwell Construction Stadium",
     "realName": "Victoria Road",
     "town": "London",
     "capacity": 6078,
@@ -1854,8 +1854,8 @@
     "name": "Crabble Athletic Ground",
     "realName": "Crabble",
     "town": "Dover",
-    "capacity": 5745,
-    "built": 1931,
+    "capacity": 6500,
+    "built": 1897,
     "position": [
       51.13779,
       1.28486
@@ -1868,7 +1868,7 @@
     "realName": "Priory Lane",
     "town": "Eastbourne",
     "capacity": 4151,
-    "built": 1983,
+    "built": 1988,
     "position": [
       50.80416,
       0.32080
@@ -1890,11 +1890,11 @@
   },
   {
     "id": "queen_elizabeth_ii_stadium_london",
-    "name": "Queen Elizabeth II Stadium",
+    "name": "Dave Bryant Stadium",
     "realName": "Queen Elizabeth II Stadium",
     "town": "London",
     "capacity": 2500,
-    "built": 1951,
+    "built": 1953,
     "position": [
       51.65928,
       -0.06384
@@ -1903,10 +1903,10 @@
   },
   {
     "id": "cherrywood_road_farnborough",
-    "name": "Easy As HGV Stadium",
-    "realName": "Cherrywood Road",
+    "name": "Saunders Transport Community Stadium",
+    "realName": "The John Roberts Ground",
     "town": "Farnborough",
-    "capacity": 4000,
+    "capacity": 6500,
     "built": 1976,
     "position": [
       51.31042,
@@ -1919,7 +1919,7 @@
     "name": "Beveree Stadium",
     "realName": "Beveree Stadium",
     "town": "Hampton",
-    "capacity": 3500,
+    "capacity": 3800,
     "built": 1959,
     "position": [
       51.41517,
@@ -1933,7 +1933,7 @@
     "realName": "Vauxhall Road",
     "town": "Hemel Hempstead",
     "capacity": 3152,
-    "built": 1972,
+    "built": 1948,
     "position": [
       51.75387,
       -0.44440
@@ -1946,7 +1946,7 @@
     "realName": "Hornchurch Stadium",
     "town": "Hornchurch",
     "capacity": 3500,
-    "built": 1952,
+    "built": 1956,
     "position": [
       51.55653,
       0.23837
@@ -1955,7 +1955,7 @@
   },
   {
     "id": "hop_on_hop_off_stadium_horsham",
-    "name": "The Camping World Community Stadium",
+    "name": "The Fusion Aviation Community Stadium",
     "realName": "Hop O'Nostril",
     "town": "Horsham",
     "capacity": 3000,
@@ -1971,7 +1971,7 @@
     "name": "York Road",
     "realName": "York Road",
     "town": "Maidenhead",
-    "capacity": 4000,
+    "capacity": 4500,
     "built": 1871,
     "position": [
       51.51987,
@@ -1997,7 +1997,7 @@
     "name": "Raymond McEnhill Stadium",
     "realName": "Raymond McEnhill Stadium",
     "town": "Salisbury",
-    "capacity": 4000,
+    "capacity": 5000,
     "built": 1997,
     "position": [
       51.10304,
@@ -2036,8 +2036,8 @@
     "name": "Plainmoor",
     "realName": "Plainmoor",
     "town": "Torquay",
-    "capacity": 6500,
-    "built": 1910,
+    "capacity": 6200,
+    "built": 1921,
     "position": [
       50.47639,
       -3.52384
@@ -2046,7 +2046,7 @@
   },
   {
     "id": "optima_stadium_weston_super_mare",
-    "name": "Optima Stadium",
+    "name": "Woodspring Stadium",
     "realName": "Woodspring Stadium",
     "town": "Weston-super-Mare",
     "capacity": 3500,
