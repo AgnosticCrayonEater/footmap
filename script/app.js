@@ -366,7 +366,7 @@ async function switchLanguage(lang) {
 function updateFullUI() {
     ui.updateStaticText(state.translations);
     ui.populateCredits(state.translations, state.attributions);
-    ui.populateFilter(state.leagueRanking, state.allClubs, state.translations);
+    ui.populateFilter(state.leagueRanking, state.allClubs, state.translations, state.cupNames);
     renderFilteredMarkers();
 
     if (state.selectedClubId) {
