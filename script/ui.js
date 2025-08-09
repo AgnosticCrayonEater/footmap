@@ -198,7 +198,7 @@ export function updateStaticText(translations) {
         dom.filterLabel.textContent = translations.filter.label;
         dom.accoladeFilterLabel.textContent = translations.filter.accoladeLabel;
     }
-    document.title = `Football Map`;
+    document.title = `Fotmap`;
     if (translations.settings) {
         dom.settingsTitle.textContent = translations.settings.title;
         dom.languageLabel.textContent = translations.settings.languageLabel;
