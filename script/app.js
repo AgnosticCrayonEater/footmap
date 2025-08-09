@@ -19,6 +19,7 @@ const state = {
     currentLanguage: localStorage.getItem('language') || 'en',
     currentFont: localStorage.getItem('font') || 'Inter',
     leagueRanking: [],
+    cupNames: {},
     isClustered: false,
     useSimpleMarkers: false,
     showMarkerTooltips: false,
