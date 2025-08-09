@@ -110,14 +110,17 @@ function formatClubFullname(fullname) {
 
 
 export function toggleInfoModal() {
+    dom.filterBtn._tippy?.hide();
     dom.infoModalOverlay.classList.toggle('visible');
 }
 
 export function toggleCreditsModal() {
+    dom.filterBtn._tippy?.hide();
     dom.creditsModalOverlay.classList.toggle('visible');
 }
 
 export function toggleFilterModal() {
+    dom.filterBtn._tippy?.hide();
     if (dom.settingsModal.classList.contains('visible')) {
         dom.settingsModal.classList.remove('visible');
     }
@@ -125,6 +128,7 @@ export function toggleFilterModal() {
 }
 
 export function toggleSettingsModal() {
+    dom.filterBtn._tippy?.hide();
     if (dom.filterBox.classList.contains('visible')) {
         dom.filterBox.classList.remove('visible');
     }
