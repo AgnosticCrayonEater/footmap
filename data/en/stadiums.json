@@ -1851,8 +1851,8 @@
   },
   {
     "id": "crabble_athletic_ground_dover",
-    "name": "Crabble Athletic Ground",
-    "realName": "Crabble",
+    "name": "Crabble",
+    "realName": "Crabble Athletic Ground",
     "town": "Dover",
     "capacity": 6500,
     "built": 1897,
