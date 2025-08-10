@@ -1,0 +1,2 @@
+*.json merge=ours
+graphics/** merge=ours
